@@ -1,12 +1,18 @@
-﻿@{
+﻿@model AMSModels.User
+@{
+   
     Layout = null;
+    string UserName = string.Empty;
+    string password = string.Empty;
+    if (TempData["UserName"] != null) UserName = Convert.ToString(TempData["UserName"]);
+    if (TempData["password"] != null) password = Convert.ToString(TempData["password"]);
 }
 <!doctype html>
 <html lang="en">
 
 <head>
     <title>Bidgen - Bid and Auction HTML Template</title>
-
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,7 +30,8 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="~/css/style.css">
     <link rel="stylesheet" href="~/css/responsive.css">
-
+    <script type="text/javascript">
+</script>
 </head>
 
 <body>
@@ -113,7 +120,7 @@
                                     <ul class="sub-menu">
                                         <li><a href="about.html">about</a></li>
                                         <li><a href="winner.html">winner</a></li>
-                                        <li><a href="login.html">login</a></li>
+                                        <li><a href="Account/login">login</a></li>
                                         <li><a href="register">register</a></li>
                                         <li><a href="faq.html">faq</a></li>
                                         <li><a href="privacy.html">Privacy Policy</a></li>
@@ -180,7 +187,7 @@
                 <div class="col-12">
                     <div class="register-btn-group">
                         <a href="register" class="register-btn style2">Register</a>
-                        <a href="login.html" class="login-btn style2">Login</a>
+                        <a href="login" class="login-btn style2">Login</a>
                     </div>
                 </div>
             </div>
@@ -195,14 +202,17 @@
                 <div class="col-lg-6">
                     <div class="right-form-area">
                         <h3>Login Your Account</h3>
-                        <form class="w-100">
+
+                        <form class="w-100" asp-action="PostLogin" method="post" id="loginForm">
                             <div class="form-inner">
                                 <label>User Name*</label>
-                                <input type="text" name="username" placeholder="User Name">
+                                <input type="text" name="UserName" placeholder="User Name" value="@UserName" required>
+                                @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
                             </div>
                             <div class="form-inner">
                                 <label>Password *</label>
-                                <input type="password" name="password" id="password" placeholder="Password" />
+                                <input type="password" name="password" id="password" placeholder="Password" value="@password" required />
+                                @Html.ValidationMessageFor(x=>x.Password,string.Empty,new {@class="text-danger"})
                                 <i class="bi bi-eye-slash" id="togglePassword"></i>
                             </div>
                             <div class="form-inner d-flex justify-content-between flex-wrap">
@@ -214,7 +224,7 @@
                                 <label class="check-box-text">Remember Me</label> -->
                                 <a href="#" class="forgot-pass">Forgotten Password</a>
                             </div>
-                            <button class="account-btn">LOGIN ACCOUNT</button>
+                            <button class="account-btn" id="BtnSubmit">LOGIN ACCOUNT</button>
                         </form>
                         <div class="alternate-signup-box">
                             <h6>or Sign up WITH</h6>
@@ -242,6 +252,7 @@
                                 <div class="form-wrap d-flex align-items-center">
                                     <input type="email" placeholder="Enter Your Email">
                                     <button type="submit">Send</button>
+                                    <partial name="_Alert" />
                                 </div>
                             </form>
 
@@ -278,7 +289,7 @@
                             <h5 class="widget-title">Quick Links</h5>
 
                             <ul class="widget-links">
-                                <li><a href="login.html">My Account</a></li>
+                                <li><a href="Account/login">My Account</a></li>
                                 <li><a href="about.html">Affiliate Program</a></li>
                                 <li><a href="contact.html">Lawyer Consulting</a></li>
                                 <li><a href="#">Sorteo Locemses</a></li>
@@ -332,6 +343,17 @@
     </footer>
     <!-- =============== footer area end=============== -->
     <!--Javascript -->
+   
+    <!--- Internal Notify js -->
+    <script src="~/assets/plugins/notify/js/notifIt.js"></script>
+    <script src="~/assets/plugins/notify/js/notifit-custom.js"></script>
+    <partial name="_Alert" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        $('#loginForm').validate();
+    </script>
     <script src="~/js/jquery-3.6.0.min.js"></script>
     <script src="~/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/swiper-bundle.min.js"></script>
@@ -339,6 +361,9 @@
     <script src="~/js/jquery.nice-select.js"></script>
     <!-- Custom JavaScript -->
     <script src="~/js/main.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+    
 </body>
 
 </html>

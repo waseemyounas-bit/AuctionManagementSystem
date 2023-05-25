@@ -20,8 +20,8 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Account/register.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci5jc2h0bWw=
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Index.cshtml]
@@ -34,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_Alert.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGVydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]

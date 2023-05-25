@@ -30,7 +30,7 @@ namespace DataAccess.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "CreatedAt", "Email", "FullName", "Password", "RoleId" },
-                values: new object[] { new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"), new DateTime(2023, 5, 25, 5, 21, 36, 473, DateTimeKind.Utc).AddTicks(6040), "admin@hrawards.com", "SuperAdmin", "12345678", 1 });
+                values: new object[] { new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"), new DateTime(2023, 5, 25, 7, 8, 13, 255, DateTimeKind.Utc).AddTicks(2917), "admin@hrawards.com", "SuperAdmin", "12345678", 1 });
         }
 
         /// <inheritdoc />

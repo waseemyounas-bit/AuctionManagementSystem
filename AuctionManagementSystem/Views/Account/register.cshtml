@@ -1,4 +1,5 @@
-﻿@{
+﻿@model AMSModels.User
+@{
     Layout = null;
 }
 <!doctype html>
@@ -195,23 +196,28 @@
                 <div class="col-lg-6">
                     <div class="right-form-area">
                         <h3>Register Your Account</h3>
-                        <form class="w-100">
+
+                        <form action="Register" method="post" enctype="multipart/form-data" class="w-100">
                             <div class="form-inner">
                                 <label>Full Name*</label>
-                                <input type="text" placeholder="Full Name">
+                                <input type="text" name="FullName" class="form-control" value="@Model.FullName" placeholder="Full Name">
+                                @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
                             </div>
                             <div class="form-inner">
                                 <label>Email *</label>
-                                <input type="text" placeholder="Your email">
+                                <input type="email" name="Email" class="form-control" value="@Model.Email" placeholder="Your email">
+                                @Html.ValidationMessageFor(x=>x.Email,string.Empty,new {@class="text-danger"})
                             </div>
                             <div class="form-inner">
                                 <label>Password *</label>
-                                <input type="password" name="password" id="password" placeholder="Password" />
+                                <input type="password" name="password" id="password" class="form-control" value="@Model.Password" placeholder="password">
+                                @Html.ValidationMessageFor(x=>x.Password,string.Empty,new {@class="text-danger"})
                                 <i class="bi bi-eye-slash" id="togglePassword"></i>
                             </div>
                             <div class="form-inner">
                                 <label>Confirm Password *</label>
-                                <input type="password" name="password" id="password2" placeholder="Confirm Password" />
+                                <input type="password" name="password" id="password2" class="form-control" value="@Model.Password" placeholder="Confirm Password">
+                                @Html.ValidationMessageFor(x=>x.Password,string.Empty,new {@class="text-danger"})
                                 <i class="bi bi-eye-slash" id="togglePassword2"></i>
                             </div>
                             <div class="form-inner d-flex justify-content-between flex-wrap">

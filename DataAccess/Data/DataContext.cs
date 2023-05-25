@@ -44,7 +44,8 @@ namespace DataAccess.Data
                     FullName = "SuperAdmin",
                     Email = "admin@hrawards.com",
                     Password = "12345678",
-                    RoleId = 1
+                    RoleId = 1,
+                    IsApproved=1
                 }
             );
         }
