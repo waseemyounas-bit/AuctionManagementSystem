@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YYC3psgvB0kDmULfLltUiMeilnzagl8E14YAianc/5CL1jZSM6MvU2vTpoC9CfYUwOQiQgJfMeXvU6pkRwFVXQ==",
+  "dgSpecHash": "McZpU6fQbyWvz40aajx0eXwaFU++uh79KVdBB2HQ8aHOBV9oI9LKQJcXpUA6OdDcN3DRe6N9DrShGh53NzcNlQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AMSModel\\AMSModels.csproj",
+  "projectFilePath": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AMSModel\\AMSModels.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

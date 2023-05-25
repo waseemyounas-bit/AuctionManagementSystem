@@ -35,14 +35,12 @@ namespace DataAccess.Data
         {
             //modelBuilder.HasPostgresExtension("uuid-ossp");
             //modelBuilder.UseSerialColumns();
-            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
-            AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
             modelBuilder.Entity<User>().HasData(
                 new User
                 {
                     Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
                     FullName = "SuperAdmin",
-                    Email = "admin@hrawards.com",
+                    Email = "admin@auctionsystem.com",
                     Password = "12345678",
                     RoleId = 1
                 }

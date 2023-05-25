@@ -22,3 +22,15 @@ C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\SharedLibrary\obj\Debu
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\refint\SharedLibrary.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.pdb
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\ref\SharedLibrary.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\bin\Debug\net7.0\SharedLibrary.deps.json
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\bin\Debug\net7.0\SharedLibrary.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\bin\Debug\net7.0\SharedLibrary.pdb
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.AssemblyReference.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfoInputs.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.AssemblyInfo.cs
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.csproj.CoreCompileInputs.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\refint\SharedLibrary.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\SharedLibrary.pdb
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\SharedLibrary\obj\Debug\net7.0\ref\SharedLibrary.dll

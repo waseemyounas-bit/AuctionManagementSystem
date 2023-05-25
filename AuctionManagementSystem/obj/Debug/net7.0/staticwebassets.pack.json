@@ -1,1255 +1,1255 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AuctionManagementSystem.bundle.scp.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\AuctionManagementSystem.bundle.scp.css",
       "PackagePath": "staticwebassets\\AuctionManagementSystem.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\css\\site.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\favicon.ico",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\bootstrap-icons.woff",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\bootstrap-icons.woff2",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.eot",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\fonts\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.ttf",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.woff",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.woff2",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md1.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md2.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md3.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md4.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md5.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\apartment-md6.png",
       "PackagePath": "staticwebassets\\images\\apartment\\apartment-md6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\cate-tab-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\apartment\\cate-tab-bg.png",
       "PackagePath": "staticwebassets\\images\\apartment\\cate-tab-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm1.png",
       "PackagePath": "staticwebassets\\images\\arts\\artist-sm1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm2.png",
       "PackagePath": "staticwebassets\\images\\arts\\artist-sm2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm3.png",
       "PackagePath": "staticwebassets\\images\\arts\\artist-sm3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\artist-sm4.png",
       "PackagePath": "staticwebassets\\images\\arts\\artist-sm4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-1.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-10.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-10.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-10.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-2.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-3.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-4.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-5.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-6.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-7.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-7.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-7.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-8.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-8.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-8.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-9.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-9.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-9.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-author1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\arts\\nft-author1.png",
       "PackagePath": "staticwebassets\\images\\arts\\nft-author1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\acution-card-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\acution-card-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\acution-card-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner1.png",
       "PackagePath": "staticwebassets\\images\\banner\\apertment-banner1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner2.png",
       "PackagePath": "staticwebassets\\images\\banner\\apertment-banner2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\apertment-banner3.png",
       "PackagePath": "staticwebassets\\images\\banner\\apertment-banner3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\banner-sm1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\banner-sm1.png",
       "PackagePath": "staticwebassets\\images\\banner\\banner-sm1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\banner-sm2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\banner-sm2.png",
       "PackagePath": "staticwebassets\\images\\banner\\banner-sm2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-art.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-art.png",
       "PackagePath": "staticwebassets\\images\\banner\\bannr-art.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-left-btm.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-left-btm.png",
       "PackagePath": "staticwebassets\\images\\banner\\bannr-left-btm.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-left-top.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-left-top.png",
       "PackagePath": "staticwebassets\\images\\banner\\bannr-left-top.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-mid-top.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\bannr-mid-top.png",
       "PackagePath": "staticwebassets\\images\\banner\\bannr-mid-top.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\best-acution-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\best-acution-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\best-acution-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\breadcrumb-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\breadcrumb-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\breadcrumb-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\category-hover-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\category-hover-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\category-hover-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero-banner1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero-banner1.png",
       "PackagePath": "staticwebassets\\images\\banner\\hero-banner1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero-banner2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero-banner2.png",
       "PackagePath": "staticwebassets\\images\\banner\\hero-banner2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero3-bg1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hero3-bg1.png",
       "PackagePath": "staticwebassets\\images\\banner\\hero3-bg1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\home3b2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\home3b2.png",
       "PackagePath": "staticwebassets\\images\\banner\\home3b2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\home3b3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\home3b3.png",
       "PackagePath": "staticwebassets\\images\\banner\\home3b3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hone3-bannerbg.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\hone3-bannerbg.jpg",
       "PackagePath": "staticwebassets\\images\\banner\\hone3-bannerbg.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\info-img.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\info-img.png",
       "PackagePath": "staticwebassets\\images\\banner\\info-img.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\land-banner1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\land-banner1.png",
       "PackagePath": "staticwebassets\\images\\banner\\land-banner1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\land-banner2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\land-banner2.png",
       "PackagePath": "staticwebassets\\images\\banner\\land-banner2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\newslatter-3-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\newslatter-3-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\newslatter-3-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\testimonal4-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\testimonal4-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\testimonal4-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\upcoming-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\banner\\upcoming-bg.png",
       "PackagePath": "staticwebassets\\images\\banner\\upcoming-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md1.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-md1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md2.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-md2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-md3.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-md3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard1.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-standard1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard2.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-standard2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\b-standard3.png",
       "PackagePath": "staticwebassets\\images\\blog\\b-standard3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb1.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb2.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb3.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb4.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb5.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb6.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb7.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb7.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb7.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb8.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb8.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb8.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb9.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\bb9.png",
       "PackagePath": "staticwebassets\\images\\blog\\bb9.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blockquote-img.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blockquote-img.png",
       "PackagePath": "staticwebassets\\images\\blog\\blockquote-img.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-author-x.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-author-x.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-author-x.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c1.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-c1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c2.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-c2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-c3.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-c3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l1.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-l1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l2.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-l2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-l3.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-l3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-writer1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blog-writer1.png",
       "PackagePath": "staticwebassets\\images\\blog\\blog-writer1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd-vdo.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd-vdo.png",
       "PackagePath": "staticwebassets\\images\\blog\\blogd-vdo.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd-vdo2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd-vdo2.png",
       "PackagePath": "staticwebassets\\images\\blog\\blogd-vdo2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\blogd.png",
       "PackagePath": "staticwebassets\\images\\blog\\blogd.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\comm1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\comm1.png",
       "PackagePath": "staticwebassets\\images\\blog\\comm1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp1.png",
       "PackagePath": "staticwebassets\\images\\blog\\lp1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp2.png",
       "PackagePath": "staticwebassets\\images\\blog\\lp2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\blog\\lp3.png",
       "PackagePath": "staticwebassets\\images\\blog\\lp3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-hidto3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-hidto3.png",
       "PackagePath": "staticwebassets\\images\\buyer\\bid-hidto3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-histo1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-histo1.png",
       "PackagePath": "staticwebassets\\images\\buyer\\bid-histo1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-histo2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\bid-histo2.png",
       "PackagePath": "staticwebassets\\images\\buyer\\bid-histo2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm1.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm10.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm10.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm10.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm11.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm11.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm11.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm12.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm12.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm12.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm2.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm3.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm4.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm5.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm6.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm7.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm7.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm7.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm8.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm8.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm8.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm9.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\buyer\\buyer-sm9.png",
       "PackagePath": "staticwebassets\\images\\buyer\\buyer-sm9.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil1.png",
       "PackagePath": "staticwebassets\\images\\collection\\c-profil1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil2.png",
       "PackagePath": "staticwebassets\\images\\collection\\c-profil2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil3.png",
       "PackagePath": "staticwebassets\\images\\collection\\c-profil3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\c-profil4.png",
       "PackagePath": "staticwebassets\\images\\collection\\c-profil4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg1.png",
       "PackagePath": "staticwebassets\\images\\collection\\coll-bg1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg2.png",
       "PackagePath": "staticwebassets\\images\\collection\\coll-bg2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg3.png",
       "PackagePath": "staticwebassets\\images\\collection\\coll-bg3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\coll-bg4.png",
       "PackagePath": "staticwebassets\\images\\collection\\coll-bg4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp1.png",
       "PackagePath": "staticwebassets\\images\\collection\\sp1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp2.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp2.jpg",
       "PackagePath": "staticwebassets\\images\\collection\\sp2.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp2.png",
       "PackagePath": "staticwebassets\\images\\collection\\sp2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp3.png",
       "PackagePath": "staticwebassets\\images\\collection\\sp3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\collection\\sp4.png",
       "PackagePath": "staticwebassets\\images\\collection\\sp4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\favicon.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\favicon.png",
       "PackagePath": "staticwebassets\\images\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\hero\\featured-product1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\hero\\featured-product1.png",
       "PackagePath": "staticwebassets\\images\\hero\\featured-product1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\hero\\featured-product2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\hero\\featured-product2.png",
       "PackagePath": "staticwebassets\\images\\hero\\featured-product2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\arrow-band.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\arrow-band.png",
       "PackagePath": "staticwebassets\\images\\icon\\arrow-band.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\arrow-right-fancy.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\arrow-right-fancy.svg",
       "PackagePath": "staticwebassets\\images\\icon\\arrow-right-fancy.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\art.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\art.svg",
       "PackagePath": "staticwebassets\\images\\icon\\art.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\bid-icon.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\bid-icon.svg",
       "PackagePath": "staticwebassets\\images\\icon\\bid-icon.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\bid-sm.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\bid-sm.svg",
       "PackagePath": "staticwebassets\\images\\icon\\bid-sm.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo1.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo1.svg",
       "PackagePath": "staticwebassets\\images\\icon\\c-logo1.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo2.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo2.svg",
       "PackagePath": "staticwebassets\\images\\icon\\c-logo2.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo3.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo3.svg",
       "PackagePath": "staticwebassets\\images\\icon\\c-logo3.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo4.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo4.svg",
       "PackagePath": "staticwebassets\\images\\icon\\c-logo4.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo5.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\c-logo5.svg",
       "PackagePath": "staticwebassets\\images\\icon\\c-logo5.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\car-gray.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\car-gray.svg",
       "PackagePath": "staticwebassets\\images\\icon\\car-gray.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\car-white.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\car-white.svg",
       "PackagePath": "staticwebassets\\images\\icon\\car-white.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c1.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c1.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-c1.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c2.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c2.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-c2.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c3.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c3.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-c3.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c4.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c4.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-c4.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c5.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-c5.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-c5.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-svg1.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\cate-svg1.svg",
       "PackagePath": "staticwebassets\\images\\icon\\cate-svg1.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\collection-bug.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\collection-bug.svg",
       "PackagePath": "staticwebassets\\images\\icon\\collection-bug.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\flat-next-icon.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\flat-next-icon.svg",
       "PackagePath": "staticwebassets\\images\\icon\\flat-next-icon.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\flat-prev-icon.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\flat-prev-icon.svg",
       "PackagePath": "staticwebassets\\images\\icon\\flat-prev-icon.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\followers.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\followers.svg",
       "PackagePath": "staticwebassets\\images\\icon\\followers.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\logo-red.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\logo-red.png",
       "PackagePath": "staticwebassets\\images\\icon\\logo-red.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\orange-logo.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\orange-logo.png",
       "PackagePath": "staticwebassets\\images\\icon\\orange-logo.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\payment-cards.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\payment-cards.png",
       "PackagePath": "staticwebassets\\images\\icon\\payment-cards.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\phone-w.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\phone-w.svg",
       "PackagePath": "staticwebassets\\images\\icon\\phone-w.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\phone.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\phone.svg",
       "PackagePath": "staticwebassets\\images\\icon\\phone.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process1.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process1.svg",
       "PackagePath": "staticwebassets\\images\\icon\\process1.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process2.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process2.svg",
       "PackagePath": "staticwebassets\\images\\icon\\process2.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process3.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\process3.svg",
       "PackagePath": "staticwebassets\\images\\icon\\process3.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\sidebar-bottom-icon.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\sidebar-bottom-icon.svg",
       "PackagePath": "staticwebassets\\images\\icon\\sidebar-bottom-icon.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\sidebar-logo.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\sidebar-logo.png",
       "PackagePath": "staticwebassets\\images\\icon\\sidebar-logo.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl1.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl1.jpg",
       "PackagePath": "staticwebassets\\images\\icon\\spl1.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl2.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl2.jpg",
       "PackagePath": "staticwebassets\\images\\icon\\spl2.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl3.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl3.jpg",
       "PackagePath": "staticwebassets\\images\\icon\\spl3.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl4.jpg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\spl4.jpg",
       "PackagePath": "staticwebassets\\images\\icon\\spl4.jpg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-left.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-left.svg",
       "PackagePath": "staticwebassets\\images\\icon\\swiper-left.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-left2.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-left2.svg",
       "PackagePath": "staticwebassets\\images\\icon\\swiper-left2.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-right.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-right.svg",
       "PackagePath": "staticwebassets\\images\\icon\\swiper-right.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-right2.svg",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\icon\\swiper-right2.svg",
       "PackagePath": "staticwebassets\\images\\icon\\swiper-right2.svg"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\about-image-group.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\about-image-group.png",
       "PackagePath": "staticwebassets\\images\\image-group\\about-image-group.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\ceo.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\ceo.png",
       "PackagePath": "staticwebassets\\images\\image-group\\ceo.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\login-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\image-group\\login-bg.png",
       "PackagePath": "staticwebassets\\images\\image-group\\login-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\logo-dark.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\logo-dark.png",
       "PackagePath": "staticwebassets\\images\\logo-dark.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\logo.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\logo.png",
       "PackagePath": "staticwebassets\\images\\logo.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\about-vdo-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\about-vdo-bg.png",
       "PackagePath": "staticwebassets\\images\\product\\about-vdo-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details1.png",
       "PackagePath": "staticwebassets\\images\\product\\details1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details11.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details11.png",
       "PackagePath": "staticwebassets\\images\\product\\details11.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details2.png",
       "PackagePath": "staticwebassets\\images\\product\\details2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details22.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details22.png",
       "PackagePath": "staticwebassets\\images\\product\\details22.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details3.png",
       "PackagePath": "staticwebassets\\images\\product\\details3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details33.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details33.png",
       "PackagePath": "staticwebassets\\images\\product\\details33.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details4.png",
       "PackagePath": "staticwebassets\\images\\product\\details4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details44.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details44.png",
       "PackagePath": "staticwebassets\\images\\product\\details44.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details5.png",
       "PackagePath": "staticwebassets\\images\\product\\details5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details55.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\details55.png",
       "PackagePath": "staticwebassets\\images\\product\\details55.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-1.png",
       "PackagePath": "staticwebassets\\images\\product\\feat-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-2.png",
       "PackagePath": "staticwebassets\\images\\product\\feat-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-3.png",
       "PackagePath": "staticwebassets\\images\\product\\feat-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\feat-4.png",
       "PackagePath": "staticwebassets\\images\\product\\feat-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-1.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-2.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-3.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-4.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-5.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\lp-6.png",
       "PackagePath": "staticwebassets\\images\\product\\lp-6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma1.png",
       "PackagePath": "staticwebassets\\images\\product\\p-gamma1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma2.png",
       "PackagePath": "staticwebassets\\images\\product\\p-gamma2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma3.png",
       "PackagePath": "staticwebassets\\images\\product\\p-gamma3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-gamma4.png",
       "PackagePath": "staticwebassets\\images\\product\\p-gamma4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-1.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-10.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-10.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-10.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-11.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-11.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-11.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-12.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-12.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-12.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-2.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-3.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-4.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-5.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-6.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-7.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-7.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-7.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-8.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-8.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-8.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-9.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\p-sm-9.png",
       "PackagePath": "staticwebassets\\images\\product\\p-sm-9.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b1.png",
       "PackagePath": "staticwebassets\\images\\product\\product-b1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b2.png",
       "PackagePath": "staticwebassets\\images\\product\\product-b2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b3.png",
       "PackagePath": "staticwebassets\\images\\product\\product-b3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\product-b4.png",
       "PackagePath": "staticwebassets\\images\\product\\product-b4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-1.png",
       "PackagePath": "staticwebassets\\images\\product\\px-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-2.png",
       "PackagePath": "staticwebassets\\images\\product\\px-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\px-6.png",
       "PackagePath": "staticwebassets\\images\\product\\px-6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-1.png",
       "PackagePath": "staticwebassets\\images\\product\\py-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-2.png",
       "PackagePath": "staticwebassets\\images\\product\\py-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-3.png",
       "PackagePath": "staticwebassets\\images\\product\\py-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\product\\py-4.png",
       "PackagePath": "staticwebassets\\images\\product\\py-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\404-vactor.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\404-vactor.png",
       "PackagePath": "staticwebassets\\images\\shape\\404-vactor.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\about-us-vactor.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\about-us-vactor.png",
       "PackagePath": "staticwebassets\\images\\shape\\about-us-vactor.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\apertment-bg-shape.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\apertment-bg-shape.png",
       "PackagePath": "staticwebassets\\images\\shape\\apertment-bg-shape.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-bg2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-bg2.png",
       "PackagePath": "staticwebassets\\images\\shape\\footer-bg2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-bg4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-bg4.png",
       "PackagePath": "staticwebassets\\images\\shape\\footer-bg4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-one-shape.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer-one-shape.png",
       "PackagePath": "staticwebassets\\images\\shape\\footer-one-shape.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer3-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\footer3-bg.png",
       "PackagePath": "staticwebassets\\images\\shape\\footer3-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\hero-shape1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\hero-shape1.png",
       "PackagePath": "staticwebassets\\images\\shape\\hero-shape1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\learning-process-illustration.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\learning-process-illustration.png",
       "PackagePath": "staticwebassets\\images\\shape\\learning-process-illustration.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\newslatter-bg1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\newslatter-bg1.png",
       "PackagePath": "staticwebassets\\images\\shape\\newslatter-bg1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\red-ract-shape.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\shape\\red-ract-shape.png",
       "PackagePath": "staticwebassets\\images\\shape\\red-ract-shape.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4a.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4a.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer-4a.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4b.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4b.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer-4b.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4c.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4c.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer-4c.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4d.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer-4d.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer-4d.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer1.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer2.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\reviewer3.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\reviewer3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-bg.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-bg.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\testi-bg.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-reviewer1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-reviewer1.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\testi-reviewer1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-reviewer2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\testimonial\\testi-reviewer2.png",
       "PackagePath": "staticwebassets\\images\\testimonial\\testi-reviewer2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-1.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-2.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-3.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-4.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b1.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b1.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b1.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b10.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b10.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b10.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b11.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b11.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b11.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b12.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b12.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b12.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b13.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b13.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b13.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b14.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b14.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b14.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b15.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b15.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b15.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b16.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b16.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b16.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b18.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b18.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b18.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b19.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b19.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b19.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b2.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b2.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b2.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b3.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b3.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b3.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b4.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b4.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b4.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b5.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b5.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b5.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b6.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b6.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b6.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b7.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b7.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b7.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b8.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b8.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b8.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b9.png",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\images\\winner\\winner-b9.png",
       "PackagePath": "staticwebassets\\images\\winner\\winner-b9.png"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\js\\site.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "F:\\FivProjects\\BiddingSystem\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

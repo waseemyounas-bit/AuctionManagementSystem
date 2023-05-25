@@ -22,3 +22,15 @@ C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AMSModel\obj\Debug\net
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\refint\AMSModels.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.pdb
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\ref\AMSModels.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\bin\Debug\net7.0\AMSModels.deps.json
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\bin\Debug\net7.0\AMSModels.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\bin\Debug\net7.0\AMSModels.pdb
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.csproj.AssemblyReference.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.GeneratedMSBuildEditorConfig.editorconfig
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.AssemblyInfoInputs.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.AssemblyInfo.cs
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.csproj.CoreCompileInputs.cache
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\refint\AMSModels.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\AMSModels.pdb
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AMSModel\obj\Debug\net7.0\ref\AMSModels.dll

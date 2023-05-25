@@ -32,13 +32,18 @@ namespace DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
@@ -51,8 +56,8 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 25, 5, 23, 18, 39, DateTimeKind.Utc).AddTicks(1332),
-                            Email = "admin@hrawards.com",
+                            CreatedAt = new DateTime(2023, 5, 25, 7, 43, 28, 432, DateTimeKind.Utc).AddTicks(7517),
+                            Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             Password = "12345678",
                             RoleId = 1
