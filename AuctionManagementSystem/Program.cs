@@ -26,7 +26,7 @@ if (!app.Environment.IsDevelopment())
 
 //Integrate SQL Server
 
-
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
