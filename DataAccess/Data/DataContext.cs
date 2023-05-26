@@ -42,7 +42,8 @@ namespace DataAccess.Data
                     FullName = "SuperAdmin",
                     Email = "admin@auctionsystem.com",
                     Password = "12345678",
-                    RoleId = 1
+                    RoleId = 1,
+                    IsApproved=1
                 }
             );
         }

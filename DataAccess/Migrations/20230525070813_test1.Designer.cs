@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230525052136_test1")]
+    [Migration("20230525070813_test1")]
     partial class test1
     {
         /// <inheritdoc />
@@ -54,7 +54,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 25, 5, 21, 36, 473, DateTimeKind.Utc).AddTicks(6040),
+                            CreatedAt = new DateTime(2023, 5, 25, 7, 8, 13, 255, DateTimeKind.Utc).AddTicks(2917),
                             Email = "admin@hrawards.com",
                             FullName = "SuperAdmin",
                             Password = "12345678",

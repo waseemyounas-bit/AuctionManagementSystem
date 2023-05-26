@@ -40,6 +40,9 @@ namespace DataAccess.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<int>("IsApproved")
+                        .HasColumnType("int");
+
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -59,6 +62,7 @@ namespace DataAccess.Migrations
                             CreatedAt = new DateTime(2023, 5, 25, 7, 43, 28, 432, DateTimeKind.Utc).AddTicks(7517),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
+                            IsApproved = 1,
                             Password = "12345678",
                             RoleId = 1
                         });

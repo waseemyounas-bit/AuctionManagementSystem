@@ -13,7 +13,7 @@ namespace DataAccess.UnitOfWork
         GenericRepository<User> UserRepository(); 
         bool ApproveCompany(Guid Id,int flag);
         void Save();
-        Dictionary<Guid,string> Authentication(string UserName, string password);
+        User Authentication(string UserName, string password);
         bool GetByEmail(string email);
         public bool ExecuteJob();
         void Dispose();
