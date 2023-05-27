@@ -1,0 +1,673 @@
+﻿@model AMSModels.AddVehicle
+@{
+
+    Layout = null;
+    string UserName = string.Empty;
+    string password = string.Empty;
+    if (TempData["UserName"] != null) UserName = Convert.ToString(TempData["UserName"]);
+    if (TempData["password"] != null) password = Convert.ToString(TempData["password"]);
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bidgen - Bid and Auction HTML Template</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="~/images/favicon.png" type="image/gif" sizes="20x20">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="~/css/swiper-bundle.min.css">
+    <!-- Boxicon -->
+    <link rel="stylesheet" href="~/css/boxicons.min.css">
+    <!-- Bootstarp 5 icons -->
+    <link rel="stylesheet" href="~/css/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .button {
+            min-width: 80px;
+            font-family: "Barlow Semi Condensed", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            background: rgb(225, 226, 227);
+            padding: 9px 24px;
+            border: none;
+        };
+       a, button {
+            cursor: pointer;
+            }
+        
+        .button:hover {
+      background-color:white;
+      transition: 0.7s;
+  }
+        .button:active{
+            background-color: #002ead;
+        }
+    </style>
+    <style type="text/css">
+.btnstyle{
+            min-width: 80px;
+            font-family: "Barlow Semi Condensed", Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 30px;
+            background: rgb(225, 226, 227);
+            padding: 9px 24px;
+            border: none;
+}
+
+            .btnstyle:active {
+            background-color: #002ead;
+        }
+</style>
+    
+    <script>
+        $(document).ready(function () {
+            $("#btnCorTypeYes").click(function () {
+                $("#btnCorTypeYes").css("background-color", "rgb(225, 226, 227)");
+                $("#btn_CorTypeNo").css("background-color", "White");
+                $("#CORTypeYN").show();
+            });
+            $("#btn_CorTypeNo").click(function () {
+                $("#btnCorTypeYes").css("background-color", "White");
+                $("#btn_CorTypeNo").css("background-color", "rgb(225, 226, 227");
+                //$(".btnCorTypeYes").removeClass("active");
+                //$(".tbtn_CorTypeNoab").addClass("active");CORTypeYN
+                $("#CORTypeYN").css("display", "none");
+            });
+            //Start--> Do you know anything about this vehicle's prior ownership or history?
+            $("#btn_VehicleOwnerShipHistoryY").click(function () {
+                $("#btn_VehicleOwnerShipHistoryY").css("background-color", "rgb(225, 226, 227)");
+                $("#btn_VehicleOwnerShipHistoryN").css("background-color", "White");
+                $("#VehicleOwnerShipHistory").show();
+            });
+            $("#btn_VehicleOwnerShipHistoryN").click(function () {
+                $("#btn_VehicleOwnerShipHistoryY").css("background-color", "White");
+                $("#btn_VehicleOwnerShipHistoryN").css("background-color", "rgb(225, 226, 227");
+                $("#VehicleOwnerShipHistory").css("display", "none");
+            });
+            //End--->
+            //Start--> Vehicle Accident
+            $("#btn_VehicleAccidentY").click(function () {
+                $("#btn_VehicleAccidentY").css("background-color", "rgb(225, 226, 227)");
+                $("#btn_VehicleAccidentN").css("background-color", "White");
+                $("#VehicleAccident").show();
+            });
+            $("#btn_VehicleAccidentN").click(function () {
+                $("#btn_VehicleAccidentY").css("background-color", "White");
+                $("#btn_VehicleAccidentN").css("background-color", "rgb(225, 226, 227");
+                $("#VehicleAccident").css("display", "none");
+            });
+            //End--->
+            
+            //Start--> Vehicle dealership
+            $("#btn_VehicleDmgRprY").click(function () {
+                $("#btn_VehicleDmgRprY").css("background-color", "rgb(225, 226, 227)");
+                $("#btn_VehicleDmgRprN").css("background-color", "White");
+                $("#VehicleDamageRepair").show();
+            });
+            $("#btn_VehicleDmgRprN").click(function () {
+                $("#btn_VehicleDmgRprY").css("background-color", "White");
+                $("#btn_VehicleDmgRprN").css("background-color", "rgb(225, 226, 227");
+                $("#VehicleDamageRepair").css("display", "none");
+            });
+            //End--->
+            //Start--> Vehicle Damage Repair
+            $("#rdrPrivate").click(function () {
+                $("#PartyDealer").show();
+                $("#PrivateDealer").hide();
+            });
+            $("#rdrseller").click(function () {
+                $("#PrivateDealer").show();
+                $("#PartyDealer").hide();
+            });
+            //End--->
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#CORTypeYN").css("display", "none");
+            $("#VehicleOwnerShipHistory").css("display", "none"); 
+            $("#VehicleAccident").css("display", "none");
+            $("#VehicleDamageRepair").css("display", "none");
+            $("#PartyDealer").css("display", "none");
+            $("#PrivateDealer").css("display", "none");
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!-- ===============  search area start =============== -->
+
+    <div class="mobile-search">
+        <div class="container">
+            <div class="row">
+                <div class="col-11">
+                    <label>What are you lookking for?</label>
+                    <input type="text" placeholder="Search Products, Category, Brand">
+                </div>
+                <div class="col-1 d-flex justify-content-end align-items-center">
+                    <div class="search-cross-btn">
+                        <!-- <i class="bi bi-search me-4"></i> -->
+                        <i class="bi bi-x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============  search area end =============== -->
+    <!-- ===============  header area start =============== -->
+    <header>
+        <div class="header-area header-style-one px-md-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 align-items-center d-xl-flex d-lg-block">
+                        <div class="nav-logo d-flex justify-content-between align-items-center">
+                            <a href="index.html"><img src="~/images/logo.png" alt="logo"></a>
+
+                            <div class="d-flex align-items-center gap-4">
+                                <ul class="nav-actions nav-inner-actions d-flex d-xl-none">
+                                    <li class="search-btn"><i class="bi bi-search"></i></li>
+                                </ul>
+                                <div class="mobile-menu d-flex ">
+                                    <a href="javascript:void(0)" class="hamburger d-block d-xl-none">
+                                        <span class="h-top"></span>
+                                        <span class="h-middle"></span>
+                                        <span class="h-bottom"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 d-flex justify-content-center ">
+                        <nav class="main-nav">
+                            <div class="inner-logo d-xl-none text-center mt-4">
+                                <a href="#"><img src="~/images/logo-dark.png" alt=""></a>
+                            </div>
+                            <ul>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Home</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home Accessories </a></li>
+                                        <li><a href="index-car.html">Home Car</a></li>
+                                        <li><a href="index-land.html">Home Land</a></li>
+                                        <li><a href="index-art-light.html">Home Light-art</a></li>
+                                        <li><a href="index-art-dark.html">Home Dark-art</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">auction</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="auction.html">auction</a></li>
+                                        <li><a href="auction-details.html">auction details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Pages</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="about.html">about</a></li>
+                                        <li><a href="winner.html">winner</a></li>
+                                        <li><a href="Account/login">login</a></li>
+                                        <li><a href="register">register</a></li>
+                                        <li><a href="faq.html">faq</a></li>
+                                        <li><a href="privacy.html">Privacy Policy</a></li>
+                                        <li><a href="404.html">Error</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Blog</a>
+                                    <i class="fl flaticon-plus">+</i>
+                                    <ul class="sub-menu">
+                                        <li><a href="blog.html">Blog</a></li>
+                                        <li><a href="blog-standard.html">Blog Standard</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">contact</a></li>
+                            </ul>
+
+                            <div class="contact-mail inner-contact-mail mt-5 d-block d-xl-none">
+                                <span>Message Us</span>
+                                <a href="mailto:support@example.com">support@example.com</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-xl-3 d-xl-flex align-items-center justify-content-end d-none">
+                        <div class="nav-right d-flex align-items-center">
+                            <ul class="nav-actions">
+                                <li class="search-btn"><i class="bi bi-search"></i></li>
+                            </ul>
+                            <div class="contact-no d-flex align-items-center">
+                                <div class="contact-icon">
+                                    <img src="~/images/icon/phone-w.svg" alt="">
+                                </div>
+                                <div class="contact-info">
+                                    <p>Hot Line Number</p>
+                                    <h6><a href="tel:+8801761111456">+880 176 1111 456</a></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===============  header area end =============== -->
+    <!-- =============== breadcrumb area start =============== -->
+    <div class="breadcrumb breadcrumb-style-one mb-0 ">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h1 class="breadcrumb-title">Login</h1>
+                <ul class="d-flex justify-content-center breadcrumb-items">
+                    <li class="breadcrumb-item"><i class="bi bi-house-door"></i> <a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Login</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- =============== breadcrumb area end =============== -->
+    <!-- =============== register-section start =============== -->
+
+    <section class="register-section pt-110">
+        <div class="container">
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col-12">
+                    <div class="register-btn-group">
+                        <a href="register" class="register-btn style2">Register</a>
+                        <a href="login" class="login-btn style2">Login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    <div class="right-form-area">
+                        <h5>Login Your Account</h5>
+
+                            <h3 class=" css-p0tcy3 e1kqzanz2">Submit your vehicle</h3><p class="chakra-text css-1b7ciod e1kg4do43">
+                                Please submit this initial form to provide us with basic information about your vehicle. <strong>We typically reply within one business day</strong>
+                                , and might ask some additional questions to confirm if your vehicle is a good fit for auction.<br><br><strong>
+                                    Need help taking photos? View our
+                                    <a target="_blank" rel="noopener noreferrer" class="chakra-link css-1tue41d" href="/pdf/photo-tips-and-checklist.pdf">Photo Guide</a>!
+                                </strong>
+                            </p>
+                        <form action="vehiclesubmission" method="post" enctype="multipart/form-data" class="w-100">
+                            <div class="css-pcbivc">
+                                <p class="css-7jf5cu e1kg4do42">Your Info</p><div class="css-15rk5s6">
+                                <h3>Full name</h3>
+                                    <div class="css-zoser8">
+                                        <div class="css-j7qwjs">
+                                            <div class="css-bjn8wh ea6uyek0">
+                                                <input type="text" name="FullName" spellcheck="true" class="form-control" value="@Model.FullName" placeholder="Your FullName">
+                                                    @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3>Vehicle Details</h3>
+                                <div class="css-uu2w9s">
+                                <h3>
+                                    Year</h3>
+                                <div class="css-wjyzxx">
+                                    <div class=" css-1obpye2 e1iejzzq11">
+                                        <div class="css-mk1o7y e1iejzzq5">
+                                            <input type="number" maxlength="4" max="4" placeholder="Enter year"  name="Year"  class="form-control" value="@Model.Year" >
+                                                    @Html.ValidationMessageFor(x=>x.Year,string.Empty,new {@class="text-danger"})   
+                                            </div>
+                                    </div>
+                                </div>
+                            </div><div class="css-i5ibdq">
+                                <h5>Make</h5><div class="css-zoser8"><div class="css-j7qwjs"><div class="css-bjn8wh ea6uyek0">
+                                <input spellcheck="true" id="2" name="Make" placeholder="Enter car manufacturer" class="form-control" value="@Model.Make" ></div></div></div>
+                                @Html.ValidationMessageFor(x=>x.Make,string.Empty,new {@class="text-danger"})
+                                </div><div class="css-12zwvwm">
+                                <h5>
+                                    Model
+                                </h5><div class="css-zoser8">
+                                    <div class="css-j7qwjs">
+                                        <div class="css-bjn8wh ea6uyek0">
+                                            <input spellcheck="true" id="3" name="Model" placeholder="Enter model" data-invalid="false" class="form-control" value="@Model.Model">
+                                            @Html.ValidationMessageFor(x=>x.Model,string.Empty,new {@class="text-danger"})
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><div class="css-1owmhnw"><h5>Vehicle Identification Number (VIN)</h5><div class="css-zoser8"><div class="css-j7qwjs">
+                            <div class="css-bjn8wh ea6uyek0">
+                                            <input spellcheck="true" id="4" name="VIN" maxlength="17" placeholder="Enter VIN" value="@Model.VIN">
+                                            @Html.ValidationMessageFor(x=>x.VIN,string.Empty,new {@class="text-danger"})
+                                        </div>
+                                    </div>
+                                   
+                            </div></div><div class="css-1owmhnw"><p class="css-1rpfd8x e1kg4do43">Current odometer reading</p>
+                            <div class="css-zoser8"><div class=" css-1obpye2 e1iejzzq11"><div class="css-mk1o7y e1iejzzq5">
+                                            <input type="number" placeholder="Enter current odometer reading" min="0" name="COR" value="">
+                                            @Html.ValidationMessageFor(x=>x.COR,string.Empty,new {@class="text-danger"})
+                                        </div>
+                                    </div>
+                            <div class="chakra-stack css-115qsau">
+                            <label class="css-datla1 e1e6pj724">
+                                            <input type="radio" value="MILES" name="CORType">
+                            <span class="radio-text css-1q1372q e1e6pj720">Miles</span></label>
+                            <label class="css-datla1 e1e6pj724">
+                                            <input type="radio" value="KILOMETERS" name="CORType" >
+                            <span class="radio-text css-1q1372q e1e6pj720">Kilometers</span></label></div></div></div>
+                            <div class="css-12zwvwm">
+                            <p class="css-1rpfd8x e1kg4do43">Does the above odometer reading reflect the total mileage on this vehicle?</p>
+                            <div class="css-zoser8"><div><div class="css-1q701y2 eddhcra1">
+                                            <button type="button" class="button" id="btnCorTypeYes">Yes</button>
+                                            <button type="button" class="button" id="btn_CorTypeNo">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chakra-collapse" style="overflow: initial; display:block; opacity: 1; height: auto;" id="CORTypeYN">
+                                <hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+<p class="css-164y5wn e1kg4do43">Please explain below:</p><div class="css-j7qwjs"><div class="css-bjn8wh e1coey30">
+<textarea id="OORMilegeRemarks" name="OORMilegeRemarks" placeholder="Enter current odometer reading details" rows="9">
+</textarea> @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><h3>Vehicle History &amp; Condition</h3>
+                            <div class="css-348ps2"><p class="css-1rpfd8x e1kg4do43">What month/year did you purchase this vehicle?</p><div class="css-zoser8">
+                            <div name="purchaseDate" class="css-0">
+                            <div >
+                                            <input type="text" placeholder="MM" value="@Model.VehiclePurchaseMoth" style="width:100px" name="VehiclePurchaseMoth">
+                                            @Html.ValidationMessageFor(x=>x.VehiclePurchaseMoth,string.Empty,new {@class="text-danger"})
+                                            <input type="text" placeholder="YYYY" value="@Model.VehiclePurchaseYear" style="width:100px" name="VehiclePurchaseYear">
+                                            @Html.ValidationMessageFor(x=>x.VehiclePurchaseYear,string.Empty,new {@class="text-danger"})
+                            </div></div></div></div><div class="css-348ps2">
+                                <p class="css-1rpfd8x e1kg4do43">How many miles (or kilometers) have been added during your ownership?</p>
+                                <div class="css-zoser8">
+                                    <div class=" css-1obpye2 e1iejzzq11">
+                                        <div class="css-mk1o7y e1iejzzq5">
+                                            <input type="number" spellcheck="false" autocorrect="off" placeholder="Enter miles/kilometers" min="0" name="Vmiles" value="" data-invalid="false" data-has-prefix="false" class="css-1npp8pm e1iejzzq4" fdprocessedid="zajta8">
+                                            @Html.ValidationMessageFor(x=>x.Vmiles,string.Empty,new {@class="text-danger"})
+                                            </div>
+                                    </div><div class="chakra-stack css-115qsau">
+                                        <label class="css-datla1 e1e6pj724">
+                                        <input type="radio" value="MILES" name="mileageDistanceUnit" class="css-1rrqi1o e1e6pj723">
+                                        <span class="radio-text css-1q1372q e1e6pj720">Miles</span></label><label class="css-datla1 e1e6pj724">
+                                            <input type="radio" value="KILOMETERS" name="mileageDistanceUnit" class="css-1rrqi1o e1e6pj723">
+                                            <span class="radio-text css-1q1372q e1e6pj720">Kilometers</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div><div class="css-348ps2">
+                                <p class="css-1rpfd8x e1kg4do43">Do you know anything about this vehicle's prior ownership or history?</p><div class="css-1s9ifpo">
+                                    <div>
+                                        <div class="css-1q701y2 eddhcra1">
+                                            <button type="button" class="btnstyle" id="btn_VehicleOwnerShipHistoryY" >Yes</button>
+                                            <button type="button" class="btnstyle" id="btn_VehicleOwnerShipHistoryN">No</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chakra-collapse" style="overflow: initial; display:block; opacity: 1; height: auto;" id="VehicleOwnerShipHistory">
+                                    <hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                                    <p class="css-164y5wn e1kg4do43">Please explain below:</p><div class="css-j7qwjs">
+                                        <div class="css-bjn8wh e1coey30">
+                                            <textarea id="OORMilegeRemarks" name="VownershipRemarks" placeholder="Enter current odometer reading details" rows="6">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                               
+                                </div>
+                            </div><div class="css-348ps2"><p class="css-1rpfd8x e1kg4do43">To your knowledge, has this vehicle ever been in an accident?</p>
+                            <div class="css-1s9ifpo"><div><div class="css-1q701y2 eddhcra1">
+                               <button aria-pressed="false" type="button" class="btnstyle" id="btn_VehicleAccidentY">Yes</button>
+                                            <button aria-pressed="false" type="button" class="btnstyle" id="btn_VehicleAccidentN">NO</button>
+                                        </div>
+                                    </div>     <div class="chakra-collapse" style="overflow: initial; display:block; opacity: 1; height: auto;" id="VehicleAccident">
+                                        <hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                                        <p class="css-164y5wn e1kg4do43">Please explain below:</p><div class="css-j7qwjs">
+                                            <div class="css-bjn8wh e1coey30">
+                                                <textarea id="VaccidentRemarks" name="VaccidentRemarks" placeholder="Enter current odometer reading details" rows="6">
+                                            </textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="css-foou8n">
+                                <p class="css-1rpfd8x e1kg4do43">Does this vehicle have any current or prior damage/repairs that we should know about?</p>
+                                <div class="css-1s9ifpo">
+                                    <div>
+                                        <div class="css-1q701y2 eddhcra1">
+                                            <button aria-pressed="false" type="button" class="btnstyle" id="btn_VehicleDmgRprY">Yes</button>
+                                            <button aria-pressed="false" type="button" class="btnstyle" id="btn_VehicleDmgRprN">NO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chakra-collapse" style="overflow: initial; display:block; opacity: 1; height: auto;" id="VehicleDamageRepair">
+                                    <hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                                    <p class="css-164y5wn e1kg4do43">Please explain below:</p><div class="css-j7qwjs">
+                                        <div class="css-bjn8wh e1coey30">
+                                            <textarea id="VDamageRemarks" name="VDamageRemarks" placeholder="Enter Vehicle Damage Repair Remarks" rows="6">
+                                            </textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1>Ownership, Title &amp; Location</h1>
+                            <div class="css-1xr0xld">
+                                <h2>Are you a dealer, or a private seller?</h2><!-- -->
+                                <span id="popover-trigger-6" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-6" class="css-1lv1yo7">
+                                <svg class="css-1saok50" width="18" height="18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM.5 9a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.975V8h2v6l-2-.025zM8 6V4h2v2H8z" fill="currentColor"></path></svg></span></p>
+                                <div class="css-h0wyg4">
+                                    <div class="chakra-stack css-lgrcba">
+                                        <label class="css-datla1 e1e6pj724">
+                                            <input type="radio" value="DEALER" id="rdrseller" name="sellerType" class="css-1rrqi1o e1e6pj723">
+                                            <div class="radio-selected-icon css-p0nk8c e1e6pj722"></div>
+                                            <div class="radio-unselected-icon css-ebo14d e1e6pj721"></div>
+                                            <span class="radio-text css-1q1372q e1e6pj720">Dealer</span>
+                                        </label><label class="css-datla1 e1e6pj724">
+                                        <input type="radio" value="PRIVATE" id="rdrPrivate" name="sellerType" class="css-1rrqi1o e1e6pj723">
+                                        <div class="radio-selected-icon css-p0nk8c e1e6pj722"></div>
+                                        <div class="radio-unselected-icon css-ebo14d e1e6pj721"></div><span class="radio-text css-1q1372q e1e6pj720">Private Party</span></label>
+                                    </div>
+                                    <div id="PartyDealer" class="chakra-collapse" style="overflow: initial; display: block; opacity: 1; height: auto;"><hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                                        <p class="css-mk2iwq e1kg4do43">What is the name of your dealership? Please also list your website below.</p>
+                                        <input type="text" placeholder="Enter DealerName And Website Here" value="@Model.DealerName" name="DealerName">
+                                        <div>
+                                            <div class="css-1q701y2 eddhcra1">
+                                                <button aria-pressed="true" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="9cgeg">Yesa</button>
+                                    <button aria-pressed="false" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="uf2fp">No</button></div></div></div>
+                                    <div id="PrivateDealer" class="chakra-collapse" style="overflow: initial; display: block; opacity: 1; height: auto;">
+                                        <hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                                        <p class="css-mk2iwq e1kg4do43">Is this vehicle titled in your name?</p><div>
+                                            <div class="css-1q701y2 eddhcra1">
+                                                <button aria-pressed="true" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="9cgeg">Yes</button>
+                                                <button aria-pressed="false" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="uf2fp">No</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                            </div>
+                            <div class="css-dwcc8l"><p class="css-1rpfd8x e1kg4do43"> Title Status<!-- --> <span id="popover-trigger-8" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-8" class="css-1lv1yo7"><svg class="css-1saok50" width="18" height="18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM.5 9a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.975V8h2v6l-2-.025zM8 6V4h2v2H8z" fill="currentColor"></path></svg></span></p>
+                            <div class="css-zoser8"><div class="css-1yic1r9 e7u4x2y8" data-invalid="false"><div class="select-container css-2b097c-container"><span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span><div class="select__control css-yk16xz-control"><div class="select__value-container css-1hwfws3"><div class="select__placeholder css-1wa3eu0-placeholder">Select title status</div>
+                            <input id="react-select-default-input" readonly="" tabindex="0" value="" aria-autocomplete="list" class="css-62g3xt-dummyInput"></div><div class="select__indicators css-1wy0on6"><div class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer" aria-hidden="true"><svg color="primary3" class="e7u4x2y7 css-qtklg1 etpyxlq1" fill="none" height="24" viewBox="0 0 24 24" width="24"><path d="m3 9 9 7 9-7" stroke-width="2" stroke="currentColor"></path></svg></div></div></div><input type="hidden" name="titleStatus" value=""></div></div></div></div><div class="css-ftpowt"><p class="css-1rpfd8x e1kg4do43">
+                            What state is the vehicle titled in?<!-- --> <span id="popover-trigger-10" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-10" class="css-1lv1yo7"><svg class="css-1saok50" width="18" height="18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM.5 9a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.975V8h2v6l-2-.025zM8 6V4h2v2H8z" fill="currentColor"></path></svg></span></p><div class="css-zoser8"><div class="css-1yic1r9 e7u4x2y8" data-invalid="false"><div class="select-container css-2b097c-container"><span aria-live="polite" aria-atomic="false" aria-relevant="additions text" class="css-7pg0cj-a11yText"></span><div class="select__control css-yk16xz-control"><div class="select__value-container css-1hwfws3"><div class="select__placeholder css-1wa3eu0-placeholder">Select state</div><input id="react-select-default-input" readonly="" tabindex="0" value="" aria-autocomplete="list" class="css-62g3xt-dummyInput"></div>
+                            <div class="select__indicators css-1wy0on6"><div class="select__indicator select__dropdown-indicator css-tlfecz-indicatorContainer" aria-hidden="true"><svg color="primary3" class="e7u4x2y7 css-qtklg1 etpyxlq1" fill="none" height="24" viewBox="0 0 24 24" width="24"><path d="m3 9 9 7 9-7" stroke-width="2" stroke="currentColor"></path></svg></div></div></div><input type="hidden" name="titledIn" value=""></div></div></div></div><div class="css-16q3cbq"><p class="css-1rpfd8x e1kg4do43">Where is the vehicle located?</p><div class="css-zoser8"><div class="css-j7qwjs"><div class="css-bjn8wh ea6uyek0">
+                            <input spellcheck="true" id="11" name="zipCode" placeholder="Enter City, State, and ZIP code" data-invalid="false" class="css-1154ngr" value="" fdprocessedid="j65b3"></div></div></div></div><p class="css-1a77sk6 e1kg4do42">Reserve</p><div class="css-foou8n"><p class="css-1rpfd8x e1kg4do43">
+                            Do you want a Reserve or No Reserve auction?<!-- --> <span id="popover-trigger-13" aria-haspopup="dialog" aria-expanded="false" aria-controls="popover-content-13" class="css-1lv1yo7"><svg class="css-1saok50" width="18" height="18" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1.5a7.5 7.5 0 100 15 7.5 7.5 0 000-15zM.5 9a8.5 8.5 0 1117 0 8.5 8.5 0 01-17 0z" fill="currentColor"></path>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.975V8h2v6l-2-.025zM8 6V4h2v2H8z" fill="currentColor"></path></svg></span></p><div class="css-h0wyg4">
+                            <div class="chakra-stack css-lgrcba"><label class="css-datla1 e1e6pj724"><input type="radio" value="true" name="hasReservedPrice" class="css-1rrqi1o e1e6pj723"><div class="radio-selected-icon css-p0nk8c e1e6pj722"></div><div class="radio-unselected-icon css-ebo14d e1e6pj721"></div><span class="radio-text css-1q1372q e1e6pj720">Reserve</span></label><label class="css-datla1 e1e6pj724"><input type="radio" value="false" name="hasReservedPrice" class="css-1rrqi1o e1e6pj723"><div class="radio-selected-icon css-p0nk8c e1e6pj722"></div><div class="radio-unselected-icon css-ebo14d e1e6pj721"></div>
+                            <span class="radio-text css-1q1372q e1e6pj720">No Reserve</span></label></div></div></div><p class="css-1a77sk6 e1kg4do42">Additional Information</p><div class="css-foou8n"><p class="css-1rpfd8x e1kg4do43">Is there anything else we should know to determine if your vehicle is a good fit for auction (modifications, rare factory features/options, etc.)?</p><div class="css-h0wyg4"><div><div class="css-1q701y2 eddhcra1">
+                            <button aria-pressed="true" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="3iv46d">Yes</button><button aria-pressed="false" type="button" class="css-1v0z9x1 eddhcra0" fdprocessedid="dwgjp7">No</button></div><div class="chakra-collapse" style="overflow: initial; display: block; opacity: 1; height: auto;"><hr aria-orientation="horizontal" class="chakra-divider css-cnn4jn">
+                            <p class="css-164y5wn e1kg4do43">Please explain below:</p><div class="css-j7qwjs"><div class="css-bjn8wh e1coey30"><textarea id="20" name="otherInformation" placeholder="Enter details" data-invalid="false" rows="6" class="css-11b4gb5"></textarea></div></div></div></div></div></div><p class="css-1a77sk6 e1kg4do42">Photos</p><div class="css-foou8n"><div class="css-zoser8"><p class="css-1jccshs e1kg4do43">Please upload at least <strong>10 photos</strong> of your vehicle using the submission box below. Your photos will begin uploading when you click the 'Submit' button at the bottom of this form.<br><br>Include images of the interior and exterior that provide a sense for your vehicle's current condition. The higher quality your images are, the easier it will be for us to assess whether your vehicle is right for our platform.<br><br>
+                            <strong>Need help taking photos? View our <a target="_blank" rel="noopener noreferrer" class="chakra-link css-1tue41d" href="/pdf/photo-tips-and-checklist.pdf">Photo Guide</a>!</strong></p>
+                            <div tabindex="0" data-error="false" data-drag-active="false" class="css-1vxy5tc"><input type="file" accept="image/jpg, image/jpeg, image/gif, image/png" multiple="" style="display:block;height:0;overflow:hidden" autocomplete="off" tabindex="-1" id="photos"><div class="css-1ezk040 ezv7akq0">
+                            <svg class="css-1dtm344 ezv7akq1" width="48" height="48" viewBox="0 0 48 48"><path d="M23.9999 22.125L31.1666 27.5L30.1666 28.8333L24.8333 24.8334V36.5H23.1667V24.8333L17.8333 28.8333L16.8333 27.5L23.9999 22.125ZM22.6316 9C25.8457 9 28.6601 10.7049 30.2224 13.2562C30.9481 13.0548 31.7121 12.9474 32.5 12.9474C37.1944 12.9474 41 16.7529 41 21.4474C41 24.2289 39.6629 26.6984 37.6006 28.2475L36.3994 26.6484C37.9805 25.4608 39 23.5733 39 21.4474C39 17.8575 36.0899 14.9474 32.5 14.9474C31.6556 14.9474 30.8511 15.1079 30.1137 15.3991L29.2494 15.7404L28.8457 14.9035C27.7305 12.5917 25.3659 11 22.6316 11C19.0233 11 16.0616 13.7724 15.7619 17.3026L15.6982 18.0528L14.9595 18.199C12.702 18.6456 11 20.6383 11 23.0263C11 23.8575 11.2053 24.6378 11.567 25.3221L9.79885 26.2568C9.28853 25.2914 9 24.1911 9 23.0263C9 19.9214 11.0437 17.2957 13.859 16.4179C14.5629 12.2079 18.2221 9 22.6316 9Z" fill="currentColor"></path></svg><p class="css-g57d86 e1kg4do43">Drag and drop here, or <u>browse</u> to upload</p><p class="css-18i9ntk e1kg4do44">Maximum file size: 20 MB</p></div><button class="e1h7yjxs0 css-meu79k esewker4" type="button">
+                            <div class="css-srjk1z esewker1"><span class="css-ju84ek esewker2">Select photos</span></div></button><p class="css-1f4jq0j e1kg4do44">Maximum file size: 20 MB</p></div></div></div><hr aria-orientation="horizontal" class="chakra-divider css-4qkmcy"><div class="css-j7qwjs">
+                                <p class="css-qz1zj3 e1kg4do43"><strong>What happens next:</strong> Once you submit this form, our team will review it to see if your vehicle is a good fit for Marqued. If it is, we'll contact you directly to discuss reserve pricing, create a listing page, and schedule a time for your upcoming auction.</p><div class="css-1vimnmh">
+                                    <div class="css-1ws5l4v e184cwjp2"></div><button class="e1utt1ks0 css-133w2rq esewker4">
+                                        <div class="account-btn"><span class="css-ju84ek esewker2">submit</span></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="alternate-signup-box">
+                            <h6>or Sign up WITH</h6>
+                            <div class="btn-group gap-4">
+                                <a href="" class="google-btn d-flex align-items-center"><i class='bx bxl-google'></i><span>Signup whit google</span></a>
+                                <a href="" class="facebook-btn d-flex align-items-center"><i class='bx bxl-facebook'></i>Sign up whit facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== register-section end =============== -->
+    <!-- =============== footer area start=============== -->
+    <footer class="footer-area footer-style-one mt-110">
+        <div class="container">
+            <div class="footer-main">
+                <div class="row gy-5 d-flex justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <form action="#" id="subscribe_form">
+                                <h3 class="form-title">subscribe us</h3>
+                                <div class="form-wrap d-flex align-items-center">
+                                    <input type="email" placeholder="Enter Your Email">
+                                    <button type="submit">Send</button>
+                                    <partial name="_Alert" />
+                                </div>
+                            </form>
+
+                            <div class="footer-contact-links">
+                                <div class="contact-option">
+                                    <div class="icon">
+                                        <i class="bi bi-telephone-plus"></i>
+                                    </div>
+                                    <div class="link">
+                                        <a href="tel:8801761111456">+880 176 1111 456</a>
+                                    </div>
+                                </div>
+                                <div class="contact-option">
+                                    <div class="icon">
+                                        <i class="bi bi-envelope"></i>
+                                    </div>
+                                    <div class="link">
+                                        <a href="info@example.com">info@example.com</a>
+                                    </div>
+                                </div>
+                                <div class="contact-option">
+                                    <div class="icon">
+                                        <i class="bi bi-geo-alt"></i>
+                                    </div>
+                                    <div class="link">
+                                        <a href="tel:8801761111456">168/170, Avenue 01,xyz, Bangladesh</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Quick Links</h5>
+
+                            <ul class="widget-links">
+                                <li><a href="Account/login">My Account</a></li>
+                                <li><a href="about.html">Affiliate Program</a></li>
+                                <li><a href="contact.html">Lawyer Consulting</a></li>
+                                <li><a href="#">Sorteo Locemses</a></li>
+                                <li><a href="privacy.html">Privacey Policy</a></li>
+                                <li><a href="#">Term & Condition</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-widget">
+                            <h5 class="widget-title">Help Center</h5>
+                            <ul class="widget-links">
+                                <li><a href="contact.html">Help Center</a></li>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="#">Borrow</a></li>
+                                <li><a href="contact.html">License Agreement</a></li>
+                                <li><a href="#">Sell your Product</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget text-start">
+                            <div class="footer-disc">
+                                <a href="index.html"><img src="~/images/logo.png" alt=""></a>
+
+                                <p>Duis luctus risus ut velit aliquam, sed fringilla odio gravida. In vitae sagittis neque, eget vestibulum enim. Pellentesque ante odio.</p>
+                            </div>
+
+                            <ul class="footer-social-links justify-content-start">
+                                <li><a href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a></li>
+                                <li><a href="https://twitter.com"><i class='bx bxl-twitter'></i></a></li>
+                                <li><a href="https://www.pinterest.com"><i class='bx bxl-pinterest'></i></a></li>
+                                <li><a href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright row align-items-center">
+                <div class="col-lg-6 col-md-6 order-1 order-md-0 text-center text-md-start mt-3 mt-md-0">
+                    <p>Copyright 2022 <a href="#">Bidgen</a> | Design By <a href="https://www.egenslab.com">Egens Theme</a></p>
+                </div>
+                <div class="col-lg-6 col-md-6 order-0 order-md-1">
+                    <div class="acceptable-cards float-lg-end text-center text-md-start">
+                        <img src="~/images/icon/payment-cards.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- =============== footer area end=============== -->
+    <!--Javascript -->
+    <!--- Internal Notify js -->
+    <script src="~/assets/plugins/notify/js/notifIt.js"></script>
+    <script src="~/assets/plugins/notify/js/notifit-custom.js"></script>
+    <partial name="_Alert" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+    <script type="text/javascript">
+        $('#loginForm').validate();
+    </script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/swiper-bundle.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.nice-select.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="~/js/main.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await Component.InvokeAsync("Notyf")
+
+</body>
+
+</html>
