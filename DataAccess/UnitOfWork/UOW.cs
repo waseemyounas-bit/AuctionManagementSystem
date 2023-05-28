@@ -23,20 +23,15 @@ namespace DataAccess.UnitOfWork
 		{
 			return new GenericRepository<User>(_context);
 		}
-       
+        public GenericRepository<AddVehicleView> AddVehicle()
+        {
+            return new GenericRepository<AddVehicleView>(_context);
+        }
 
         public User Authentication(string UserName, string password)
 		{
 			Dictionary<Guid, string> dic = new Dictionary<Guid, string>();
 			User user = _context.Users.Where(x => x.FullName == UserName && x.Password == password && x.IsApproved==1).FirstOrDefault();
-			//if (user != null)
-				//dic.Add(user.Id, "Admin");
-			//Company compnay = _context.Companies.Where(x => x.Email == email && x.Password == password).FirstOrDefault();
-			//if (compnay != null)
-			//	dic.Add(compnay.CompanyId, "Company");
-			//Employee employee = _context.Employees.Where(x => x.Email == email && x.Password == password).FirstOrDefault();
-			//if (employee != null)
-			//	dic.Add(employee.Id, "Employee");
 			return user;
 		}
 		

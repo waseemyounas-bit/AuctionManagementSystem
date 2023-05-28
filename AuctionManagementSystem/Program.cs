@@ -17,7 +17,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddSession();
 builder.Services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.BottomRight; });
 //builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-//builder.Services.AddScoped<IUOW, UOW>();
+builder.Services.AddScoped<IUOW, UOW>();
 //builder.Services.AddScoped<SuperController>();
 var app = builder.Build();
 

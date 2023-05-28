@@ -10,7 +10,8 @@ namespace DataAccess.UnitOfWork
 {
     public interface IUOW
     {
-        GenericRepository<User> UserRepository(); 
+        GenericRepository<User> UserRepository();
+        GenericRepository<AddVehicleView> AddVehicle();
         bool ApproveCompany(Guid Id,int flag);
         void Save();
         User Authentication(string UserName, string password);

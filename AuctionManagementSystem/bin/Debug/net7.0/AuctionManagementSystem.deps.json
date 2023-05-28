@@ -78,7 +78,7 @@
           "Microsoft.AspNetCore.Http.Connections": "7.0.0.0",
           "Microsoft.AspNetCore.Http": "7.0.0.0",
           "Microsoft.AspNetCore.Http.Extensions": "7.0.0.0",
-          "Microsoft.AspNetCore.Http.Features": "7.0.0.0",
+          "Microsoft.AspNetCore.Http.Features.Reference": "7.0.0.0",
           "Microsoft.AspNetCore.Http.Results": "7.0.0.0",
           "Microsoft.AspNetCore.HttpLogging": "7.0.0.0",
           "Microsoft.AspNetCore.HttpOverrides": "7.0.0.0",
@@ -230,7 +230,7 @@
           "System.IO.FileSystem.Watcher": "7.0.0.0",
           "System.IO.IsolatedStorage": "7.0.0.0",
           "System.IO.MemoryMappedFiles": "7.0.0.0",
-          "System.IO.Pipelines": "7.0.0.0",
+          "System.IO.Pipelines.Reference": "7.0.0.0",
           "System.IO.Pipes.AccessControl": "7.0.0.0",
           "System.IO.Pipes": "7.0.0.0",
           "System.IO.UnmanagedMemoryStream": "7.0.0.0",
@@ -412,6 +412,12 @@
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
           }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "7.0.0",
+          "System.IO.Pipelines": "5.0.2"
         }
       },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
@@ -1029,6 +1035,7 @@
           "lib/net6.0/System.IdentityModel.Tokens.Jwt.dll": {}
         }
       },
+      "System.IO.Pipelines/5.0.2": {},
       "System.Memory/4.5.4": {},
       "System.Memory.Data/1.0.2": {
         "dependencies": {
@@ -1150,6 +1157,9 @@
         }
       },
       "AMSModels/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17"
+        },
         "runtime": {
           "AMSModels.dll": {}
         },
@@ -1382,7 +1392,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.AspNetCore.Http.Features/7.0.0.0": {
+      "Microsoft.AspNetCore.Http.Features.Reference/7.0.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Http.Features.dll": {}
         },
@@ -2294,7 +2304,7 @@
         },
         "compileOnly": true
       },
-      "System.IO.Pipelines/7.0.0.0": {
+      "System.IO.Pipelines.Reference/7.0.0.0": {
         "compile": {
           "System.IO.Pipelines.dll": {}
         },
@@ -2984,6 +2994,13 @@
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3320,6 +3337,13 @@
       "path": "system.identitymodel.tokens.jwt/6.24.0",
       "hashPath": "system.identitymodel.tokens.jwt.6.24.0.nupkg.sha512"
     },
+    "System.IO.Pipelines/5.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Iew+dfa6FFiyvWBdRmXApixRY1db+beyutpIck4SOSe0NLM8FD/7AD54MscqVLhvfSMLHO7KadjTRT7fqxOGTA==",
+      "path": "system.io.pipelines/5.0.2",
+      "hashPath": "system.io.pipelines.5.0.2.nupkg.sha512"
+    },
     "System.Memory/4.5.4": {
       "type": "package",
       "serviceable": true,
@@ -3631,7 +3655,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.Http.Features/7.0.0.0": {
+    "Microsoft.AspNetCore.Http.Features.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -4391,7 +4415,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.IO.Pipelines/7.0.0.0": {
+    "System.IO.Pipelines.Reference/7.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
