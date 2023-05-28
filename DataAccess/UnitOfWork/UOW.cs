@@ -27,7 +27,10 @@ namespace DataAccess.UnitOfWork
         {
             return new GenericRepository<AddVehicleView>(_context);
         }
-
+        public GenericRepository<VehicleImages> AddVehicleImage()
+        {
+            return new GenericRepository<VehicleImages>(_context);
+        }
         public User Authentication(string UserName, string password)
 		{
 			Dictionary<Guid, string> dic = new Dictionary<Guid, string>();

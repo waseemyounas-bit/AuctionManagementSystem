@@ -32,6 +32,7 @@ namespace DataAccess.Data
         //}
         public DbSet<User> Users { get; set; }
         public DbSet<AddVehicleView> AddVehicle { get; set; }
+        public DbSet<VehicleImages> VehicleImages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.HasPostgresExtension("uuid-ossp");

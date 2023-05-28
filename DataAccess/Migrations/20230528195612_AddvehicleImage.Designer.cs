@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230528102700_AddVehicleView")]
-    partial class AddVehicleView
+    [Migration("20230528195612_AddvehicleImage")]
+    partial class AddvehicleImage
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,26 +35,35 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("COR")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int?>("CORType")
+                        .IsRequired()
+                        .HasMaxLength(100)
                         .HasColumnType("int");
 
                     b.Property<string>("DealerName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImagePath")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<int>("IsApproved")
+                        .HasColumnType("int");
 
                     b.Property<string>("Make")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Model")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("OORMilegeRemarks")
                         .HasColumnType("nvarchar(max)");
@@ -81,7 +90,9 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VIN")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<int?>("VSeller")
                         .HasColumnType("int");
@@ -95,11 +106,18 @@ namespace DataAccess.Migrations
                     b.Property<string>("VehicleLocated")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("VehiclePurchaseMoth")
+                    b.Property<string>("VehicleOwnerShipHistory")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("VehiclePurchaseMoth")
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
+
                     b.Property<string>("VehiclePurchaseYear")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(1)
+                        .HasColumnType("nvarchar(1)");
 
                     b.Property<string>("Vmiles")
                         .HasColumnType("nvarchar(max)");
@@ -117,10 +135,15 @@ namespace DataAccess.Migrations
                     b.Property<int>("Year")
                         .HasColumnType("int");
 
+                    b.Property<int?>("btnVehicleAccident")
+                        .HasColumnType("int");
+
                     b.Property<string>("mileageDistanceUnit")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("odometerreadingreflect")
+                        .IsRequired()
+                        .HasMaxLength(1)
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -165,13 +188,32 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 28, 10, 27, 0, 834, DateTimeKind.Utc).AddTicks(9225),
+                            CreatedAt = new DateTime(2023, 5, 28, 19, 56, 12, 189, DateTimeKind.Utc).AddTicks(38),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
                             Password = "12345678",
                             RoleId = 1
                         });
+                });
+
+            modelBuilder.Entity("AMSModels.VehicleImages", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("AddVehicleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VehicleImages");
                 });
 #pragma warning restore 612, 618
         }

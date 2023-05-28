@@ -28,7 +28,7 @@ namespace AMSModels
         public int? CORType { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
-        public int? odometerreadingreflect { get; set; }
+        public int odometerreadingreflect { get; set; }
         public string? OORMilegeRemarks { get; set; }
         //Vehicle History & Condition
         //[Required(AllowEmptyStrings = false)]
@@ -39,8 +39,10 @@ namespace AMSModels
         public string? VehiclePurchaseYear { get; set; }
         public string? Vmiles { get; set; }
         public string? mileageDistanceUnit { get; set; }
+        public string? VehicleOwnerShipHistory { get;set; }
         public string? VownershipRemarks { get; set; }
         public string? Vaccident { get; set; }
+        public int?btnVehicleAccident { get; set; }
         public string? VaccidentRemarks { get; set; }
         public int? VDamage { get; set; }
         public string? VDamageRemarks { get; set; }
@@ -57,6 +59,6 @@ namespace AMSModels
         public string? ReserveRemaks { get; set; }
         public string? AdInfoRemarks { get; set; }
         //public string Images { get; set; }
-        public string ImagePath { get; set; }
+        public int IsApproved { get; set; } = 0;
     }
 }

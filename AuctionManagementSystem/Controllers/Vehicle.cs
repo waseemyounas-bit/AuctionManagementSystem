@@ -35,22 +35,19 @@ namespace AuctionManagementSystem.Controllers
                 // Handle empty or invalid file
                 return BadRequest("Invalid file");
             }
-       
+            int a = 5;
+            Guid guid = new Guid(a, 0, 0, new byte[8]);
+          
             // Process the image file
             // Example: Save the file to a specific location
-            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
-            ad.ImagePath = filePath;
-            System.IO.File.Create(filePath).Dispose();
+            //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
+            // ad.ImagePath = filePath;
+            //  System.IO.File.Create(filePath).Dispose();
             AddVehicleView advv = new AddVehicleView();
-            //adView.ImagePath = filePath;
-            //string wwwRootPath = _hostEnvironment.WebRootPath;
-            string fileName = Path.GetFileNameWithoutExtension(ad.Images.FileName);
-            string extension = Path.GetExtension(ad.Images.FileName);
-            if (ModelState.IsValid)
-            {
-                 advv = new()
+          
+                advv = new()
                 {
-                    Id=ad.Id,
+                    Id = guid,
                     FullName = ad.FullName,
                     Year = ad.Year,
                     Make = ad.Make,
@@ -79,17 +76,39 @@ namespace AuctionManagementSystem.Controllers
                     Reserve = ad.Reserve,
                     ReserveRemaks = ad.ReserveRemaks,
                     AdInfoRemarks = ad.AdInfoRemarks,
-                    ImagePath = filePath
-                };
+                    VehicleOwnerShipHistory = ad.VehicleOwnerShipHistory,
+                    IsApproved = 0
+                 };
                 UOW.AddVehicle().Insert(advv);
                 //Delete that post
                 //UOW.UserRepository().Update(us);
-
                 //Commit the transaction
                 UOW.Save();
+
+                foreach (var imageFile in ad.Images)
+                {
+                    if (imageFile.Length > 0)
+                    {
+                        // Process each image file
+                        // Example: Save the file to a specific location
+                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + imageFile.FileName);
+                        using (var stream = new FileStream(filePath, FileMode.Create))
+                        {
+                            imageFile.CopyTo(stream);
+                            VehicleImages vi = new()
+                            {
+                                ImagePath = filePath,
+                                AddVehicleId = guid.ToString()
+                            };
+                            UOW.AddVehicleImage().Insert(vi);
+                            UOW.Save();
+                        }
+                    }
+                }
+               
+
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
-                return RedirectToAction("Index", "Home");
-            }
+                //return RedirectToAction("Index", "Home");
             return View(advv);
         }
     }
