@@ -30,21 +30,25 @@ namespace AuctionManagementSystem.Controllers
         [HttpPost]
         public IActionResult vehiclesubmission(AddVehicle ad)
         {
-            if (ad.Images == null || ad.Images.Length == 0)
+            
+            if (ModelState.IsValid)
             {
-                // Handle empty or invalid file
-                return BadRequest("Invalid file");
-            }
-            int a = 5;
-            Guid guid = new Guid();
-            string Id = guid.ToString();
-            // Process the image file
-            // Example: Save the file to a specific location
-            //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
-            // ad.ImagePath = filePath;
-            //  System.IO.File.Create(filePath).Dispose();
-            AddVehicleView advv = new AddVehicleView();
-          
+                AddVehicleView advv = new AddVehicleView();
+                if (ad.Images == null || ad.Images.Length == 0)
+                {
+                    // Handle empty or invalid file
+                    return BadRequest("Invalid file");
+                }
+                int a = 5;
+                Guid guid = new Guid();
+                string Id = guid.ToString();
+                // Process the image file
+                // Example: Save the file to a specific location
+                //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
+                // ad.ImagePath = filePath;
+                //  System.IO.File.Create(filePath).Dispose();
+               
+
                 advv = new()
                 {
                     AvId = guid,
@@ -55,7 +59,7 @@ namespace AuctionManagementSystem.Controllers
                     VIN = ad.VIN,
                     COR = ad.COR,
                     CORType = ad.CORType,
-                    odometerreadingreflect = ad.odometerreadingreflect,
+                  //  odometerreadingreflect = ad.odometerreadingreflect,
                     OORMilegeRemarks = ad.OORMilegeRemarks,
                     VehiclePurchaseMoth = ad.VehiclePurchaseMoth,
                     VehiclePurchaseYear = ad.VehiclePurchaseYear,
@@ -78,10 +82,10 @@ namespace AuctionManagementSystem.Controllers
                     AdInfoRemarks = ad.AdInfoRemarks,
                     VehicleOwnerShipHistory = ad.VehicleOwnerShipHistory,
                     IsApproved = "0"
-                 };
+                };
                 UOW.AddVehicle().Insert(advv);
                 UOW.Save();
-            string MyId = advv.AvId.ToString();
+                string MyId = advv.AvId.ToString();
                 foreach (var imageFile in ad.Images)
                 {
                     if (imageFile.Length > 0)
@@ -102,11 +106,19 @@ namespace AuctionManagementSystem.Controllers
                         }
                     }
                 }
-               
+
 
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
                 //return RedirectToAction("Index", "Home");
-            return View(advv);
+                
+            }
+            else
+            {
+                var errors = ModelState.Values.SelectMany(v => v.Errors);
+                _notyf.Custom("Form Is Not Complete Try Again", 10, "#B600FF", "fa fa-home");
+            }
+            
+            return View(ad);
         }
     }
 }

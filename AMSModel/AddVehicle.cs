@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AMSModels
 {
-    public class AddVehicle:ImageViewModel
+    public class AddVehicle : ImageViewModel
     {
-       
-       
+
+
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 3, ErrorMessage = "Length should be in between 3 and 100")]
         public string? FullName { get; set; }
@@ -18,7 +18,7 @@ namespace AMSModels
         public string? Make { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 4, ErrorMessage = "Enter Model")]
-        public string? Model { get; set; }
+        public string Model { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 4, ErrorMessage = "Enter VIN")]
         public string? VIN { get; set; }
@@ -30,7 +30,7 @@ namespace AMSModels
         public string? CORType { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
-        public string odometerreadingreflect { get; set; }
+      //  public string odometerreadingreflect { get; set; }
         public string? OORMilegeRemarks { get; set; }
         //Vehicle History & Condition
         //[Required(AllowEmptyStrings = false)]
