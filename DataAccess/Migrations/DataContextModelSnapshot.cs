@@ -24,7 +24,7 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("AMSModels.AddVehicleView", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("AvId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -32,33 +32,27 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("COR")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("CORType")
-                        .HasColumnType("int");
+                    b.Property<string>("CORType")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("DealerName")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IsApproved")
-                        .HasColumnType("int");
+                    b.Property<string>("IsApproved")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Make")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Model")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("OORMilegeRemarks")
                         .HasColumnType("nvarchar(max)");
@@ -72,25 +66,24 @@ namespace DataAccess.Migrations
                     b.Property<string>("ReserveRemaks")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TitleState")
-                        .HasColumnType("int");
+                    b.Property<string>("TitleState")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TitleStatus")
-                        .HasColumnType("int");
+                    b.Property<string>("TitleStatus")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VDamage")
-                        .HasColumnType("int");
+                    b.Property<string>("VDamage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VDamageRemarks")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VIN")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VSeller")
-                        .HasColumnType("int");
+                    b.Property<string>("VSeller")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Vaccident")
                         .HasColumnType("nvarchar(max)");
@@ -105,14 +98,10 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VehiclePurchaseMoth")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VehiclePurchaseYear")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("nvarchar(1)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Vmiles")
                         .HasColumnType("nvarchar(max)");
@@ -127,21 +116,20 @@ namespace DataAccess.Migrations
                     b.Property<string>("VtitledRemarks")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Year")
-                        .HasColumnType("int");
+                    b.Property<string>("Year")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("btnVehicleAccident")
-                        .HasColumnType("int");
+                    b.Property<string>("btnVehicleAccident")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("mileageDistanceUnit")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("odometerreadingreflect")
-                        .IsRequired()
-                        .HasMaxLength(1)
-                        .HasColumnType("int");
+                    b.Property<string>("odometerreadingreflect")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("AvId");
 
                     b.ToTable("AddVehicle");
                 });
@@ -183,7 +171,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 28, 20, 9, 28, 411, DateTimeKind.Utc).AddTicks(7820),
+                            CreatedAt = new DateTime(2023, 5, 29, 10, 58, 47, 682, DateTimeKind.Utc).AddTicks(1918),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,

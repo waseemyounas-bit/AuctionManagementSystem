@@ -1,16 +1,18 @@
 ﻿using Microsoft.AspNetCore.Http;
+using System.ComponentModel.DataAnnotations;
 
 namespace AMSModels
 {
     public class AddVehicle:ImageViewModel
     {
-        public Guid Id { get; set; }
+       
+       
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 3, ErrorMessage = "Length should be in between 3 and 100")]
         public string? FullName { get; set; }
         //[Required(AllowEmptyStrings = false)]
-        //[Range(2000, 2023, ErrorMessage = "Please enter valid integer Number")]
-        public int Year { get; set; }
+        //[Range(2000, 2023, ErrorMessage = "Please enter valid stringeger Number")]
+        public string Year { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 4, ErrorMessage = "Enter Car Manufacture")]
         public string? Make { get; set; }
@@ -25,10 +27,10 @@ namespace AMSModels
         public string? COR { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(100, MinimumLength = 4, ErrorMessage = "Enter Current odometer reading")]
-        public int? CORType { get; set; }
+        public string? CORType { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
-        public int odometerreadingreflect { get; set; }
+        public string odometerreadingreflect { get; set; }
         public string? OORMilegeRemarks { get; set; }
         //Vehicle History & Condition
         //[Required(AllowEmptyStrings = false)]
@@ -42,23 +44,24 @@ namespace AMSModels
         public string? VehicleOwnerShipHistory { get;set; }
         public string? VownershipRemarks { get; set; }
         public string? Vaccident { get; set; }
-        public int?btnVehicleAccident { get; set; }
+        public string?btnVehicleAccident { get; set; }
         public string? VaccidentRemarks { get; set; }
-        public int? VDamage { get; set; }
+        public string? VDamage { get; set; }
         public string? VDamageRemarks { get; set; }
         //Ownership, Title & Location
-        public int? VSeller { get; set; }
+        public string? VSeller { get; set; }
         public string? DealerName { get; set; }
         public string? OwnerDetails { get; set; }
         public String Vtitled { get; set; }
         public string? VtitledRemarks { get; set; }
-        public int? TitleStatus { get; set; }
-        public int? TitleState { get; set; }
+        public string? TitleStatus { get; set; }
+        public string? TitleState { get; set; }
         public string? VehicleLocated { get; set; }
         public string? Reserve { get; set; }
         public string? ReserveRemaks { get; set; }
         public string? AdInfoRemarks { get; set; }
         //public string Images { get; set; }
-        public int IsApproved { get; set; } = 0;
+        public string IsApproved { get; set; } = "0";
+        public Guid AvId { get; set; }
     }
 }

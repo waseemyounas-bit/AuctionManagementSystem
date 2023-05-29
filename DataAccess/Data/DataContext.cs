@@ -35,8 +35,9 @@ namespace DataAccess.Data
         public DbSet<VehicleImages> VehicleImages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.HasPostgresExtension("uuid-ossp");
-            //modelBuilder.UseSerialColumns();
+          
+            modelBuilder.Entity<AddVehicleView>().HasKey(x => x.AvId);
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>().HasData(
                 new User
                 {

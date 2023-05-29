@@ -36,8 +36,8 @@ namespace AuctionManagementSystem.Controllers
                 return BadRequest("Invalid file");
             }
             int a = 5;
-            Guid guid = new Guid(a, 0, 0, new byte[8]);
-          
+            Guid guid = new Guid();
+            string Id = guid.ToString();
             // Process the image file
             // Example: Save the file to a specific location
             //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
@@ -47,7 +47,7 @@ namespace AuctionManagementSystem.Controllers
           
                 advv = new()
                 {
-                    Id = guid,
+                    AvId = guid,
                     FullName = ad.FullName,
                     Year = ad.Year,
                     Make = ad.Make,
@@ -77,14 +77,11 @@ namespace AuctionManagementSystem.Controllers
                     ReserveRemaks = ad.ReserveRemaks,
                     AdInfoRemarks = ad.AdInfoRemarks,
                     VehicleOwnerShipHistory = ad.VehicleOwnerShipHistory,
-                    IsApproved = 0
+                    IsApproved = "0"
                  };
                 UOW.AddVehicle().Insert(advv);
-                //Delete that post
-                //UOW.UserRepository().Update(us);
-                //Commit the transaction
                 UOW.Save();
-
+            string MyId = advv.AvId.ToString();
                 foreach (var imageFile in ad.Images)
                 {
                     if (imageFile.Length > 0)
@@ -98,7 +95,7 @@ namespace AuctionManagementSystem.Controllers
                             VehicleImages vi = new()
                             {
                                 ImagePath = filePath,
-                                AddVehicleId = guid.ToString()
+                                AddVehicleId = MyId
                             };
                             UOW.AddVehicleImage().Insert(vi);
                             UOW.Save();
