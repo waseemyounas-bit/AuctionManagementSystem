@@ -31,12 +31,12 @@ namespace DataAccess.Data
         //    base.OnModelCreating(modelBuilder);
         //}
         public DbSet<User> Users { get; set; }
-        public DbSet<AddVehicleView> AddVehicle { get; set; }
+        public DbSet<AddVehicle> AddVehicle { get; set; }
         public DbSet<VehicleImages> VehicleImages { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           
-            modelBuilder.Entity<AddVehicleView>().HasKey(x => x.AvId);
+            modelBuilder.Entity<AddVehicle>().HasKey(x => x.AvId);
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>().HasData(
                 new User

@@ -1,9 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AMSModels
 {
-    public class AddVehicle : ImageViewModel
+    public class AddVehicle
     {
 
 
@@ -30,7 +31,7 @@ namespace AMSModels
         public string? CORType { get; set; }
         //[Required(AllowEmptyStrings = false)]
         //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
-      //  public string odometerreadingreflect { get; set; }
+        //  public string odometerreadingreflect { get; set; }
         public string? OORMilegeRemarks { get; set; }
         //Vehicle History & Condition
         //[Required(AllowEmptyStrings = false)]
@@ -41,10 +42,10 @@ namespace AMSModels
         public string? VehiclePurchaseYear { get; set; }
         public string? Vmiles { get; set; }
         public string? mileageDistanceUnit { get; set; }
-        public string? VehicleOwnerShipHistory { get;set; }
+        public string? VehicleOwnerShipHistory { get; set; }
         public string? VownershipRemarks { get; set; }
         public string? Vaccident { get; set; }
-        public string?btnVehicleAccident { get; set; }
+        public string? btnVehicleAccident { get; set; }
         public string? VaccidentRemarks { get; set; }
         public string? VDamage { get; set; }
         public string? VDamageRemarks { get; set; }
