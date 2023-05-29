@@ -23,9 +23,9 @@ namespace DataAccess.UnitOfWork
 		{
 			return new GenericRepository<User>(_context);
 		}
-        public GenericRepository<AddVehicleView> AddVehicle()
+        public GenericRepository<AddVehicle> AddVehicle()
         {
-            return new GenericRepository<AddVehicleView>(_context);
+            return new GenericRepository<AddVehicle>(_context);
         }
         public GenericRepository<VehicleImages> AddVehicleImage()
         {

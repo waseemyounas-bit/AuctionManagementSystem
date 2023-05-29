@@ -28,12 +28,11 @@ namespace AuctionManagementSystem.Controllers
             return View(addVehicle);
         }
         [HttpPost]
-        public IActionResult vehiclesubmission(AddVehicle ad)
+        public IActionResult vehiclesubmission(AddVehicleView ad)
         {
-            
             if (ModelState.IsValid)
             {
-                AddVehicleView advv = new AddVehicleView();
+                AddVehicle advv = new AddVehicle();
                 if (ad.Images == null || ad.Images.Length == 0)
                 {
                     // Handle empty or invalid file
@@ -42,13 +41,6 @@ namespace AuctionManagementSystem.Controllers
                 int a = 5;
                 Guid guid = new Guid();
                 string Id = guid.ToString();
-                // Process the image file
-                // Example: Save the file to a specific location
-                //var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + ad.Images.FileName);
-                // ad.ImagePath = filePath;
-                //  System.IO.File.Create(filePath).Dispose();
-               
-
                 advv = new()
                 {
                     AvId = guid,
@@ -59,7 +51,7 @@ namespace AuctionManagementSystem.Controllers
                     VIN = ad.VIN,
                     COR = ad.COR,
                     CORType = ad.CORType,
-                  //  odometerreadingreflect = ad.odometerreadingreflect,
+                    //  odometerreadingreflect = ad.odometerreadingreflect,
                     OORMilegeRemarks = ad.OORMilegeRemarks,
                     VehiclePurchaseMoth = ad.VehiclePurchaseMoth,
                     VehiclePurchaseYear = ad.VehiclePurchaseYear,
@@ -107,17 +99,8 @@ namespace AuctionManagementSystem.Controllers
                     }
                 }
 
-
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
-                //return RedirectToAction("Index", "Home");
-                
             }
-            else
-            {
-                var errors = ModelState.Values.SelectMany(v => v.Errors);
-                _notyf.Custom("Form Is Not Complete Try Again", 10, "#B600FF", "fa fa-home");
-            }
-            
             return View(ad);
         }
     }

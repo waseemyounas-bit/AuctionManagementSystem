@@ -11,7 +11,7 @@ namespace DataAccess.UnitOfWork
     public interface IUOW
     {
         GenericRepository<User> UserRepository();
-        GenericRepository<AddVehicleView> AddVehicle();
+        GenericRepository<AddVehicle> AddVehicle();
         GenericRepository<VehicleImages> AddVehicleImage();
         bool ApproveCompany(Guid Id,int flag);
         void Save();
