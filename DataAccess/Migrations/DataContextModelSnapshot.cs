@@ -126,9 +126,6 @@ namespace DataAccess.Migrations
                     b.Property<string>("mileageDistanceUnit")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("odometerreadingreflect")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("AvId");
 
                     b.ToTable("AddVehicle");
@@ -171,7 +168,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 29, 10, 58, 47, 682, DateTimeKind.Utc).AddTicks(1918),
+                            CreatedAt = new DateTime(2023, 5, 29, 15, 5, 3, 384, DateTimeKind.Utc).AddTicks(9414),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
