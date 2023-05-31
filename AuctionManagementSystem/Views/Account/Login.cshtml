@@ -31,6 +31,9 @@
     <link rel="stylesheet" href="~/css/style.css">
     <link rel="stylesheet" href="~/css/responsive.css">
     <script type="text/javascript">
+        <link media="screen" rel = "stylesheet" href = "https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.css" />
+            <link media="screen" rel = "stylesheet" href = 'https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.css' />
+                <script type="text/javascript" src = "https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.js" ></script>
 </script>
 </head>
 
@@ -204,6 +207,14 @@
                         <h3>Login Your Account</h3>
 
                         <form class="w-100" asp-action="PostLogin" method="post" id="loginForm">
+                            @if (TempData["error"] != null)
+                            {
+                                <script type="text/javascript">
+                                    window.onload = function () {
+                                        swal("Request Save Succefully!", '@TempData["pesan"]', "error");
+                                    };
+                                </script>
+                            }
                             <div class="form-inner">
                                 <label>User Name*</label>
                                 <input type="text" name="UserName" placeholder="User Name" value="@UserName" required>

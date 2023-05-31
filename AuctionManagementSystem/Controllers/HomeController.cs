@@ -1,4 +1,5 @@
 ﻿using AuctionManagementSystem.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,7 +16,8 @@ namespace AuctionManagementSystem.Controllers
 
 		public IActionResult Index()
 		{
-			return View();
+			//HttpContextAccessor.HttpContext.session["Succesmsg"];
+            return View();
 		}
 
 		public IActionResult Privacy()

@@ -41,6 +41,7 @@ namespace AuctionManagementSystem.Controllers
             {
                 if (UserName == "" || UserName == null)
                 {
+                    TempData["error"] = "Invalid email or password.";
                     _notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
                     return RedirectToAction("Login", "Account");
                 }
@@ -71,6 +72,7 @@ namespace AuctionManagementSystem.Controllers
                 }
                 else
                 {
+                    TempData["error"] = "Invalid email or password.";
                     _notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
                     AlertMessage("Invalid email or password.", AlertType.Error);
                     return RedirectToAction("Login", "Account");
@@ -87,7 +89,7 @@ namespace AuctionManagementSystem.Controllers
         {
             if (ModelState.IsValid)
             {
-                _notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
+                //_notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
             }
                 return View(us);
         }
@@ -98,10 +100,11 @@ namespace AuctionManagementSystem.Controllers
             {
                 us.IsApproved = 0;
                     UOW.UserRepository().Insert(us);
-                    //Delete that post
-                    //UOW.UserRepository().Update(us);
+                //Delete that post
+                //UOW.UserRepository().Update(us);
 
-                    //Commit the transaction
+                //Commit the transaction
+                TempData["Succes"] = "Request Save Scussfully.";
                     UOW.Save();
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
                 _notyf.Custom("Request Send For Approval.", 10, "#B600FF", "fa fa-home");

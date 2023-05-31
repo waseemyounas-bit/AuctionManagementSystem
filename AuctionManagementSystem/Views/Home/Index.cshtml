@@ -1,5 +1,5 @@
-﻿
-
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
     <div class="hero-area hero-style-one overflow-hidden">
         <div class="swiper hero-slide-one">
             <div class="swiper-wrapper">
@@ -87,7 +87,16 @@
                                         <a href="auction-details.html" class="alpha-btn-xl hero-btn">Bid Now</a>
                                     </div>
                                 </div>
-
+                            
+                            @if (@HttpContextAccessor.HttpContext.Session.GetString("Succesmsg") != null)
+                            {
+                                <script type="text/javascript">
+                                    window.onload = function () {
+                                        swal("Request Save Succefully!", '@TempData["pesan"]', "success");
+                                     
+                                    };
+                                </script>
+                            }
                                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
                                     <div class="slide-image d-inline-block position-relative position-relative">
                                         <img src="~/images/hero/featured-product2.png" alt="" class="img-fluid">
