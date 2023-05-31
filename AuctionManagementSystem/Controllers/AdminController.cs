@@ -1,10 +1,12 @@
 ﻿using AMSModels;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using DataAccess.UnitOfWork;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AuctionManagementSystem.Controllers
 {
+    //[Authorize(Roles ="Admin")]
     public class AdminController : Controller
     {
         private IUOW UOW;
@@ -25,12 +27,12 @@ namespace AuctionManagementSystem.Controllers
         }
         public IActionResult GetAllVehicles()
         {
-            List<AddVehicleView> list=UOW.AddVehicle().GetAll().ToList();
+            List<AddVehicle> list=UOW.AddVehicle().GetAll().ToList();
             return View(list);
         }
         public IActionResult GetVehicleDetails(Guid Id)
         {
-            AddVehicleView vehicle=UOW.AddVehicle().GetById(Id);
+            AddVehicle vehicle=UOW.AddVehicle().GetById(Id);
             return View(vehicle);
         }
     }

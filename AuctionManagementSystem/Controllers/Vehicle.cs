@@ -21,6 +21,10 @@ namespace AuctionManagementSystem.Controllers
             webHostEnvironment = _webHostEnvironment;
             _notyf = notyf;
         }
+        public IActionResult AddVehicle()
+        {
+            return View();
+        }
         public IActionResult vehiclesubmission()
         {
 
