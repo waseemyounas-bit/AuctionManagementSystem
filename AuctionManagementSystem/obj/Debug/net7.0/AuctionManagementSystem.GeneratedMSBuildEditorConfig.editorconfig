@@ -64,8 +64,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxBZGRWZWhpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/CarAuction.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxDYXJBdWN0aW9uLmNzaHRtbA==
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/AuctionDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxBdWN0aW9uRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/CarAuctionDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxDYXJBdWN0aW9uRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/vehiclesubmission.cshtml]

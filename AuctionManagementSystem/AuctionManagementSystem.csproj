@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Vehicle\CarAuction.cshtml" />
     <Content Remove="wwwroot\css\all.css" />
     <Content Remove="wwwroot\css\bootstrap-icons.css" />
     <Content Remove="wwwroot\css\bootstrap.min.css" />

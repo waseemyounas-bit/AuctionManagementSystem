@@ -1123,6 +1123,7 @@ C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSyste
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\AspNetCoreHero.ToastNotification.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Azure.Identity.dll
+C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Dapper.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Humanizer.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
@@ -1226,4 +1227,3 @@ C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSyste
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\AuctionManagementSystem.pdb
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\AuctionManagementSystem.genruntimeconfig.cache
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\ref\AuctionManagementSystem.dll
-C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Dapper.dll

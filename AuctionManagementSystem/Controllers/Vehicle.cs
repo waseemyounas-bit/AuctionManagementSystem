@@ -111,10 +111,17 @@ namespace AuctionManagementSystem.Controllers
             _notyf.Custom(errors.ToString(), 10, "#B600FF", "fa fa-home");
             return View(ad);
         }
-        public IActionResult CarAuction()
+        public IActionResult VehicleAuction()
         {
             List<AddVehicleView> ad = UOW.GetVehicleInFo();
             TempData["employee"] = UOW.GetPendingVehicleInfo(); 
+            return View(ad);
+        }
+        public IActionResult AuctionDetails(string AvId="")
+        {
+            string sdt = AvId;
+            List<AddVehicleView> ad = UOW.GetVehicleInFo();
+          TempData["employee"] = UOW.GetPendingVehicleInfo();
             return View(ad);
         }
     }
