@@ -107,5 +107,9 @@ namespace AuctionManagementSystem.Controllers
             _notyf.Custom(errors.ToString(), 10, "#B600FF", "fa fa-home");
             return View(ad);
         }
+        public IActionResult CarAuction()
+        {
+            return View();
+        }
     }
 }
