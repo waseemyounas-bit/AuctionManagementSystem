@@ -82,7 +82,7 @@
    }
   
 
-  $('.custom-select').niceSelect();
+  /*$('.custom-select').niceSelect();*/
 
 // count-down1
 setInterval(function time(){

@@ -21,19 +21,16 @@ namespace AuctionManagementSystem.Controllers
             webHostEnvironment = _webHostEnvironment;
             _notyf = notyf;
         }
-        public IActionResult AddVehicle()
-        {
-            return View();
-        }
         public IActionResult vehiclesubmission()
         {
-
+           
             AddVehicleView addVehicle = new AddVehicleView();
             return View(addVehicle);
         }
         [HttpPost]
         public IActionResult vehiclesubmission(AddVehicleView ad)
         {
+            //TempData["pesan"] = "Data Berhasil disimpan...";
             if (ModelState.IsValid)
             {
                 AddVehicle advv = new AddVehicle();
@@ -102,9 +99,12 @@ namespace AuctionManagementSystem.Controllers
                         }
                     }
                 }
-
+                TempData["pesan"] = " Forward For Approval";
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
             }
+
+            var errors = ModelState.Values.SelectMany(x => x.Errors).ToArray();
+            _notyf.Custom(errors.ToString(), 10, "#B600FF", "fa fa-home");
             return View(ad);
         }
     }

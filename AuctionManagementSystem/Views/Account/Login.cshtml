@@ -45,6 +45,14 @@
                         <h3>Login Your Account</h3>
 
                         <form class="w-100" asp-action="PostLogin" method="post" id="loginForm">
+                            @if (TempData["error"] != null)
+                            {
+                                <script type="text/javascript">
+                                    window.onload = function () {
+                                        swal("Request Save Succefully!", '@TempData["pesan"]', "error");
+                                    };
+                                </script>
+                            }
                             <div class="form-inner">
                                 <label>User Name*</label>
                                 <input type="text" name="UserName" placeholder="User Name" value="@UserName" required>

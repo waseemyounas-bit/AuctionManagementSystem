@@ -3,6 +3,111 @@
 
     Layout = "~/views/shared/_layout.cshtml";
 }
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script>
+        $(document).ready(function () {
+            $("#btnCorTypeYes").click(function () {
+                $("#CORTypeYN").show();
+            });
+            $("#btn_CorTypeNo").click(function () {
+                $("#CORTypeYN").css("display", "none");
+            });
+        $("#btn_VehicleOwnerShipHistoryY").click(function () {
+            $("#VehicleOwnerShipHistory").show();
+        });
+        $("#btn_VehicleOwnerShipHistoryN").click(function () {
+            $("#VehicleOwnerShipHistory").css("display", "none");
+        });
+        //Start--> Vehicle Accident
+        $("#btn_VehicleAccidentY").click(function () {
+            $("#VehicleAccident").show();
+        });
+        $("#btn_VehicleAccidentN").click(function () {
+            $("#VehicleAccident").css("display", "none");
+        });
+        ////End--->
+
+        ////Start--> Vehicle dealership
+        $("#btn_VehicleDmgRprY").click(function () {
+            $("#VehicleDamageRepair").show();
+        });
+        $("#btn_VehicleDmgRprN").click(function () {
+            $("#VehicleDamageRepair").css("display", "none");
+        });
+        ////End--->
+        ////Start--> Vehicle Damage Repair
+        $("#rdrPrivate").click(function () {
+            $("#PartyDealer").hide();
+            $("#PrivateDealer").show();
+        });
+        $("#rdrseller").click(function () {
+            $("#PrivateDealer").hide();
+            $("#PartyDealer").show();
+        });
+        ////End--->
+        ////Start--> Vehicle Owner
+        $("#btn_VehicleEntitledonNameY").click(function () {
+           
+            $("#VehicleEntitledOwner").hide();
+        });
+        $("#btn_VehicleEntitledonNameN").click(function () {
+            $("#VehicleEntitledOwner").hide();
+            $("#VehicleEntitledOwner").show();
+        });
+        ////End--->
+        ////Start--> Reserve Non Reserve
+        $("#NonReserve").click(function () {
+            $("#VehicleReserve").hide();
+        });
+        $("#Reserve").click(function () {
+            $("#VehicleReserve").show();
+        });
+        ////End--->
+
+        ////Start--> Additional Info
+        $("#AddInfoY").click(function () {
+            $("#AddInfoR").show();
+        });
+        $("#AddInfoN").click(function () {
+            $("#AddInfoR").hide();
+        });
+        ////End--->
+        var maxchars = 2;
+        var maxYear = 4;
+        $('#VehiclePurchaseMoth').keyup(function () {
+            debugger;
+            var tlength = $(this).val().length;
+            $(this).val($(this).val().substring(0, maxchars));
+            var tlength = $(this).val().length;
+            remain = maxchars - parseInt(tlength);
+            $('#VehiclePurchaseMoth').text(remain);
+        });
+        $('#VehiclePurchaseYear').keyup(function () {
+            debugger;
+            var tlength = $(this).val().length;
+            $(this).val($(this).val().substring(0, maxYear));
+            var tlength = $(this).val().length;
+            remain = maxYear - parseInt(tlength);
+            $('#VehiclePurchaseYear').text(remain);
+        });
+});
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#CORTypeYN").css("display", "none");
+          $("#VehicleOwnerShipHistory").css("display", "none"); 
+           $("#VehicleAccident").css("display", "none");
+            $("#VehicleDamageRepair").css("display", "none");
+            $("#PartyDealer").css("display", "none");
+            $("#PrivateDealer").css("display", "none");
+            $("#VehicleEntitledOwner").css("display", "none");
+          $("#VehicleReserve").css("display", "none"); 
+           //$("#AddInfoR").css("display", "none"); 
+        });
+    </script>
+<link media="screen" rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.css" />
+<link media="screen" rel="stylesheet" href='https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.css' />
+<script type="text/javascript" src="https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.js"></script>
 <!-- =============== breadcrumb area start =============== -->
 <div class="breadcrumb breadcrumb-style-one mb-0 ">
     <div class="container">
@@ -52,64 +157,250 @@
             <div class="col-lg-7 mt-5 mt-lg-0">
                 <div class="contact-form">
                     <h4>Vehicle Information</h4>
-                    <form action="#" id="contact_form" method="post">
+                         <h4>Your Info</h4>
+                    <form action="AddVehicle" id="contact_form" method="post" enctype="multipart/form-data">
+                     
+                        @if (TempData["error"] != null)
+                        {
+                            <script type="text/javascript">
+                                window.onload = function () {
+                                    swal("Error!", '@TempData["pesan"]', "error");
+                                };
+                            </script>
+                        }
                         <div class="contact-input-group">
-                            <label for="first-Name">Text Box</label>
-                            <input type="text" id="first-Name" placeholder="Full Name">
+                            <label for="first-Name">Full name</label>
+                           <input type="text" name="FullName"value="@Model.FullName" placeholder="Your FullName">
+                            @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
+                        </div>
+                        <h3>Vehicle Details</h3>
+                         <div class="contact-input-group">
+                            <label for="first-Name">Year</label>
+                         <input type="number" placeholder="Enter year"  name="Year">
+                        </div>
+                         <div class="contact-input-group">
+                            <label for="first-Name">Make</label>
+                          <input id="Make" name="Make" placeholder="Enter car manufacturer" value="@Model.Make" >
                         </div>
                         <div class="contact-input-group">
-                            <label for="email">Number</label>
-                            <input type="number" id="email" placeholder="Enter Your year">
+                            <label for="first-Name">Model</label>
+                           <input id="3" name="Model" placeholder="Enter model" value="@Model.Model">
+                          @Html.ValidationMessageFor(x=>x.Model,string.Empty,new {@class="text-danger"})
                         </div>
                         <div class="contact-input-group">
-                            <label for="email">Text Area</label>
-                            <textarea id="massege" cols="30" rows="7" placeholder="Type your Message"></textarea>
+                            <label for="first-Name">Vehicle Identification Number (VIN)</label>
+                         <input id="VIN" name="VIN" maxlength="17" placeholder="Enter VIN" value="@Model.VIN">
+                         @Html.ValidationMessageFor(x=>x.VIN,string.Empty,new {@class="text-danger"})
                         </div>
-                        <div class="contact-input-group">
-                            <label for="drop">Dropdown</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select menu</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
+                         <div class="contact-input-group">
+                            <label for="first-Name">Current odometer reading</label>
+                          <input type="number" placeholder="Enter current odometer reading" min="0" name="COR" value="@Model.COR">
+                          @Html.ValidationMessageFor(x=>x.COR,string.Empty,new {@class="text-danger"})
                         </div>
                         <div class="mt-3">
-                            <label for="email">Radios</label>
+                            @*<label for="email">Miles</label>*@
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                    Default radio
-                                </label>
+                                 <input type="radio" class="form-check-input" value="MILES" name="CORType" id="MILES" >
+                                <label class="form-check-label" for="flexRadioDefault1"> Miles</label>
                             </div>
+                           
                             <br />
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                   <input type="radio" class="form-check-input" value="KILOMETERS" name="CORType" id="MILES" checked >
                                 <label class="form-check-label" for="flexRadioDefault2">
-                                    Default checked radio
+                                    Kilometers
                                 </label>
                             </div>
                         </div>
-                        <div class="mt-3">
-                            <label for="email">Toggle buttons</label>
+                           <div class="mt-3">
+                            <label for="email">Does the above odometer reading reflect the total mileage on this vehicle?</label>
                             <div class="switch-field">
-                                <input type="radio" id="radio-one" name="switch-one" value="yes" checked />
-                                <label for="radio-one">Yes</label>
-                                <input type="radio" id="radio-two" name="switch-one" value="no" />
-                                <label for="radio-two">No</label>
+                                <input type="radio" id="btnCorTypeYes" name="odometerreadingreflect" value="yes"  />
+                                <label for="btnCorTypeYes">Yes</label>
+                                <input type="radio" id="btn_CorTypeNo" name="odometerreadingreflect" value="no" checked />
+                                <label for="btn_CorTypeNo">No</label>
                             </div>
                         </div>
+
+                       <div class="contact-input-group" id="CORTypeYN">
+                            <label for="email">Text Area</label>
+                           <textarea id="OORMilegeRemarks" name="OORMilegeRemarks" cols="30" rows="7"  placeholder="Enter current odometer reading details" >
+                        </textarea> @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
+                        </div>
+                        <h4>
+                            Vehicle History &amp; Condition</h4>
                         <div class="mt-3">
-                            <label for="email">Two inputs in one row</label>
+                            <label for="email">What month/year did you purchase this vehicle?</label>
                             <div class="row">
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Month" aria-label="First name">
+                                    <input type="number" placeholder="MM" class="form-control" value="@Model.VehiclePurchaseMoth" id="VehiclePurchaseMoth"  name="VehiclePurchaseMoth">
+                                    @Html.ValidationMessageFor(x=>x.VehiclePurchaseMoth,string.Empty,new {@class="text-danger"})
                                 </div>
                                 <div class="col">
-                                    <input type="text" class="form-control" placeholder="Year" aria-label="Last name">
+                                    <input type="number" placeholder="YYYY" id="VehiclePurchaseYear" value="@Model.VehiclePurchaseYear" name="VehiclePurchaseYear">
+                                    @Html.ValidationMessageFor(x=>x.VehiclePurchaseYear,string.Empty,new {@class="text-danger"})
                                 </div>
                             </div>
                         </div>
+                         <div class="contact-input-group">
+                            <label for="first-Name">How many miles (or kilometers) have been added during your ownership?</label>
+                            <input type="number"  placeholder="Enter miles/kilometers" min="0" name="Vmiles">
+                            @Html.ValidationMessageFor(x=>x.Vmiles,string.Empty,new {@class="text-danger"})
+                        </div>
+                        <div class="mt-3">
+                           @* <label for="email">Does the above odometer reading reflect the total mileage on this vehicle?</label>*@
+                            <div class="switch-field">
+                                <input type="radio" value="MILES" name="mileageDistanceUnit" id="mileageDistanceUnitY">
+                                <label for="mileageDistanceUnitY">MILES</label>
+                                <input type="radio" id="mileageDistanceUnitN" name="mileageDistanceUnit" value="Kilometers" checked />
+                                <label for="mileageDistanceUnitN">Kilometers</label>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="email">Do you know anything about this vehicle's prior ownership or history?</label>
+                            <div class="switch-field">
+                                <input type="radio" id="btn_VehicleOwnerShipHistoryY" name="VehicleOwnerShipHistory" value="1" />
+                                <label for="btn_VehicleOwnerShipHistoryY">Yes</label>
+                                <input type="radio" id="btn_VehicleOwnerShipHistoryN" name="VehicleOwnerShipHistory" value="0" checked />
+                                <label for="btn_VehicleOwnerShipHistoryN">No</label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="VehicleOwnerShipHistory">
+                            <label for="email">Please explain below:</label>
+                            <textarea id="VownershipRemarks" name="VownershipRemarks" cols="30" rows="7" placeholder="Enter current odometer reading details">
+                        </textarea> @Html.ValidationMessageFor(x=>x.VownershipRemarks,string.Empty,new {@class="text-danger"})
+                        </div>
+                        
+                        @*vehicle damagae*@
+                        <div class="mt-3">
+                            <label for="email">To your knowledge, has this vehicle ever been in an accident?</label>
+                            <div class="switch-field">
+                                <input type="radio" id="btn_VehicleDmgRprY" name="VDamage" value="1" />
+                                <label for="btn_VehicleDmgRprY">Yes</label>
+                                <input type="radio" id="btn_VehicleDmgRprN" name="VDamage" value="0" checked />
+                                <label for="btn_VehicleDmgRprN">No</label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="VehicleDamageRepair">
+                            <label for="email">Please explain below:</label>
+                            <textarea id="VDamageRemarks" name="VDamageRemarks" cols="30" rows="7" placeholder="Enter Vehicle Damage Repair Remarks">
+                        </textarea> @Html.ValidationMessageFor(x=>x.VDamageRemarks,string.Empty,new {@class="text-danger"})
+                        </div>
+                        @*vehicle damage*@
+                        <h1>Ownership, Title & Location</h1>
+                       
+                        @* Vehicl OwnerShip*@
+                        @*vehicle Accident*@
+                        <div class="mt-3">
+                            <label for="email">Are you a dealer, or a private seller?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="DEALER" name="sellerType" id="rdrseller">
+                                <label class="form-check-label" for="flexRadioDefault1"> Dealer</label>
+                            </div>
+
+                            <br />
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="PRIVATE" name="sellerType" id="rdrPrivate">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Private Party
+                                </label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="PartyDealer">
+                            <div class="switch-field">
+                                <input type="radio" id="btn_VehicleEntitledonNameY" name="switch-one" value="yes" checked />
+                                <label for="btn_VehicleEntitledonNameY">Yes</label>
+                                <input type="radio" id="btn_VehicleEntitledonNameN" name="switch-one" value="no" />
+                                <label for="btn_VehicleEntitledonNameN">No</label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="PrivateDealer">
+                            <label for="email">What is the name of your dealership? Please also list your website below.</label>
+                            <input type="text" name="DealerName" value="@Model.DealerName" placeholder="Your DealerName">
+                        </div>
+                        <div class="contact-input-group" id="VehicleEntitledOwner">
+                            <label for="email">Please explain below:.</label>
+                            <input type="text" name="OwnerDetails" value="@Model.OwnerDetails" placeholder="Enter Title/OwnerShip Details">
+                        </div>
+                        @*vehicle Accident*@
+                        @*vehicle OwnerShip*@
+                        @*TITLE sTATUS*@
+                         <div class="contact-input-group">
+                            <label for="drop">Title Status</label>
+                            <select class="form-select" aria-label="Default select example"  name="Vtitled">
+                                <option selected value="0">Select title status</option>
+                                <option>Clean</option>
+                                <option>Salvage</option>
+                                <option>Rebuilt</option>
+                                <option>Othe Explain(Below)</option>
+                            </select>
+                        </div>
+                        @*TITLE SSTATUS eND*@
+                        @*TITLE sTATUS*@
+                        <div class="contact-input-group">
+                            <label for="drop">State</label>
+                            <select class="form-select" aria-label="Default select example" name="VehicleLocated">
+                                <option selected value="0">Select State</option>
+                                <option selected="@Model.VehicleLocated">Albama</option>
+                                <option>Alaska</option>
+                                <option>Arizona</option>
+                                <option>Araskas</option>
+                                <option>Californaia</option>
+                            </select>
+                        </div>
+                        @*TITLE SSTATUS eND*@
+                        <div class="contact-input-group">
+                            <label for="email">Where is the vehicle located?</label>
+                            <input id="11" name="VehicleLocated" placeholder="Enter City, State, and ZIP code" value="@Model.VehicleLocated">
+                        </div>
+                        <h1>Reserve</h1>
+                        <div class="mt-3">
+                            <label for="email">Do you want a Reserve or No Reserve auction?</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="false" name="Reserve" id="Reserve">
+                                <label class="form-check-label" for="flexRadioDefault1"> Reserve</label>
+                            </div>
+
+                            <br />
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="true" name="Reserve" id="NonReserve" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    No Reserve
+                                </label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="VehicleReserve">
+                            <label for="email">Please explain below:.</label>
+                            <input type="text" name="ReserveRemaks" value="@Model.ReserveRemaks" placeholder="$ Enter Reserve Amount">
+                        </div>
+                        <h1>Additional Information</h1>
+                        <p>Is there anything else we should know to determine if your vehicle is a good fit for auction (modifications, rare factory features/options, etc.)?</p>
+                        <div class="contact-input-group" id="PartyDealer">
+                            <div class="switch-field">
+                                <input type="radio" id="AddInfoY" name="switch-one" value="yes" checked />
+                                <label for="AddInfoY">Yes</label>
+                                <input type="radio" id="AddInfoN" name="switch-one" value="no" />
+                                <label for="AddInfoN">No</label>
+                            </div>
+                        </div>
+                        <div class="contact-input-group" id="AddInfoR">
+                            <label for="email">Please explain below:</label>
+                            <textarea id="massege" cols="30" rows="7" placeholder="Enter Details"></textarea>
+                        </div>
+                        <h4>Photos</h4>
+                        <div class="contact-input-group">
+                            <p class="css-1jccshs e1kg4do43">
+                                Please upload at least <strong>10 photos</strong> of your vehicle using the submission box below.
+                                Your photos will begin uploading when you click the 'Submit' button at the bottom of this form.<br><br>Include images of the interior and exterior that provide a sense for your vehicle's current condition. The higher quality your images are, the easier it will be for us to assess whether your vehicle is right for our platform.<br><br>
+                                <strong>Need help taking photos? View our <a target="_blank" rel="noopener noreferrer" class="chakra-link css-1tue41d" href="/pdf/photo-tips-and-checklist.pdf">Photo Guide</a>!</strong>
+                            </p>
+                            <div>
+                                <input type="file" name="Images" multiple />
+                            </div>
+                        </div>
+                      
+                       
+                       
                         <div class="contact-input-group mt-0">
                             <button type="submit" class="submit-btn">Submit</button>
                         </div>
