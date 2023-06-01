@@ -200,22 +200,6 @@
                         <h3>Register Your Account</h3>
 
                         <form action="Register" method="post" enctype="multipart/form-data" class="w-100">
-                            @if (TempData["Succes"] != null)
-                            {
-                                <script type="text/javascript">
-                                    window.onload = function () {
-                                        swal("Request Save Succefully!", '@TempData["pesan"]', "success");
-                                    };
-                                </script>
-                            }
-                            @if (TempData["error"] != null)
-                            {
-                                <script type="text/javascript">
-                                    window.onload = function () {
-                                        swal("Request Save Succefully!", '@TempData["pesan"]', "error");
-                                    };
-                                </script>
-                            }
                             <div class="form-inner">
                                 <label>Full Name*</label>
                                 <input type="text" name="FullName" class="form-control" value="@Model.FullName" placeholder="Full Name">

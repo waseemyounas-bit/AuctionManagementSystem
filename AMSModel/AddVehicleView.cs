@@ -15,7 +15,7 @@ namespace AMSModels
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Length should be in between 3 and 100")]
         public string? FullName { get; set; }
         [Required(AllowEmptyStrings = false)]
-        [Range(2000, 2023, ErrorMessage = "Please enter valid stringeger Number")]
+        [Range(2000, 2023, ErrorMessage = "Please enter valid Year")]
         public string Year { get; set; }
         [Required(AllowEmptyStrings = false)]
         [StringLength(100, MinimumLength = 4, ErrorMessage = "Enter Car Manufacture")]
