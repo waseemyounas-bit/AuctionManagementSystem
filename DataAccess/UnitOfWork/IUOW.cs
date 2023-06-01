@@ -13,6 +13,8 @@ namespace DataAccess.UnitOfWork
         GenericRepository<User> UserRepository();
         GenericRepository<AddVehicle> AddVehicle();
         GenericRepository<VehicleImages> AddVehicleImage();
+        List<AddVehicleView> GetVehicleInFo();
+        List<AddVehicleView> GetPendingVehicleInfo();
         bool ApproveCompany(Guid Id,int flag);
         void Save();
         User Authentication(string UserName, string password);

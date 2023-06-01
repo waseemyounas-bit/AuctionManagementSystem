@@ -85,13 +85,16 @@ namespace AuctionManagementSystem.Controllers
                     {
                         // Process each image file
                         // Example: Save the file to a specific location
-                        var filePath = Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + imageFile.FileName);
+                        string wwwRootPath = webHostEnvironment.WebRootPath;
+                        string NewGuid = "";
+                        NewGuid = Guid.NewGuid().ToString();
+                        var filePath = Path.Combine(wwwRootPath + "/media/", NewGuid + "_" + imageFile.FileName);// Path.Combine(Directory.GetCurrentDirectory(), "Images", Guid.NewGuid().ToString() + "_" + imageFile.FileName);
                         using (var stream = new FileStream(filePath, FileMode.Create))
                         {
                             imageFile.CopyTo(stream);
                             VehicleImages vi = new()
                             {
-                                ImagePath = filePath,
+                                ImagePath = "~/media/"+ NewGuid + "_" + imageFile.FileName,
                                 AddVehicleId = MyId
                             };
                             UOW.AddVehicleImage().Insert(vi);
@@ -101,6 +104,7 @@ namespace AuctionManagementSystem.Controllers
                 }
                 TempData["pesan"] = " Forward For Approval";
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
+                return View(new AddVehicleView());
             }
 
             var errors = ModelState.Values.SelectMany(x => x.Errors).ToArray();
@@ -109,7 +113,9 @@ namespace AuctionManagementSystem.Controllers
         }
         public IActionResult CarAuction()
         {
-            return View();
+            List<AddVehicleView> ad = UOW.GetVehicleInFo();
+            TempData["employee"] = UOW.GetPendingVehicleInfo(); 
+            return View(ad);
         }
     }
 }

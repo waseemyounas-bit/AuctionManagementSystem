@@ -9425,6 +9425,14 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\71be40c9-cacc-4b4a-bdef-54650007785c_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg",
+      "PackagePath": "staticwebassets\\media\\71be40c9-cacc-4b4a-bdef-54650007785c_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\935a3c8f-8a35-464c-9b89-8a8ccbf8ea44_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
+      "PackagePath": "staticwebassets\\media\\935a3c8f-8a35-464c-9b89-8a8ccbf8ea44_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.AuctionManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

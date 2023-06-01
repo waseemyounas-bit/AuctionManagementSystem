@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vj8ycRO+DJq1G1/9oSA6cI8JMN/Ykb8D9yg8Ajt1/lQCwW1IQuoJRFWNHdG6wplgdiT7O16BWk5vF7JNw89VPg==",
+  "dgSpecHash": "ELyMGZ8tOFA6zQmMAnLEk8r6Oa3lQaVgWDjvqYHzEpEKKyx+ozrD+uK5RZ4ZG/B+ZW/5es1epcXtOHp9vHqwsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\DataAccess\\DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Shahbaz\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Shahbaz\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Shahbaz\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Shahbaz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Shahbaz\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\Shahbaz\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

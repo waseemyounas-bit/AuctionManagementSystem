@@ -1,13 +1,40 @@
-﻿@{
-
-    Layout = "~/views/shared/_layout.cshtml";
-}
+﻿@model List<AddVehicleView>
 <!doctype html>
 <html lang="en">
 <head>
     <title>Bidgen - Bid and Auction HTML Template</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon -->
+    <link rel="icon" href="~/images/favicon.png" type="image/gif" sizes="20x20">
+    <!-- Swiper bundle Css -->
+    <link rel="stylesheet" href="~/css/swiper-bundle.min.css">
+    <!-- Boxicon -->
+    <link rel="stylesheet" href="~/css/boxicons.min.css">
+    <!-- Bootstarp 5 icons -->
+    <link rel="stylesheet" href="~/css/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/css/magnific-popup.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
 </head>
 <body>
+
+    @*<div class="preloader">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>*@
 
     <!-- =============== search area start =============== -->
 
@@ -462,175 +489,45 @@
             </div>
 
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 ">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Citroen C4 Picasso 1.6 e-HDi Aird</a></h6>
-                            <h4 class="price">$2,526</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-1.png" alt="">
-                            <div class="id"><span>ID 0195687</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,079.00</h6>
+                   @if (Model.Count() > 0)
+                {
+                    foreach (var item in Model)
+                    {
+                        <div class="col-lg-4 col-md-6 ">
+                            <div class="product-card product-beta-md">
+                                <div class="product-header">
+                                    <h6 class="product-title"><a href="auction-details.html">@item.FullName</a></h6>
+                                    <h4 class="price">@item.Year</h4>
                                 </div>
-                                <div class="countdown" id="week-countdown5">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
+
+                                <div class="product">
+                                    @*<img src="c:\users\shahbaz\documents\github\auctionmanagementsystem\auctionmanagementsystem\images\3f3d7c5b-eadf-4879-a0f5-b608d26d5f7a_758bd918-ea52-4692-a7d9-3eaffae3a18f.jpg" />*@
+                                    <img src="@Url.Content(item.ImagePath)">
+                                    @*<img src="Images/5410adfb-da9c-469a-bd6b-7057a86db657_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg" alt=""> 
+                                         //<img src="../images/5410adfb-da9c-469a-bd6b-7057a86db657_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg" />
+                                   // <img src="images\ca8c5323-aca9-4792-9a68-8c14714028c1_6305d909-4cbb-4b01-87ca-e6b6913ead8b.jpg" />
+                                    *@
+                                    <div class="id"><span>ID 0195687</span></div>
                                 </div>
-                            </div>
 
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Ford Focus 1.8 ZETEC 5d 125 </a></h6>
-                            <h4 class="price">$3,000</h4>
-                        </div>
+                                <div class="product-disc">
+                                    <div class="product-acution">
+                                        <div class="cv">
+                                            <span>current Bid</span>
+                                            <h6>$1,079.00</h6>
+                                        </div>
+                                        <div class="countdown" id="week-countdown5">
+                                            <h6>  </h6>
+                                            <span>Waiting For Bid</span>
+                                        </div>
+                                    </div>
 
-                        <div class="product">
-                            <img src="assets/images/product/lp-2.png" alt="">
-                            <div class="id"><span>ID 0195688</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$2,00.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown6">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
+                                    <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
                                 </div>
                             </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Masrati Mustang GT Premium</a></h6>
-                            <h4 class="price">$1500</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-3.png" alt="">
-                            <div class="id"><span>ID 0195689</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$899.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown7">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Citroen C1 AIRSCAPE FEEL EDIT</a></h6>
-                            <h4 class="price">$1,506</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-4.png" alt="">
-                            <div class="id"><span>ID 0195690</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,079.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown8">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Ford Focus 1.8 ZETEC 5d 125</a></h6>
-                            <h4 class="price">$3,526</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-5.png" alt="">
-                            <div class="id"><span>ID 0195691</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$3,000.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown9">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h6 class="product-title"><a href="auction-details.html">Smart fortwo Red Mercedes AMG</a></h6>
-                            <h4 class="price">$2,000</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-6.png" alt="">
-                            <div class="id"><span>ID 0195692</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$2,079.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown10">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-
+                    }
+                }
                 <div class="view-btn mt-50 text-center">
                     <a href="auction.html" class="alpha-btn-md-dark">View All</a>
                 </div>
@@ -648,17 +545,19 @@
                     </div>
                 </div>
             </div>
-
+           
             <div class="row g-4">
+                 @foreach (var item in (IEnumerable<AddVehicleView>)TempData["employee"])
+                    {
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="product-card product-beta-sm">
                         <div class="product">
-                            <img src="assets/images/product/product-b1.png" alt="">
-                            <div class="id"><span>ID 0195693</span></div>
+                                <img src="@Url.Content(item.ImagePath)">
+                            <div class="id"><span>@item.FullName</span></div>
                         </div>
 
                         <div class="product-disc">
-                            <h6 class="product-title"> <a href="auction-details.html">Ford Mustang GT Premium 2008</a> </h6>
+                            <h6 class="product-title"> <a href="auction-details.html">Ford Mustang GT Premium @item.Year</a> </h6>
 
                             <div class="product-acution">
                                 <div class="cv">
@@ -674,78 +573,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product-card product-beta-sm">
-                        <div class="product">
-                            <img src="assets/images/product/product-b2.png" alt="">
-                            <div class="id"><span>ID 0195694</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <h6 class="product-title"> <a href="auction-details.html">lamgergini New BOOM 800 Premium</a> </h6>
-
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,279</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown12">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product-card product-beta-sm">
-                        <div class="product">
-                            <img src="assets/images/product/product-b3.png" alt="">
-                            <div class="id"><span>ID 0195695</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <h6 class="product-title"> <a href="auction-details.html">Smart fortwo coupe 1.0 Prime Sport Premium</a> </h6>
-
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,279</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown13">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product-card product-beta-sm">
-                        <div class="product">
-                            <img src="assets/images/product/product-b4.png" alt="">
-                            <div class="id"><span>ID 0195636</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <h6 class="product-title"> <a href="auction-details.html">Audi New BOOM 800 21M 1.0 Prime Sport</a> </h6>
-
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,279</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown14">
-                                    <h6>  </h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                }
             </div>
         </div>
     </div>
@@ -1216,12 +1044,12 @@
     </footer>
     <!-- =============== footer area end=============== -->
     <!--Javascript -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.nice-select.js"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/swiper-bundle.min.js"></script>
+    <script src="~/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/js/jquery.nice-select.js"></script>
     <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 </html>
