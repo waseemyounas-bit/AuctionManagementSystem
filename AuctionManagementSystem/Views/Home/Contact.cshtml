@@ -1,0 +1,135 @@
+﻿@{
+
+    Layout = "~/views/shared/_layout.cshtml";
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bidgen - Bid and Auction HTML Template</title>
+</head>
+
+<body>
+
+    <!-- ===============  header area end =============== -->
+    <!-- =============== breadcrumb area start =============== -->
+    <div class="breadcrumb breadcrumb-style-one mb-0 ">
+        <div class="container">
+            <div class="col-lg-12 text-center">
+                <h1 class="breadcrumb-title">Contact Us</h1>
+                <ul class="d-flex justify-content-center breadcrumb-items">
+                    <li class="breadcrumb-item"><i class="bi bi-house-door"></i> <a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- =============== breadcrumb area end =============== -->
+    <!-- =============== contact wrapper start =============== -->
+    <div class="contact-wrapper  mt-110">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-header mx-auto text-center">
+                        <h3>Any Asking To The Officers?</h3>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-box-wrap">
+                        <h4>Contact Us</h4>
+
+                        <div class="single-contact-box">
+                            <h6>Let’s Talk</h6>
+                            <a href="mailto:info@example.com" class="mail">info@example.com</a> <a href="mailto:support@example.com" class="mail">support@example.com</a>
+                            <a href="tel:8801761111456" class="phone">+88 0176 1111 456</a>
+                        </div>
+                        <div class="single-contact-box">
+                            <h6>Loacation.</h6>
+                            <a href="#" class="location">168/170, Ave 01, Streets Suite 66xyz, Bangladesh</a>
+                        </div>
+                        <div class="single-contact-box">
+                            <h6>Social Site Link</h6>
+                            <a href="#" class="weblink">Facebook: https://www.facebook.com/egenstheme</a>
+                            <a href="#" class="weblink">Twitter: https://www.twitter.com/egenstheme</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0">
+                    <div class="contact-form">
+                        <h4>Questions or Comments?</h4>
+                        <form action="#" id="contact_form" method="post">
+                            <div class="contact-input-group">
+                                <label for="first-Name">Full Name</label>
+                                <input type="text" id="FullName" placeholder="Full Name">
+                            </div>
+                            <div class="contact-input-group">
+                                <label for="email">Email</label>
+                                <input type="text" id="Email" placeholder="Enter Your Email">
+                            </div>
+                            <div class="contact-input-group">
+                                <label for="email">Message</label>
+                                <textarea id="Message" cols="30" rows="7" placeholder="Type your Message"></textarea>
+                            </div>
+                            <div class="contact-input-group mt-0">
+                                <button type="submit" onclick="Contact()" class="submit-btn">Submit Comment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Contact() {
+            debugger;
+            var FullName = $("#FullName").val();
+            var Email = $("#Email").val();
+            var Message = $("#Message").val();
+            if (FullName == "") {
+                swal("Error", "Name Can't be Null.", "error");
+                return false;
+            }
+            if (Email == "") {
+                swal("Error", "Email Can't be Null.", "error");
+                return false;
+            }
+            if (Message == "") {
+                swal("Error", "Message Can't be Null.", "error");
+                return false;
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Home/Contact",
+                data: { name: FullName, email: Email, message: Message },
+                dataType: "json",
+                success: function (data) {
+                    if (data == 1) {
+                        swal("Saved!", "Your Bid Has Been Saved Succesfully.", "success");
+                        setTimeout(function () { 
+                        setTimeout(function () {
+                            location.href = 'Home/Index';
+                        }, 3000);
+                  
+                        return true
+                    }
+                    else {
+                        swal("Error!", "Something went wrong.", "error");
+                        return false;
+                    }
+                },
+                error: function () {
+                    swal("Error", "Something went wrong.", "error");
+                }
+            });
+            return false;
+        }
+    </script>
+   
+</body>
+
+</html>

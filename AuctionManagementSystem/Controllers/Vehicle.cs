@@ -141,7 +141,7 @@ namespace AuctionManagementSystem.Controllers
                     Userid = "Super Admin",
                     BidId = PostId,
                 }
-                         ;
+                ;
                 UOW.AddBid().Insert(placebid);
                 UOW.Save();
                 return Json(1);

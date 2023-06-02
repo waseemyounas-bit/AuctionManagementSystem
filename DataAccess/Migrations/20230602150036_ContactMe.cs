@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class test1 : Migration
+    public partial class ContactMe : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -51,6 +51,21 @@ namespace DataAccess.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AddVehicle", x => x.AvId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "ContactMe",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FullName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_ContactMe", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -101,7 +116,7 @@ namespace DataAccess.Migrations
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "CreatedAt", "Email", "FullName", "IsApproved", "Password", "RoleId" },
-                values: new object[] { new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"), new DateTime(2023, 6, 2, 12, 57, 42, 343, DateTimeKind.Utc).AddTicks(3500), "admin@auctionsystem.com", "SuperAdmin", 1, "12345678", 1 });
+                values: new object[] { new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"), new DateTime(2023, 6, 2, 15, 0, 36, 343, DateTimeKind.Utc).AddTicks(1140), "admin@auctionsystem.com", "SuperAdmin", 1, "12345678", 1 });
         }
 
         /// <inheritdoc />
@@ -109,6 +124,9 @@ namespace DataAccess.Migrations
         {
             migrationBuilder.DropTable(
                 name: "AddVehicle");
+
+            migrationBuilder.DropTable(
+                name: "ContactMe");
 
             migrationBuilder.DropTable(
                 name: "PlaceBid");

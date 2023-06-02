@@ -34,6 +34,7 @@ namespace DataAccess.Data
         public DbSet<AddVehicle> AddVehicle { get; set; }
         public DbSet<VehicleImages> VehicleImages { get; set; }
         public DbSet<PlaceBid> PlaceBid { get; set; }
+        public DbSet<ContactMe> ContactMe { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           

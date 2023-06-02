@@ -17,6 +17,7 @@ namespace DataAccess.UnitOfWork
         List<AddVehicleView> GetPendingVehicleInfo();
         List<AddVehicleView> GetVehicleIngo(Guid Avid);
         GenericRepository<PlaceBid> AddBid();
+        int ContactMe(string name, string message, string email);
         bool ApproveCompany(Guid Id,int flag);
         void Save();
         User Authentication(string UserName, string password);
