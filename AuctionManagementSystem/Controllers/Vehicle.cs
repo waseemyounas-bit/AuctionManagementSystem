@@ -117,12 +117,35 @@ namespace AuctionManagementSystem.Controllers
             TempData["employee"] = UOW.GetPendingVehicleInfo(); 
             return View(ad);
         }
-        public IActionResult AuctionDetails(string AvId="")
+        public IActionResult AuctionDetails(Guid AvId)
         {
-            string sdt = AvId;
-            List<AddVehicleView> ad = UOW.GetVehicleInFo();
-          TempData["employee"] = UOW.GetPendingVehicleInfo();
+            
+            List<AddVehicleView> ad = UOW.GetVehicleIngo(AvId);
             return View(ad);
+        }
+        [HttpPost]
+        public IActionResult SaveBid(string PostId,string amount)
+        {
+            if (PostId == "")
+            {
+                return Json(-1);
+            }
+            else
+            {
+                Guid guid = new Guid();
+                PlaceBid placebid = new PlaceBid()
+                {
+                    Id = guid,
+                    BidAmount = amount,
+                    BidTime = DateTime.Now,
+                    Userid = "Super Admin",
+                    BidId = PostId,
+                }
+                         ;
+                UOW.AddBid().Insert(placebid);
+                UOW.Save();
+                return Json(1);
+            }    
         }
     }
 }

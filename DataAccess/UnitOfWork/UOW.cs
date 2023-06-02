@@ -10,6 +10,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
+
 namespace DataAccess.UnitOfWork
 {
 	public class UOW : IUOW, IDisposable
@@ -58,8 +60,18 @@ namespace DataAccess.UnitOfWork
 			User user = _context.Users.Where(x => x.FullName == UserName && x.Password == password && x.IsApproved==1).FirstOrDefault();
 			return user;
 		}
-		
-		public void Save()
+        public List<AddVehicleView> GetVehicleIngo(Guid Avid)
+        {
+            using var con = new SqlConnection(connectionString);
+            var param = new DynamicParameters();
+            param.Add("Avid", Avid, DbType.Guid);
+            return con.Query<AddVehicleView>("select * from AddVehicle where  Avid=@Avid", param, null, true, 0, CommandType.Text).ToList();
+        }
+        public GenericRepository<PlaceBid> AddBid()
+        {
+            return new GenericRepository<PlaceBid>(_context);
+        }
+        public void Save()
 		{
 			_context.SaveChanges();
 		}
