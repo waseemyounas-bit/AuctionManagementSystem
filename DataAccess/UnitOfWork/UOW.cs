@@ -36,6 +36,10 @@ namespace DataAccess.UnitOfWork
         {
             return new GenericRepository<VehicleImages>(_context);
         }
+        public GenericRepository<ContactMe> ContactMe()
+        {
+            return new GenericRepository<ContactMe>(_context);
+        }
         public List<AddVehicleView> GetVehicleInFo()
         {
             using var con = new SqlConnection(connectionString);
@@ -70,6 +74,16 @@ namespace DataAccess.UnitOfWork
         public GenericRepository<PlaceBid> AddBid()
         {
             return new GenericRepository<PlaceBid>(_context);
+        }
+        public int ContactMe(string name, string message, string email)
+        {
+            using var con = new SqlConnection(connectionString);
+            var param = new DynamicParameters();
+            param.Add("@p0", name, DbType.String);
+            param.Add("@p1", message, DbType.String);
+            param.Add("@p2", email, DbType.String);
+             var insertedCustomers= con.Query<int>("INSERT INTO [ContactMe] ([Email], [FullName], [Message]) VALUES (@p0, @p1, @p2)", param, null, true, 0, CommandType.Text);
+            return insertedCustomers.Count();
         }
         public void Save()
 		{
