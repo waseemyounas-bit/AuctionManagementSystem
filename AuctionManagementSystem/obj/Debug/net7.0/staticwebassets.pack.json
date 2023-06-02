@@ -9425,6 +9425,22 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\58cb085b-9840-472d-9599-d508268ec0d6_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg",
+      "PackagePath": "staticwebassets\\media\\58cb085b-9840-472d-9599-d508268ec0d6_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\639cb8df-1ba2-4e2e-96a5-5be335b8c010_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
+      "PackagePath": "staticwebassets\\media\\639cb8df-1ba2-4e2e-96a5-5be335b8c010_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\d0bd6b1e-63e3-4692-9015-05b39e062a57_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
+      "PackagePath": "staticwebassets\\media\\d0bd6b1e-63e3-4692-9015-05b39e062a57_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\dbca43d8-b950-46f2-9c4c-803b8328cebf_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg",
+      "PackagePath": "staticwebassets\\media\\dbca43d8-b950-46f2-9c4c-803b8328cebf_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.AuctionManagementSystem.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

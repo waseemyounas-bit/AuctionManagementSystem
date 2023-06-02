@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Vehicle\CarAuction.cshtml" />
     <Content Remove="wwwroot\css\all.css" />
     <Content Remove="wwwroot\css\bootstrap-icons.css" />
     <Content Remove="wwwroot\css\bootstrap.min.css" />
@@ -318,6 +319,7 @@
 
   <ItemGroup>
     <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="Dapper" Version="2.0.123" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.5" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.1" />
@@ -336,6 +338,7 @@
 
   <ItemGroup>
     <Folder Include="Images\" />
+    <Folder Include="wwwroot\media\" />
   </ItemGroup>
 
 </Project>

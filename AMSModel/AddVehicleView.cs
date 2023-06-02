@@ -67,6 +67,7 @@ namespace AMSModels
         //public string Images { get; set; }
         public string IsApproved { get; set; } = "0";
         public Guid AvId { get; set; }
+        public string ImagePath { get; set; } = "0";
         //[NotMapped]
         //public IFormFile Images { get; set; }
     }

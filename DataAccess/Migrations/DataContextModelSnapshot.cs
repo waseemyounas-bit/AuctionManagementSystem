@@ -22,7 +22,7 @@ namespace DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("AMSModels.AddVehicleView", b =>
+            modelBuilder.Entity("AMSModels.AddVehicle", b =>
                 {
                     b.Property<Guid>("AvId")
                         .ValueGeneratedOnAdd()
@@ -79,7 +79,6 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VIN")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("VSeller")
@@ -131,6 +130,28 @@ namespace DataAccess.Migrations
                     b.ToTable("AddVehicle");
                 });
 
+            modelBuilder.Entity("AMSModels.PlaceBid", b =>
+                {
+                    b.Property<string>("BidId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("BidAmount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("BidTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("Id")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Userid")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("BidId");
+
+                    b.ToTable("PlaceBid");
+                });
+
             modelBuilder.Entity("AMSModels.User", b =>
                 {
                     b.Property<Guid>("Id")
@@ -168,7 +189,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 5, 29, 15, 5, 3, 384, DateTimeKind.Utc).AddTicks(9414),
+                            CreatedAt = new DateTime(2023, 6, 2, 12, 57, 42, 343, DateTimeKind.Utc).AddTicks(3500),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,

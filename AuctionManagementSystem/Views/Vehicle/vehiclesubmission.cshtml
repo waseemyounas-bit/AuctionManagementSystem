@@ -160,7 +160,7 @@
                     </div>
                 </div>
             </div>
-
+           
             <div class="col-lg-7 mt-5 mt-lg-0">
                 <div class="contact-form">
                     <h4>Vehicle Information</h4>
@@ -175,9 +175,11 @@
                                 };
                             </script>
                         }
+
                         <div class="contact-input-group">
                             <label for="first-Name">Full name</label>
                             <input type="text" name="FullName" value="@Model.FullName" placeholder="Your FullName">
+                            <input type="text" name="ImagePath" value="@Model.ImagePath" style="display:none">
                             @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
                         </div>
                         <h3>Vehicle Details</h3>

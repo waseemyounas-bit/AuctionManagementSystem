@@ -68,6 +68,7 @@ namespace AuctionManagementSystem.Controllers
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principle);
                         return RedirectToAction("Index", "Home");
                     }
+                    HttpContext.Session.SetString("UserName", UserName);
                     return RedirectToAction("Index", "Home");
                 }
                 else
