@@ -1,4 +1,4 @@
-﻿@model List<AddVehicleView>
+﻿@model AddVehicle
 @{
 
     Layout = "~/views/shared/_layout.cshtml";
@@ -12,7 +12,7 @@
 
 <body>
 
-    
+
     <!-- ===============  search area start =============== -->
 
     <div class="mobile-search">
@@ -63,54 +63,34 @@
                     </div>
                     <!-- item-details-gallery -->
                     <div class="tab-content">
-                        <div class="tab-pane big-image fade show active" id="gallery-img1">
-                            <span class="eg-badge">ID 0195638</span>
-                            <img src="assets/images/product/details11.png" alt="">
-                        </div>
-                        <div class="tab-pane big-image fade" id="gallery-img2">
-                            <span class="eg-badge">ID 0195638</span>
-                            <img src="assets/images/product/details22.png" alt="">
-                        </div>
-                        <div class="tab-pane big-image fade" id="gallery-img3">
-                            <span class="eg-badge">ID 0195638</span>
-                            <img src="assets/images/product/details33.png" alt="">
-                        </div>
-                        <div class="tab-pane big-image fade show" id="gallery-img4">
-                            <span class="eg-badge">ID 0195638</span>
-                            <img src="assets/images/product/details44.png" alt="">
-                        </div>
-                        <div class="tab-pane big-image fade" id="gallery-img5">
-                            <span class="eg-badge">ID 0195638</span>
-                            <img src="assets/images/product/details55.png" alt="">
-                        </div>
+                        @if (Model.VehicleImages.Count > 0)
+                        {
+                            int count = 1;
+                            foreach (var item in Model.VehicleImages)
+                            {
+                                <div class="tab-pane big-image fade show @(count==1?"active":"")" id="gallery-img_@count">
+                                    <span class="eg-badge">ID 0195638</span>
+                                    <img src="@Url.Content(item.ImagePath)" alt="">
+                                </div>
+                                count++;
+                            }
+                        }
                     </div>
 
                     <ul class="nav small-image-list d-flex justify-content-md-between justify-content-center gap-md-4 gap-2">
-                        <li class="nav-item">
-                            <div id="details-img1" data-bs-toggle="pill" data-bs-target="#gallery-img1" aria-controls="gallery-img1">
-                                <img src="assets/images/product/details1.png" alt="">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div id="details-img2" data-bs-toggle="pill" data-bs-target="#gallery-img2" aria-controls="gallery-img2">
-                                <img src="assets/images/product/details2.png" alt="">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div id="details-img3" data-bs-toggle="pill" data-bs-target="#gallery-img3" aria-controls="gallery-img3">
-                                <img src="assets/images/product/details3.png" alt="">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div id="details-img4" data-bs-toggle="pill" data-bs-target="#gallery-img4" aria-controls="gallery-img4">
-                                <img src="assets/images/product/details4.png" alt="">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <div id="details-img5" data-bs-toggle="pill" data-bs-target="#gallery-img5" aria-controls="gallery-img5">
-                                <img src="assets/images/product/details5.png" alt="">
-                            </div>
-                        </li>
+                        @if (Model.VehicleImages.Count > 0)
+                        {
+                            int count = 1;
+                            foreach (var item in Model.VehicleImages)
+                            {
+                                <li class="nav-item">
+                                    <div id="details-img1"data-bs-toggle="pill" data-bs-target="#gallery-img_@count" aria-controls="gallery-img_@count">
+                                        <img src="@Url.Content(item.ImagePath)" alt="" width="100">
+                                    </div>
+                                </li>
+                                count++;
+                            }
+                        }
                     </ul>
 
                     <!-- item-describe-area -->
@@ -165,30 +145,30 @@
                     </div>
 
                 </div>
-                @if(Model.Count()>0)
+                @if (Model != null)
                 {
-                <div class="col-lg-6">
-                    <div class="widget-right-area">
-                        <h4>@Model.FirstOrDefault().FullName</h4>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit</p>
-                        <div class="single-widget">
-                            <h5 class="wdget-title">Product Overview</h5>
-                            <ul class="widget-list">
-                                <li><span>Year :</span><span>@Model.FirstOrDefault().FullName</span></li>
-                                <li><span>Make :</span><span>@Model.FirstOrDefault().Make</span></li>
-                                <li><span>Model :</span><span>@Model.FirstOrDefault().Model</span></li>
-                                <li><span>Vehicle Identification Number (VIN) :</span><span>@Model.FirstOrDefault().VIN</span></li>
-                                <li><span>Current odometer reading :</span><span>@Model.FirstOrDefault().COR</span></li>
-                                <li><span> odometer reading reflect :</span><span>@Model.FirstOrDefault().CORType</span></li>
-                                <li><span>Vehicle month/year :</span><span>@Model.FirstOrDefault().VehiclePurchaseMoth/@Model.FirstOrDefault().Year</span></li>
-                                <li><span>State :</span><span>@Model.FirstOrDefault().TitleState</span></li>
-                                <li><span>vehicle located :</span><span>@Model.FirstOrDefault().VehicleLocated</span></li>
-                                <li><span>Reserve :</span><span>@Model.FirstOrDefault().Reserve</span></li>
-                            </ul>
-                        </div>
-                        <div class="single-widget">
-                            <h5 class="wdget-title wdget-title2">Bid Now</h5>
-                            <p class="widget-subtitle">Bid Amount : Minimum Bid 20.00$</p>
+                    <div class="col-lg-6">
+                        <div class="widget-right-area">
+                            <h4>@Model.FullName</h4>
+                            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar. Donec a consectetur nulla. Nulla posuere sapien vitae lectus suscipit</p>
+                            <div class="single-widget">
+                                <h5 class="wdget-title">Product Overview</h5>
+                                <ul class="widget-list">
+                                    <li><span>Year :</span><span>@Model.FullName</span></li>
+                                    <li><span>Make :</span><span>@Model.Make</span></li>
+                                    <li><span>Model :</span><span>@Model.Model</span></li>
+                                    <li><span>Vehicle Identification Number (VIN) :</span><span>@Model.VIN</span></li>
+                                    <li><span>Current odometer reading :</span><span>@Model.COR</span></li>
+                                    <li><span> odometer reading reflect :</span><span>@Model.CORType</span></li>
+                                    <li><span>Vehicle month/year :</span><span>@Model.VehiclePurchaseMoth/@Model.Year</span></li>
+                                    <li><span>State :</span><span>@Model.TitleState</span></li>
+                                    <li><span>vehicle located :</span><span>@Model.VehicleLocated</span></li>
+                                    <li><span>Reserve :</span><span>@Model.Reserve</span></li>
+                                </ul>
+                            </div>
+                            <div class="single-widget">
+                                <h5 class="wdget-title wdget-title2">Bid Now</h5>
+                                <p class="widget-subtitle">Bid Amount : Minimum Bid 20.00$</p>
                                 <div class="widget-form">
                                     <div class="form-group d-flex justify-content-center align-items-center">
                                         <input type="text" placeholder="$00.00" id="txtBidAmount">
@@ -197,39 +177,39 @@
                                     </div>
 
                                 </div>
-                        </div>
-                        <div class="single-widget">
-                            <h5 class="wdget-title">Bidding History</h5>
-                            <div class="bidding-item gap-sm-4 gap-2">
-                                <div class="bidding-img">
-                                    <img src="assets/images/buyer/bid-histo1.png" alt="">
-                                </div>
-                                <div class="bidding-content">
-                                    <h6><a href="winner.html">Robart FOX</a></h6>
-                                    <p>Bid 23 minutes ago for 24.5$</p>
-                                </div>
                             </div>
-                            <div class="bidding-item gap-sm-4 gap-2">
-                                <div class="bidding-img">
-                                    <img src="assets/images/buyer/bid-histo2.png" alt="">
+                            <div class="single-widget">
+                                <h5 class="wdget-title">Bidding History</h5>
+                                <div class="bidding-item gap-sm-4 gap-2">
+                                    <div class="bidding-img">
+                                        <img src="assets/images/buyer/bid-histo1.png" alt="">
+                                    </div>
+                                    <div class="bidding-content">
+                                        <h6><a href="winner.html">Robart FOX</a></h6>
+                                        <p>Bid 23 minutes ago for 24.5$</p>
+                                    </div>
                                 </div>
-                                <div class="bidding-content">
-                                    <h6><a href="winner.html">Leslie Alexander</a></h6>
-                                    <p>Bid 23 minutes ago for 24.5$</p>
+                                <div class="bidding-item gap-sm-4 gap-2">
+                                    <div class="bidding-img">
+                                        <img src="assets/images/buyer/bid-histo2.png" alt="">
+                                    </div>
+                                    <div class="bidding-content">
+                                        <h6><a href="winner.html">Leslie Alexander</a></h6>
+                                        <p>Bid 23 minutes ago for 24.5$</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="bidding-item gap-sm-4 gap-2">
-                                <div class="bidding-img">
-                                    <img src="assets/images/buyer//bid-hidto3.png" alt="">
-                                </div>
-                                <div class="bidding-content">
-                                    <h6><a href="winner.html">Jane Cooper</a></h6>
-                                    <p>Bid 23 minutes ago for 24.5$</p>
+                                <div class="bidding-item gap-sm-4 gap-2">
+                                    <div class="bidding-img">
+                                        <img src="assets/images/buyer//bid-hidto3.png" alt="">
+                                    </div>
+                                    <div class="bidding-content">
+                                        <h6><a href="winner.html">Jane Cooper</a></h6>
+                                        <p>Bid 23 minutes ago for 24.5$</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 }
             </div>
         </div>
@@ -336,18 +316,15 @@
 
     <!-- =============== best auction end =============== -->
     <!-- =============== footer area start=============== -->
-
     <!-- Custom JavaScript -->
-  @*  <script src="assets/js/main.js"></script>*@
+    @*  <script src="assets/js/main.js"></script>*@
     <script>
-          function SaveBid()
-          {
-             debugger;
+        function SaveBid() {
+            debugger;
             const urlParams = new URLSearchParams(window.location.search);
             const AvId = urlParams.get('AvId');
             var BidAmount = $("#txtBidAmount").val();
-            if (BidAmount=="")
-            {
+            if (BidAmount == "") {
                 swal("Error", "Please enter a valid amount.", "error");
                 return false;
             }
@@ -357,8 +334,7 @@
                 data: { PostId: AvId, amount: BidAmount },
                 dataType: "json",
                 success: function (data) {
-                    if (data == 1)
-                    {
+                    if (data == 1) {
                         swal("Saved!", "Your Bid Has Been Saved Succesfully.", "success");
                         setTimeout(function () {
                             location.reload();
@@ -366,8 +342,7 @@
                         location.href = '~?Home/Index';
                         return true
                     }
-                    else
-                    {
+                    else {
                         swal("Error!", "Something went wrong.", "error");
                         return false;
                     }
@@ -377,9 +352,9 @@
                 }
             });
             return false;
-          }
+        }
     </script>
-    
+
 </body>
 
 </html>

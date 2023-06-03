@@ -10,6 +10,7 @@ namespace AMSModels
     {
         public Guid Id { get; set; }
         public string ImagePath { get; set; }
-        public string AddVehicleId { get; set; }
+        public Guid? AddVehicleId { get; set; }
+        public AddVehicle? AddVehicle { get; set; }
     }
 }

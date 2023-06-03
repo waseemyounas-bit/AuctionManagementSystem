@@ -1,8 +1,10 @@
-﻿@model List<AddVehicleView>
+﻿@model List<AddVehicle>
 @using Microsoft.AspNetCore.Http
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 ﻿@{
     ViewData["Title"] = "Auctions";
+    var appovedVehicels=Model.Where(x=>x.IsApproved=="1").ToList();
+    var pendingVehicles = Model.Where(x => x.IsApproved == "0").ToList();
 }
 @if (@HttpContextAccessor.HttpContext.Session.GetString("Succesmsg") != null)
 {
@@ -272,9 +274,9 @@ background-image: url('/images/img/bg1.jpeg');"></div>
         </div>
 
         <div class="row g-4">
-            @if (Model.Count() > 0)
+            @if (appovedVehicels.Count() > 0)
             {
-                foreach (var item in Model)
+                foreach (var item in appovedVehicels)
                 {
                     <div class="col-lg-4 col-md-6 ">
                         <div class="product-card product-beta-md">
@@ -284,7 +286,7 @@ background-image: url('/images/img/bg1.jpeg');"></div>
                             </div>
 
                             <div class="product">
-                                <img src="@Url.Content(item.ImagePath)">
+                                <img src="@Url.Content(item.VehicleImages?.FirstOrDefault().ImagePath)">
                                 <div class="id"><span>ID 0195687</span></div>
                             </div>
 
@@ -325,32 +327,35 @@ background-image: url('/images/img/bg1.jpeg');"></div>
         </div>
 
         <div class="row g-4">
-            @foreach (var item in (IEnumerable<AddVehicleView>)TempData["employee"])
+            @if (pendingVehicles.Count > 0)
             {
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="product-card product-beta-sm">
-                        <div class="product">
-                            <img src="@Url.Content(item.ImagePath)">
-                            <div class="id"><span>@item.FullName</span></div>
-                        </div>
+                foreach (var item in pendingVehicles)
+                {
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="product-card product-beta-sm">
+                            <div class="product">
+                                <img src="@Url.Content(item.VehicleImages?.FirstOrDefault().ImagePath)">
+                                <div class="id"><span>@item.FullName</span></div>
+                            </div>
 
-                        <div class="product-disc">
-                            <h6 class="product-title"> <a href="AuctionDetails">@item.FullName @item.Year</a> </h6>
+                            <div class="product-disc">
+                                <h6 class="product-title"> <a href="AuctionDetails">@item.FullName @item.Year</a> </h6>
 
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$1,279</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown11">
-                                    <h6>  </h6>
-                                    <span>Pending for approval</span>
+                                <div class="product-acution">
+                                    <div class="cv">
+                                        <span>current Bid</span>
+                                        <h6>$1,279</h6>
+                                    </div>
+                                    <div class="countdown" id="week-countdown11">
+                                        <h6>  </h6>
+                                        <span>Pending for approval</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
+                }
             }
         </div>
     </div>

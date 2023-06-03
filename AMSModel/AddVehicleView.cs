@@ -70,5 +70,6 @@ namespace AMSModels
         public string ImagePath { get; set; } = "0";
         //[NotMapped]
         //public IFormFile Images { get; set; }
+        public List<VehicleImages>? VehicleImages { get; set; }
     }
 }

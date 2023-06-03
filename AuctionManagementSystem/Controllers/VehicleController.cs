@@ -78,7 +78,6 @@ namespace AuctionManagementSystem.Controllers
                 };
                 UOW.AddVehicle().Insert(advv);
                 UOW.Save();
-                string MyId = advv.AvId.ToString();
                 foreach (var imageFile in ad.Images)
                 {
                     if (imageFile.Length > 0)
@@ -95,7 +94,7 @@ namespace AuctionManagementSystem.Controllers
                             VehicleImages vi = new()
                             {
                                 ImagePath = "~/media/"+ NewGuid + "_" + imageFile.FileName,
-                                AddVehicleId = MyId
+                                AddVehicleId = advv.AvId
                             };
                             UOW.AddVehicleImage().Insert(vi);
                             UOW.Save();
@@ -119,9 +118,10 @@ namespace AuctionManagementSystem.Controllers
         }
         public IActionResult AuctionDetails(Guid AvId)
         {
-            
-            List<AddVehicleView> ad = UOW.GetVehicleIngo(AvId);
-            return View(ad);
+
+            AddVehicle vehicle = UOW.AddVehicle().GetById(AvId);
+            vehicle.VehicleImages=UOW.AddVehicleImage().GetAll().Where(x=>x.AddVehicleId==AvId).ToList();
+            return View(vehicle);
         }
         [HttpPost]
         public IActionResult SaveBid(string PostId,string amount)

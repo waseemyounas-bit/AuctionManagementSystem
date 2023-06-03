@@ -3,6 +3,7 @@ using AuctionManagementSystem.Models;
 using DataAccess.UnitOfWork;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Net.Mail;
 
@@ -21,9 +22,8 @@ namespace AuctionManagementSystem.Controllers
 		public IActionResult Index()
 		{
             //HttpContextAccessor.HttpContext.session["Succesmsg"];
-            List<AddVehicleView> ad = UOW.GetVehicleInFo();
-            TempData["employee"] = UOW.GetPendingVehicleInfo();
-            return View(ad);
+            List<AddVehicle> approvedVehicles = UOW.AddVehicle().GetAll().Include(x => x.VehicleImages).ToList();
+            return View(approvedVehicles);
 		}
 		public IActionResult Contact()
 		{

@@ -22,10 +22,9 @@ namespace DataAccess.GenericRepository
             return true;
         }
 
-        public IEnumerable<T> GetAll()
+        public IQueryable<T> GetAll()
         {
-            List<T> list=db.Set<T>().ToList();
-            return list;
+            return db.Set<T>();
         }
 
         public T GetById(Guid Id)

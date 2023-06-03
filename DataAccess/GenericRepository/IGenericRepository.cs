@@ -8,7 +8,7 @@ namespace DataAccess.GenericRepository
 {
     public interface IGenericRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
+        IQueryable<T> GetAll();
         T GetById(Guid Id);
         T Insert(T obj);
         T Update(T obj);
