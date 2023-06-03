@@ -230,24 +230,28 @@
                                 <h4 class="price">@item.Make</h4>
                         </div>
 
-                        @*<div class="product">
+                        <div class="product">
                                 <img src="@Url.Content(item.VehicleImages.FirstOrDefault().ImagePath)">
                             <div class="id"><span>ID 0195667</span></div>
                         </div>
-*@
+
                         <div class="product-disc">
                             <div class="product-acution">
                                 <div class="cv">
                                     <span>current Bid</span>
-                                    @*@if(item.Bids.Count()>0)
+                                    @if(item.Bids.Count()>0)
                                         {
                                             <h6>@item.Bids.FirstOrDefault().BidAmount.ToUpper()</h6>
-                                        }*@
-                                </div>
-                                <div class="countdown" id="week-countdown1">
-                                    <h6>&nbsp;</h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="countdown" id="week-countdown1">
+                                                <h6>&nbsp;</h6>
+                                                <span>Waiting For Bid</span>
+                                            </div>
+                                        }
+                                    </div>
+                            
                             </div>
 
                                 <a href="~/Vehicle/AuctionDetails?AvId=@item.AvId" class="bid-btn">Submit A Bid</a>
