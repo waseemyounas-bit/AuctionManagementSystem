@@ -39,7 +39,7 @@ namespace DataAccess.Data
         {
           
             modelBuilder.Entity<AddVehicle>().HasKey(x => x.AvId);
-            modelBuilder.Entity<PlaceBid>().HasKey(x => x.BidId);
+            modelBuilder.Entity<PlaceBid>().HasKey(x => x.Id);
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<User>().HasData(
                 new User

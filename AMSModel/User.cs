@@ -19,5 +19,6 @@ namespace AMSModels
 		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 		public int RoleId { get; set; }
 		public int IsApproved { get; set; } = 1;
+		public List<AddVehicle>? Vehicles { get; set; }
     }
 }

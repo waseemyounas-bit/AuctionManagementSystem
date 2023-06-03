@@ -4,6 +4,7 @@ using DataAccess.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20230603154429_initial")]
+    partial class initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -72,9 +75,6 @@ namespace DataAccess.Migrations
                     b.Property<string>("TitleStatus")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid?>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("VDamage")
                         .HasColumnType("nvarchar(max)");
 
@@ -130,8 +130,6 @@ namespace DataAccess.Migrations
 
                     b.HasKey("AvId");
 
-                    b.HasIndex("UserId");
-
                     b.ToTable("AddVehicle");
                 });
 
@@ -173,9 +171,6 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("BidTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid?>("Userid")
@@ -230,7 +225,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 6, 3, 16, 18, 20, 259, DateTimeKind.Utc).AddTicks(397),
+                            CreatedAt = new DateTime(2023, 6, 3, 15, 44, 28, 953, DateTimeKind.Utc).AddTicks(283),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
@@ -257,15 +252,6 @@ namespace DataAccess.Migrations
                     b.HasIndex("AddVehicleId");
 
                     b.ToTable("VehicleImages");
-                });
-
-            modelBuilder.Entity("AMSModels.AddVehicle", b =>
-                {
-                    b.HasOne("AMSModels.User", "User")
-                        .WithMany("Vehicles")
-                        .HasForeignKey("UserId");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("AMSModels.PlaceBid", b =>
@@ -297,11 +283,6 @@ namespace DataAccess.Migrations
                     b.Navigation("Bids");
 
                     b.Navigation("VehicleImages");
-                });
-
-            modelBuilder.Entity("AMSModels.User", b =>
-                {
-                    b.Navigation("Vehicles");
                 });
 #pragma warning restore 612, 618
         }

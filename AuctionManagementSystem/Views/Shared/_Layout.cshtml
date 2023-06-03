@@ -101,7 +101,7 @@
                                 <li class="has-child-menu">
                                     <a href="javascript:void(0)">Account</a>
                                     <ul class="sub-menu">
-                                        @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") == "")
+                                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") == null)
                                         {<li><a href="Account/Login">login</a></li>
                                         <li><a href="Account/Register">SignUp</a></li>
                                         }

@@ -172,7 +172,7 @@
                                 <div class="widget-form">
                                     <div class="form-group d-flex justify-content-center align-items-center">
                                         <input type="text" placeholder="$00.00" id="txtBidAmount">
-                                        <button class="widget-btn" id="btn_PlaceBid" onclick="SaveBid()">Place Bid</button>
+                                        <button class="widget-btn" id="btn_PlaceBid" onclick="SaveBid('@Model.AvId')">Place Bid</button>
 
                                     </div>
 
@@ -180,33 +180,22 @@
                             </div>
                             <div class="single-widget">
                                 <h5 class="wdget-title">Bidding History</h5>
-                                <div class="bidding-item gap-sm-4 gap-2">
-                                    <div class="bidding-img">
-                                        <img src="assets/images/buyer/bid-histo1.png" alt="">
-                                    </div>
-                                    <div class="bidding-content">
-                                        <h6><a href="winner.html">Robart FOX</a></h6>
-                                        <p>Bid 23 minutes ago for 24.5$</p>
-                                    </div>
-                                </div>
-                                <div class="bidding-item gap-sm-4 gap-2">
-                                    <div class="bidding-img">
-                                        <img src="assets/images/buyer/bid-histo2.png" alt="">
-                                    </div>
-                                    <div class="bidding-content">
-                                        <h6><a href="winner.html">Leslie Alexander</a></h6>
-                                        <p>Bid 23 minutes ago for 24.5$</p>
-                                    </div>
-                                </div>
-                                <div class="bidding-item gap-sm-4 gap-2">
-                                    <div class="bidding-img">
-                                        <img src="assets/images/buyer//bid-hidto3.png" alt="">
-                                    </div>
-                                    <div class="bidding-content">
-                                        <h6><a href="winner.html">Jane Cooper</a></h6>
-                                        <p>Bid 23 minutes ago for 24.5$</p>
-                                    </div>
-                                </div>
+                                @if (Model.Bids.Count>0)
+                                {
+                                    foreach (var item in Model.Bids)
+                                    {
+                                        <div class="bidding-item gap-sm-4 gap-2">
+                                            @*<div class="bidding-img">
+                                                <img src="assets/images/buyer/bid-histo1.png" alt="">
+                                            </div>*@
+                                            <div class="bidding-content">
+                                                <h6><a href="winner.html">@item.User.FullName</a></h6>
+                                                <p>Bid Amount: <b>$@item.BidAmount</b></p>
+                                                <p>Dated: <b>@item.CreatedDate.ToLongDateString()</b></p>
+                                            </div>
+                                        </div>
+                                    }
+                                }
                             </div>
                         </div>
                     </div>
@@ -319,10 +308,8 @@
     <!-- Custom JavaScript -->
     @*  <script src="assets/js/main.js"></script>*@
     <script>
-        function SaveBid() {
+        function SaveBid(Id) {
             debugger;
-            const urlParams = new URLSearchParams(window.location.search);
-            const AvId = urlParams.get('AvId');
             var BidAmount = $("#txtBidAmount").val();
             if (BidAmount == "") {
                 swal("Error", "Please enter a valid amount.", "error");
@@ -331,7 +318,7 @@
             $.ajax({
                 type: "POST",
                 url: "/Vehicle/SaveBid",
-                data: { PostId: AvId, amount: BidAmount },
+                data: { VehicleId: Id, amount: BidAmount },
                 dataType: "json",
                 success: function (data) {
                     if (data == 1) {
@@ -339,8 +326,6 @@
                         setTimeout(function () {
                             location.reload();
                         }, 3000);
-                        location.href = '~?Home/Index';
-                        return true
                     }
                     else {
                         swal("Error!", "Something went wrong.", "error");

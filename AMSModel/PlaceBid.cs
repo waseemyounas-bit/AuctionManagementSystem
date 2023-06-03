@@ -9,9 +9,13 @@ namespace AMSModels
     public class PlaceBid
     {
         public Guid Id { get; set; }
-        public string? Userid { get; set; }
+        public Guid? Userid { get; set; }
+        public User? User { get; set; }
         public string? BidAmount { get; set; }
         public DateTime BidTime { get; set; } =DateTime.Now;
-        public string BidId { get; set; }
+        public Guid? VehicleId { get; set; }
+        public AddVehicle? AddVehicle { get; set; }
+        public DateTime CreatedDate { get; set; }=DateTime.Now;
+
     }
 }

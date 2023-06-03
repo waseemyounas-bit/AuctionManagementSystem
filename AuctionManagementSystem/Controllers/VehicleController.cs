@@ -4,6 +4,7 @@ using DataAccess.UnitOfWork;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 
 namespace AuctionManagementSystem.Controllers
@@ -118,28 +119,45 @@ namespace AuctionManagementSystem.Controllers
         }
         public IActionResult AuctionDetails(Guid AvId)
         {
-
+            if (HttpContext.Session.GetString("UserId")==null)
+            {
+                return RedirectToAction("Login","Account");
+            }
             AddVehicle vehicle = UOW.AddVehicle().GetById(AvId);
             vehicle.VehicleImages=UOW.AddVehicleImage().GetAll().Where(x=>x.AddVehicleId==AvId).ToList();
+            vehicle.Bids = UOW.AddBid().GetAll().Include(x=>x.User).Where(x => x.VehicleId == AvId).ToList();
             return View(vehicle);
         }
         [HttpPost]
-        public IActionResult SaveBid(string PostId,string amount)
+        public IActionResult SaveBid(Guid VehicleId,string amount)
         {
-            if (PostId == "")
+            if (VehicleId == Guid.Empty)
             {
                 return Json(-1);
             }
             else
             {
-                Guid guid = new Guid();
+                var userId = new Guid(HttpContext.Session.GetString("UserId"));
+                var vehicle = UOW.AddVehicle().GetById(VehicleId);
+                if (vehicle.UserId==userId)
+                {
+                    return Json(0);
+                }
+                var exist = UOW.AddBid().GetAll().Where(x => x.Userid == userId && x.VehicleId == VehicleId).FirstOrDefault();
+                if (exist != null)
+                {
+                    exist.BidAmount = amount;
+                    UOW.AddBid().Update(exist);
+                    UOW.Save();
+                    return Json(1);
+                }
                 PlaceBid placebid = new PlaceBid()
                 {
-                    Id = guid,
+                    Id = Guid.NewGuid(),
                     BidAmount = amount,
                     BidTime = DateTime.Now,
-                    Userid = "Super Admin",
-                    BidId = PostId,
+                    Userid = userId,
+                    VehicleId = VehicleId
                 }
                 ;
                 UOW.AddBid().Insert(placebid);

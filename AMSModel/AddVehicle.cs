@@ -65,5 +65,8 @@ namespace AMSModels
         public string IsApproved { get; set; } = "0";
         public Guid AvId { get; set; }
         public List<VehicleImages>? VehicleImages { get; set; }
+        public List<PlaceBid>? Bids { get; set; }
+        public Guid? UserId { get; set; }
+        public User? User { get; set; }
     }
 }

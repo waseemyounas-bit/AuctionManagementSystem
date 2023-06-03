@@ -69,6 +69,7 @@ namespace AuctionManagementSystem.Controllers
                        
                     }
                     HttpContext.Session.SetString("UserName", UserName);
+                    HttpContext.Session.SetString("UserId", user.Id.ToString());
                     if (user.RoleId == 1)
                     {
                         return RedirectToAction("Index", "Admin");
@@ -112,6 +113,8 @@ namespace AuctionManagementSystem.Controllers
                 UOW.Save();
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
                 _notyf.Custom("Request Send For Approval.", 10, "#B600FF", "fa fa-home");
+                HttpContext.Session.SetString("UserName", us.Email);
+                HttpContext.Session.SetString("UserId", us.Id.ToString());
                 return RedirectToAction("Index", "Home");
             }
             return View(us);
