@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuctionManagementSystem
 build_property.RootNamespace = AuctionManagementSystem
-build_property.ProjectDir = F:\FivProjects\BiddingSystem\AuctionManagementSystem\AuctionManagementSystem\
+build_property.ProjectDir = C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = F:\FivProjects\BiddingSystem\AuctionManagementSystem\AuctionManagementSystem
+build_property.MSBuildProjectDirectory = C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem
 build_property._RazorSourceGeneratorDebug = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Account/Login.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Account/register.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Account/register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxyZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/Details.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/GetAllUsers.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/GetAllUsers.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsVXNlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/GetAllVehicles.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/GetAllVehicles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cR2V0QWxsVmVoaWNsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/Index.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Contact.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Index.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Privacy.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/Error.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_AdminLayout.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_Alert.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_Alert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BbGVydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/AddVehicle.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/AddVehicle.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxBZGRWZWhpY2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/AuctionDetails.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/AuctionDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxBdWN0aW9uRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/CarAuctionDetails.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/CarAuctionDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxDYXJBdWN0aW9uRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/VehicleAuction.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/VehicleAuction.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVxWZWhpY2xlQXVjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/vehiclesubmission.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Vehicle/vehiclesubmission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVoaWNsZVx2ZWhpY2xlc3VibWlzc2lvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/_ViewImports.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/_ViewStart.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[F:/FivProjects/BiddingSystem/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_Layout.cshtml]
+[C:/Users/Shahbaz/Documents/GitHub/AuctionManagementSystem/AuctionManagementSystem/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-fv0gmk5ibr
