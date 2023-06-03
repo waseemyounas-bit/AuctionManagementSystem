@@ -82,7 +82,7 @@ namespace DataAccess.UnitOfWork
             param.Add("@p0", name, DbType.String);
             param.Add("@p1", message, DbType.String);
             param.Add("@p2", email, DbType.String);
-             var insertedCustomers= con.Query<int>("INSERT INTO [ContactMe] ([Email], [FullName], [Message]) VALUES (@p0, @p1, @p2)", param, null, true, 0, CommandType.Text);
+             var insertedCustomers= con.Query<int>("INSERT INTO [ContactMe] ([FullName],[Email], [Message]) VALUES (@p0, @p1, @p2)", param, null, true, 0, CommandType.Text);
             return insertedCustomers.Count();
         }
         public void Save()

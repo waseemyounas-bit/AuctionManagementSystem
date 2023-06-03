@@ -4,6 +4,7 @@ using DataAccess.UnitOfWork;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Net.Mail;
 
 namespace AuctionManagementSystem.Controllers
 {
@@ -27,7 +28,7 @@ namespace AuctionManagementSystem.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Contact(string name, string message, string email)
+        public IActionResult Contact(string name, string email, string message)
         {
             if (name == "" || name==null)
             {
@@ -35,7 +36,7 @@ namespace AuctionManagementSystem.Controllers
             }
             else
             {
-                UOW.ContactMe(name, message, email);
+               int i= UOW.ContactMe(name, email,message);
                 return Json(1);
             }
         }
