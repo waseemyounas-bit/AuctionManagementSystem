@@ -1227,3 +1227,4 @@ C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSyste
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\AuctionManagementSystem.pdb
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\AuctionManagementSystem.genruntimeconfig.cache
 C:\Users\Shahbaz\Documents\GitHub\AuctionManagementSystem\AuctionManagementSystem\obj\Debug\net7.0\ref\AuctionManagementSystem.dll
+F:\FivProjects\BiddingSystem\AuctionManagementSystem\AuctionManagementSystem\bin\Debug\net7.0\Dapper.dll

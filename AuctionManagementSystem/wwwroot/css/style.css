@@ -544,7 +544,7 @@ input, .comment-form textarea {
 }
 
 .breadcrumb-style-one {
-    background-image: linear-gradient(rgba(0, 1, 13, 0.8), rgba(0, 1, 13, 0.8)),url("../images/banner/breadcrumb-bg.png");
+    background-image: linear-gradient(rgba(0, 1, 13, 0.8), rgba(0, 1, 13, 0.8)),url("/images/img/bg2.jpeg");
     background-size: cover;
     padding-bottom: 230px;
     padding-top: 220px;
@@ -6216,7 +6216,7 @@ header.sticky-header {
 }
 
 .register-left-area {
-    background-image: url("../images/image-group/login-bg.png");
+    background-image: url("/images/img/bg3.jpeg");
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;

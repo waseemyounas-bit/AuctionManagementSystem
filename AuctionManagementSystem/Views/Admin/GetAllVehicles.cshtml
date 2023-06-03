@@ -38,6 +38,7 @@
                                     <th>Model</th>
                                     <th>COR</th>
                                     <th>COR Type</th>
+                                    <th>Appoved</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
@@ -55,7 +56,22 @@
                                             <td>@item.COR</td>
                                             <td>@item.CORType</td>
                                             <td>
-                                                <a href="@Url.Action("CheckDetials","Home",new{Id=item.AvId})" class="btn btn-info">Details </a>
+                                                @if (item.IsApproved == "0")
+                                                {
+                                                    <p class="badge badge-warning">Pending</p>
+                                                }
+                                                else if(item.IsApproved=="-1")
+                                                {
+                                                    <p class="badge badge-danger"> Approved</p>
+                                                }
+                                                else
+                                                {
+                                                    <p class="badge badge-success"> Approved</p>
+                                                }
+
+                                            </td>
+                                            <td>
+                                                <a href="@Url.Action("GetVehicleDetails","Admin",new{Id=item.AvId})" class="btn btn-info">Details </a>
                                             </td>
                                         </tr>
                                     }

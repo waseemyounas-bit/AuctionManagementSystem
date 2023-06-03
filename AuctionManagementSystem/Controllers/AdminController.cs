@@ -33,7 +33,15 @@ namespace AuctionManagementSystem.Controllers
         public IActionResult GetVehicleDetails(Guid Id)
         {
             AddVehicle vehicle=UOW.AddVehicle().GetById(Id);
-            return View(vehicle);
+            return View("Details",vehicle);
+        }
+        public IActionResult ApproveVehicle(Guid Id)
+        {
+            AddVehicle vehicle=UOW.AddVehicle().GetById(Id);
+            vehicle.IsApproved = "1";
+            UOW.AddVehicle().Update(vehicle);
+            UOW.Save();
+            return RedirectToAction("GetAllVehicles");
         }
     }
 }

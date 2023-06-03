@@ -18,6 +18,6 @@ namespace AMSModels
 		public string? Password { get; set; }
 		public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 		public int RoleId { get; set; }
-        public int IsApproved { get; set; }
+		public int IsApproved { get; set; } = 1;
     }
 }

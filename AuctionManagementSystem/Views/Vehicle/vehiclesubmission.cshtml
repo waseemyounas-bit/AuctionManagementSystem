@@ -142,12 +142,12 @@
         <div class="row">
             <div class="col-lg-5">
                 <div class="contact-box-wrap">
-                    <h4>Note:</h4>
 
                     <div class="single-contact-box">
                         <h6>Let’s Talk</h6>
-                        <a href="mailto:info@example.com" class="mail">info@example.com</a> <a href="mailto:support@example.com" class="mail">support@example.com</a>
-                        <a href="tel:8801761111456" class="phone">+88 0176 1111 456</a>
+                        <a href="#" class="location">
+                            <p>Please submit this initial form to provide us with basic information about your vehicle. We typically reply within one business day, and might ask some additional questions to confirm if your vehicle is a good fit for auction.</p>
+                        </a>
                     </div>
                     <div class="single-contact-box">
                         <h6>Loacation.</h6>
@@ -160,11 +160,10 @@
                     </div>
                 </div>
             </div>
-           
+
             <div class="col-lg-7 mt-5 mt-lg-0">
                 <div class="contact-form">
                     <h4>Vehicle Information</h4>
-                    <h4>Your Info</h4>
                     <form action="vehiclesubmission" id="contact_form" method="post" enctype="multipart/form-data">
 
                         @if (TempData["pesan"] != null)
@@ -182,7 +181,7 @@
                             <input type="text" name="ImagePath" value="@Model.ImagePath" style="display:none">
                             @Html.ValidationMessageFor(x=>x.FullName,string.Empty,new {@class="text-danger"})
                         </div>
-                        <h3>Vehicle Details</h3>
+                        <h4>Vehicle Details</h4>
                         <div class="contact-input-group">
                             <label for="first-Name">Year</label>
                             <input type="number" placeholder="Enter year" name="Year" value="@Model.Year">
@@ -349,7 +348,7 @@
                         @*TITLE sTATUS*@
                         <div class="contact-input-group">
                             <label for="drop">State</label>
-                            <select class="form-select" aria-label="Default select example" name="VehicleLocated" >
+                            <select class="form-select" aria-label="Default select example" name="VehicleLocated">
                                 <option selected value="0">Select State</option>
                                 <option>Albama</option>
                                 <option>Alaska</option>

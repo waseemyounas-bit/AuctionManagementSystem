@@ -66,9 +66,13 @@ namespace AuctionManagementSystem.Controllers
                         //Roles.Add(principle);
                         var claims = principle.Claims;
                         var login = HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principle);
-                        return RedirectToAction("Index", "Home");
+                       
                     }
                     HttpContext.Session.SetString("UserName", UserName);
+                    if (user.RoleId == 1)
+                    {
+                        return RedirectToAction("Index", "Admin");
+                    }
                     return RedirectToAction("Index", "Home");
                 }
                 else
@@ -92,26 +96,30 @@ namespace AuctionManagementSystem.Controllers
             {
                 //_notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
             }
-                return View(us);
+            return View(us);
         }
         [HttpPost]
         public IActionResult Register(User us)
         {
             if (ModelState.IsValid)
             {
-                us.IsApproved = 0;
-                    UOW.UserRepository().Insert(us);
+                UOW.UserRepository().Insert(us);
                 //Delete that post
                 //UOW.UserRepository().Update(us);
 
                 //Commit the transaction
                 TempData["Succes"] = "Request Save Scussfully.";
-                    UOW.Save();
+                UOW.Save();
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
                 _notyf.Custom("Request Send For Approval.", 10, "#B600FF", "fa fa-home");
                 return RedirectToAction("Index", "Home");
             }
             return View(us);
+        }
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
     }
 }

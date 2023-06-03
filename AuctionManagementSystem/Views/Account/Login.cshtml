@@ -36,7 +36,7 @@
                     <div class="register-left-area style2">
                         <h3>Hello Again</h3>
                         <p>Wellcome Back You’ve Been Missed</p>
-                        <a href="index.html" class="transparent-btn">Back Home</a>
+                        <a asp-action="Index" asp-controller="Home" class="transparent-btn">Back Home</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -48,7 +48,7 @@
                             {
                                 <script type="text/javascript">
                                     window.onload = function () {
-                                        swal("Request Save Succefully!", '@TempData["pesan"]', "error");
+                                        swal("Error!", '@TempData["error"]', "error");
                                     };
                                 </script>
                             }

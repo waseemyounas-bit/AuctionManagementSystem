@@ -21,7 +21,7 @@ namespace DataAccess.UnitOfWork
 		{
 			_context = context;
 		}
-        string connectionString = "Data Source=DEVELOPMENT-PC;Initial Catalog=NFT2;Integrated Security=True;TrustServerCertificate=True";
+        string connectionString = "Server=localhost;Database=Bidding_db;Trusted_Connection=True;TrustServerCertificate=True;";
        
 
         public GenericRepository<User> UserRepository()
@@ -60,8 +60,7 @@ namespace DataAccess.UnitOfWork
         //}
         public User Authentication(string UserName, string password)
 		{
-			Dictionary<Guid, string> dic = new Dictionary<Guid, string>();
-			User user = _context.Users.Where(x => x.FullName == UserName && x.Password == password && x.IsApproved==1).FirstOrDefault();
+			User user = _context.Users.Where(x => x.Email == UserName && x.Password == password && x.IsApproved==1).FirstOrDefault();
 			return user;
 		}
         public List<AddVehicleView> GetVehicleIngo(Guid Avid)

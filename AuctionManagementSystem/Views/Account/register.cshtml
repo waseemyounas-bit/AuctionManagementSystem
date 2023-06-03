@@ -30,9 +30,9 @@
             <div class="row gy-4">
                 <div class="col-lg-6">
                     <div class="register-left-area">
-                        <h3>Hello Again</h3>
-                        <p>Wellcome Back You’ve Been Missed</p>
-                        <a href="index.html" class="transparent-btn">Back Home</a>
+                        <h3>Welcome</h3>
+                        <p>You are one step away.</p>
+                        <a asp-action="Index" asp-controller="Home" class="transparent-btn">Back Home</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -71,13 +71,12 @@
                             </div>
                             <button class="account-btn">CREATE AN ACCOUNT</button>
                         </form>
-                        <div class="alternate-signup-box">
-                            <h6>or Sign up WITH</h6>
-                            <div class="btn-group gap-4">
-                                <a href="" class="google-btn d-flex align-items-center"><i class='bx bxl-google'></i><span>Signup whit google</span></a>
-                                <a href="" class="facebook-btn d-flex align-items-center"><i class='bx bxl-facebook'></i>Sign up whit facebook</a>
-                            </div>
+                    <div class="alternate-signup-box">
+                        <h6>Already have account?</h6>
+                        <div class="btn-group gap-4">
+                            <a class="account-btn"  asp-action="Login">Login</a>
                         </div>
+                    </div>
                     </div>
                 </div>
             </div>

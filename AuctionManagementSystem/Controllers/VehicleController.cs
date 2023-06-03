@@ -8,13 +8,13 @@ using Microsoft.Extensions.Hosting;
 
 namespace AuctionManagementSystem.Controllers
 {
-    public class Vehicle : SuperController
+    public class VehicleController : SuperController
     {
         private IHttpContextAccessor httpContextAccessor;
         private IUOW UOW;
         private readonly IWebHostEnvironment webHostEnvironment;
         private readonly INotyfService _notyf;
-        public Vehicle(IHttpContextAccessor httpContext, IUOW _uow, IWebHostEnvironment _webHostEnvironment, INotyfService notyf) : base(httpContext, _uow)
+        public VehicleController(IHttpContextAccessor httpContext, IUOW _uow, IWebHostEnvironment _webHostEnvironment, INotyfService notyf) : base(httpContext, _uow)
         {
             httpContextAccessor = httpContext;
             UOW = _uow;

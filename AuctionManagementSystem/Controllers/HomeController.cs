@@ -19,8 +19,10 @@ namespace AuctionManagementSystem.Controllers
 
 		public IActionResult Index()
 		{
-			//HttpContextAccessor.HttpContext.session["Succesmsg"];
-            return View();
+            //HttpContextAccessor.HttpContext.session["Succesmsg"];
+            List<AddVehicleView> ad = UOW.GetVehicleInFo();
+            TempData["employee"] = UOW.GetPendingVehicleInfo();
+            return View(ad);
 		}
 		public IActionResult Contact()
 		{

@@ -87,7 +87,7 @@
                             </div>
                             <ul>
                                 <li><a asp-action="Index" asp-controller="Home">Auctions</a></li>
-                                @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") == "")
+                                @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") != "")
                                 {
                                     <li><a asp-action="vehiclesubmission" asp-controller="Vehicle">Sell A Car</a></li>
                                 }
@@ -98,8 +98,22 @@
                               
                                 <li><a asp-action="About" asp-controller="Home">About</a></li>
                                 <li><a asp-action="Contact" asp-controller="Home">contact</a></li>
-                                <li><a asp-action="Login" asp-controller="Account">Login/SignUp</a></li>
                                 <li class="has-child-menu">
+                                    <a href="javascript:void(0)">Account</a>
+                                    <ul class="sub-menu">
+                                        @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") == "")
+                                        {<li><a href="Account/Login">login</a></li>
+                                        <li><a href="Account/Register">SignUp</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a asp-action="Logout" asp-controller="Account">Logout</a></li>
+                                        }
+                                        
+                                        
+                                    </ul>
+                                </li>
+                                @*<li class="has-child-menu">
                                     <a href="javascript:void(0)">Home</a>
                                     <i class="fl flaticon-plus">+</i>
                                     <ul class="sub-menu">
@@ -109,34 +123,7 @@
                                         <li><a href="index-art-light.html">Home Light-art</a></li>
                                         <li><a href="index-art-dark.html">Home Dark-art</a></li>
                                     </ul>
-                                </li>
-
-                                <li class="has-child-menu">
-                                    <a href="javascript:void(0)">auction</a>
-                                    <i class="fl flaticon-plus">+</i>
-                                    <ul class="sub-menu">
-                                        <li><a href="~/Vehicle/VehicleAuction">auction</a></li>
-                                        <li><a href="auction-details.html">auction details</a></li>
-                                    </ul>
-                                </li>
-                              
-                                <li class="has-child-menu">
-                                    <a href="javascript:void(0)">SignUp/Login</a>
-                                    <i class="fl flaticon-plus">+</i>
-                                    <ul class="sub-menu">
-                                        @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") == "")
-                                        {
-                                        }
-                                        else
-                                        {
-                                            <li><a href="blog-details.html">Logout</a></li>
-                                        }
-                                        <li><a href="Account/Login">login</a></li>
-                                        <li><a href="Account/Register">SignUp</a></li>
-                                        
-                                    </ul>
-                                </li>
-                                <li><a asp-action="Contact" asp-controller="Home">Contact</a></li>
+                                </li>*@
                             </ul>
 
                             <div class="contact-mail inner-contact-mail mt-5 d-block d-xl-none">
