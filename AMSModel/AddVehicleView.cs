@@ -56,7 +56,8 @@ namespace AMSModels
         public string? VSeller { get; set; }
         public string? DealerName { get; set; }
         public string? OwnerDetails { get; set; }
-        public String Vtitled { get; set; }
+        public string sellerType { get; set; }
+        public string Vtitled { get; set; }
         public string? VtitledRemarks { get; set; }
         public string? TitleStatus { get; set; }
         public string? TitleState { get; set; }

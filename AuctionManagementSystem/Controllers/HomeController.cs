@@ -27,7 +27,13 @@ namespace AuctionManagementSystem.Controllers
 		}
 		public IActionResult Contact()
 		{
+
             return View();
+        }
+        public IActionResult About()
+        {
+            List<User> ApprvdUsers = UOW.UserRepository().GetAll().Where(x => x.IsApproved == 1).ToList();  //AddVehicle().GetAll().Include(x => x.VehicleImages).ToList();
+            return View(ApprvdUsers);
         }
         [HttpPost]
         public IActionResult Contact(string name, string email, string message)
