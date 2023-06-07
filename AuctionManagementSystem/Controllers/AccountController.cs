@@ -79,8 +79,8 @@ namespace AuctionManagementSystem.Controllers
                 else
                 {
                     TempData["error"] = "Invalid email or password.";
-                    _notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
-                    AlertMessage("Invalid email or password.", AlertType.Error);
+                    //_notyf.Custom("Invalid email or password.", 10, "#B600FF", "fa fa-home");
+                    //AlertMessage("Invalid email or password.", AlertType.Error);
                     return RedirectToAction("Login", "Account");
                 }
             }

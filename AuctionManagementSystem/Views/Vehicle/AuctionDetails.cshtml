@@ -323,14 +323,18 @@
                 success: function (data) {
                     if (data == 1) {
                         swal("Saved!", "Your Bid Has Been Saved Succesfully.", "success");
-                        setTimeout(function () {
-                            location.reload();
-                        }, 3000);
+                       
+                    }
+                    else if(data==0){
+                        swal("Warning!", "You can not bid on your own vehicle.", "warning");
                     }
                     else {
                         swal("Error!", "Something went wrong.", "error");
                         return false;
-                    }
+                    } 
+                    setTimeout(function () {
+                            location.reload();
+                        }, 3000);
                 },
                 error: function () {
                     swal("Error", "Something went wrong.", "error");

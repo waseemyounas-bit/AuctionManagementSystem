@@ -37920,6 +37920,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\3e39f1a8-7b58-4aa9-9d79-a7c0f1f14ca7_bg9.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\4e171909-b88e-4110-827c-4fc638b07038_bg6.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuctionManagementSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuctionManagementSystem</BasePath>
+      <RelativePath>media/4e171909-b88e-4110-827c-4fc638b07038_bg6.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\4e171909-b88e-4110-827c-4fc638b07038_bg6.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\58cb085b-9840-472d-9599-d508268ec0d6_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AuctionManagementSystem</SourceId>
@@ -37967,6 +37983,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\639cb8df-1ba2-4e2e-96a5-5be335b8c010_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\6a913602-8e36-4304-a06c-973b47d6b35f_bg4.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuctionManagementSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuctionManagementSystem</BasePath>
+      <RelativePath>media/6a913602-8e36-4304-a06c-973b47d6b35f_bg4.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\6a913602-8e36-4304-a06c-973b47d6b35f_bg4.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\735031a1-4d4a-4244-bb58-91278b2bcaf9_bg1.jpeg))">
       <SourceType>Package</SourceType>
@@ -38032,6 +38064,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\cd13dac4-8947-4889-9c12-097b328f8707_bg4.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\d01fbb0c-d9d1-40cc-b32d-70e3def65ab3_bg5.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuctionManagementSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuctionManagementSystem</BasePath>
+      <RelativePath>media/d01fbb0c-d9d1-40cc-b32d-70e3def65ab3_bg5.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\d01fbb0c-d9d1-40cc-b32d-70e3def65ab3_bg5.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\d0bd6b1e-63e3-4692-9015-05b39e062a57_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>AuctionManagementSystem</SourceId>
@@ -38063,6 +38111,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\dbca43d8-b950-46f2-9c4c-803b8328cebf_d730e578-8fa5-4c19-83a5-1c7ab374cdd6.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\ebaa0c2c-b872-49b6-9048-79e86acbb9bd_bg7.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>AuctionManagementSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AuctionManagementSystem</BasePath>
+      <RelativePath>media/ebaa0c2c-b872-49b6-9048-79e86acbb9bd_bg7.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\media\ebaa0c2c-b872-49b6-9048-79e86acbb9bd_bg7.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
