@@ -259,18 +259,18 @@
                         <div class="mt-3">
                             @* <label for="email">Does the above odometer reading reflect the total mileage on this vehicle?</label>*@
                             <div class="switch-field">
-                                <input type="radio" value="@Model.mileageDistanceUnit" name="mileageDistanceUnit" id="mileageDistanceUnitY">
+                                <input type="radio" value="MILES" name="mileageDistanceUnit" id="mileageDistanceUnitY">
                                 <label for="mileageDistanceUnitY">MILES</label>
-                                <input type="radio" id="mileageDistanceUnitN" name="mileageDistanceUnit" value="@Model.mileageDistanceUnit" checked />
+                                <input type="radio" id="mileageDistanceUnitN" name="mileageDistanceUnit" value="Kilometers" checked />
                                 <label for="mileageDistanceUnitN">Kilometers</label>
                             </div>
                         </div>
                         <div class="mt-3">
                             <label for="email">Do you know anything about this vehicle's prior ownership or history?</label>
                             <div class="switch-field">
-                                <input type="radio" id="btn_VehicleOwnerShipHistoryY" name="VehicleOwnerShipHistory" value="@Model.VehicleOwnerShipHistory" />
+                                <input type="radio" id="btn_VehicleOwnerShipHistoryY" name="VehicleOwnerShipHistory" value="Yes" />
                                 <label for="btn_VehicleOwnerShipHistoryY">Yes</label>
-                                <input type="radio" id="btn_VehicleOwnerShipHistoryN" name="VehicleOwnerShipHistory" value="@Model.VehicleOwnerShipHistory" checked />
+                                <input type="radio" id="btn_VehicleOwnerShipHistoryN" name="VehicleOwnerShipHistory" value="No" checked />
                                 <label for="btn_VehicleOwnerShipHistoryN">No</label>
                             </div>
                         </div>
@@ -284,9 +284,9 @@
                         <div class="mt-3">
                             <label for="email">To your knowledge, has this vehicle ever been in an accident?</label>
                             <div class="switch-field">
-                                <input type="radio" id="btn_VehicleDmgRprY" name="VDamage" value="1" />
+                                <input type="radio" id="btn_VehicleDmgRprY" name="VDamage" value="Yes" />
                                 <label for="btn_VehicleDmgRprY">Yes</label>
-                                <input type="radio" id="btn_VehicleDmgRprN" name="VDamage" value="0" checked />
+                                <input type="radio" id="btn_VehicleDmgRprN" name="VDamage" value="No" checked />
                                 <label for="btn_VehicleDmgRprN">No</label>
                             </div>
                         </div>
@@ -303,13 +303,13 @@
                         <div class="mt-3">
                             <label for="email">Are you a dealer, or a private seller?</label>
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" value="@Model.VSeller" name="sellerType" id="rdrseller">
+                                <input type="radio" class="form-check-input" value="Dealer" name="sellerType" id="rdrseller">
                                 <label class="form-check-label" for="flexRadioDefault1"> Dealer</label>
                             </div>
 
                             <br />
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" value="@Model.VSeller" name="sellerType" id="rdrPrivate">
+                                <input type="radio" class="form-check-input" value="Private" name="sellerType" id="rdrPrivate">
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     Private Party
                                 </label>
@@ -366,13 +366,13 @@
                         <div class="mt-3">
                             <label for="email">Do you want a Reserve or No Reserve auction?</label>
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" value="false" name="Reserve" id="Reserve">
+                                <input type="radio" class="form-check-input" value="Reserve" name="Reserve" id="Reserve">
                                 <label class="form-check-label" for="flexRadioDefault1"> Reserve</label>
                             </div>
 
                             <br />
                             <div class="form-check">
-                                <input type="radio" class="form-check-input" value="true" name="Reserve" id="NonReserve" checked>
+                                <input type="radio" class="form-check-input" value="NoReserve" name="Reserve" id="NonReserve" checked>
                                 <label class="form-check-label" for="flexRadioDefault2">
                                     No Reserve
                                 </label>

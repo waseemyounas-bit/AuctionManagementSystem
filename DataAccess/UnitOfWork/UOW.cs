@@ -21,7 +21,7 @@ namespace DataAccess.UnitOfWork
 		{
 			_context = context;
 		}
-        string connectionString = "Server=localhost;Database=Bidding_db;Trusted_Connection=True;TrustServerCertificate=True;";
+        string connectionString = "Server=DEVELOPMENT-PC;Database=NFT2;Trusted_Connection=True;TrustServerCertificate=True;";
        
 
         public GenericRepository<User> UserRepository()

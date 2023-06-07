@@ -128,6 +128,10 @@ namespace DataAccess.Migrations
                     b.Property<string>("mileageDistanceUnit")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("sellerType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("AvId");
 
                     b.HasIndex("UserId");
@@ -230,7 +234,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 6, 3, 16, 18, 20, 259, DateTimeKind.Utc).AddTicks(397),
+                            CreatedAt = new DateTime(2023, 6, 3, 17, 56, 49, 818, DateTimeKind.Utc).AddTicks(5064),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,

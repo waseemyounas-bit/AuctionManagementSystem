@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
+using System;
 
 namespace AuctionManagementSystem.Controllers
 {
@@ -75,6 +77,7 @@ namespace AuctionManagementSystem.Controllers
                     ReserveRemaks = ad.ReserveRemaks,
                     AdInfoRemarks = ad.AdInfoRemarks,
                     VehicleOwnerShipHistory = ad.VehicleOwnerShipHistory,
+                    sellerType=ad.sellerType,
                     IsApproved = "0"
                 };
                 UOW.AddVehicle().Insert(advv);
@@ -126,6 +129,8 @@ namespace AuctionManagementSystem.Controllers
             AddVehicle vehicle = UOW.AddVehicle().GetById(AvId);
             vehicle.VehicleImages=UOW.AddVehicleImage().GetAll().Where(x=>x.AddVehicleId==AvId).ToList();
             vehicle.Bids = UOW.AddBid().GetAll().Include(x=>x.User).Where(x => x.VehicleId == AvId).ToList();
+            List<AddVehicle> vehicles = UOW.AddVehicle().GetAll().Include(o => o.VehicleImages).Include(x=>x.Bids).ToList();
+            TempData["RelatedAuctions"] = vehicles;
             return View(vehicle);
         }
         [HttpPost]

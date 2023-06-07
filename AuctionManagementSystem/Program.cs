@@ -20,7 +20,7 @@ builder.Services.AddNotyf(config => { config.DurationInSeconds = 20; config.IsDi
 //builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUOW, UOW>();
 builder.Services.AddSession(options => {
-    options.IdleTimeout = TimeSpan.FromMinutes(1);//You can set Time   
+    options.IdleTimeout = TimeSpan.FromMinutes(3);//You can set Time   
 });
 //builder.Services.AddScoped<SuperController>();
 var app = builder.Build();

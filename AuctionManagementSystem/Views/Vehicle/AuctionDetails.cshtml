@@ -2,6 +2,7 @@
 @{
 
     Layout = "~/views/shared/_layout.cshtml";
+
 }
 <!doctype html>
 <html lang="en">
@@ -97,37 +98,41 @@
                     <div class="item-describe-area">
                         <ul class="nav nav-pills d-flex justify-content-center gap-sm-4 gap-1" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active describe-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+                                <button class="nav-link active describe-btn" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                     History
+                                </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link describe-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Location</button>
+                                <button class="nav-link describe-btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Ownership</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link describe-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">About Video</button>
+                                <button class="nav-link describe-btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Additional Information</button>
                             </li>
                         </ul>
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                 <div class="describe-content">
-                                    <p class="mb-15">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis molestiae dolore, quaerat illo adipisci fugiat voluptatibus eligendi provident animi qui totam commodi a dolor saepe labore tempore.</p>
-                                    <p> Consequuntur doloremque accusantium aspernatur illo labore quisquam consectetur tenetur temporibus, eos ad, fuga cumque suscipit quasi iure veniam, omnis in iste ipsa optio. Sint voluptates sed inventore saepe, obcaecati dolores rerum aliquid eaque.</p>
+                                    <p class="mb-15">
+                                      Vehicle Purchase Month/Year: <b> @Model.VehiclePurchaseMoth/@Model.VehiclePurchaseYear</b></p>
+                                    <p>Miles Or Kilometers Added During OwnerShip:<b>@Model.Vmiles</b>@Model.mileageDistanceUnit</p>
+                                    <p>Vehicle OwnerShip History/Remarks:  <b>@Model.VehicleOwnerShipHistory</b>/@Model.VownershipRemarks</p>
+                                    <p> vehicle Accdient/Remarks: <b>@Model.Vaccident </b>/@Model.VaccidentRemarks </p>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                 <div class="map-area">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.73467103074!2d90.36181521536365!3d23.828032291722206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c13a21730b43%3A0xb14a9c52d01c00d9!2sMirpur-12%20Bus%20Stand!5e0!3m2!1sen!2sbd!4v1640171021567!5m2!1sen!2sbd" style="border-radius: 5px;" allowfullscreen="" loading="lazy"></iframe>
-                                </div>
+                                    <p>
+                                    <p>dealer, or a private seller:@Model.VSeller</p>
+                                    <p>Title Status:@Model.Vtitled</p>
+                                    <p>Select State:@Model.VehicleLocated</p>
+                                    <p>vehicle located:@Model.VehicleLocated</p>
+                                    <p>Auction Type:@Model.Reserve</p>
+                                    </p>
+                               </div>
                             </div>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                <div class="about-video">
-                                    <div class="wrapper">
-                                        <div class="video-pluse">
-                                            <span style="--i:1;"></span>
-                                            <span style="--i:5;"></span>
-                                            <span style="--i:3;"></span>
-                                            <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="video-frame video-icon"><i class="bx bx-play"></i></a>
-                                        </div>
-                                    </div>
+                                <div class="map-area">
+                                    <p>Additional Information:@Model.AdInfoRemarks</p>
                                 </div>
                             </div>
                         </div>
@@ -216,15 +221,17 @@
                 </div>
             </div>
             <div class="row g-4">
+                @foreach (var item in (List<AddVehicle>)TempData["RelatedAuctions"])
+                {
                 <div class="col-lg-4 col-md-6 ">
                     <div class="product-card product-beta-md">
                         <div class="product-header">
-                            <h5 class="product-title"><a href="product-details.html">Smart fortwo Red Mercedes AMG</a></h5>
-                            <h4 class="price">$3,526</h4>
+                                <h5 class="product-title"><a href="product-details.html">@item.FullName</a></h5>
+                                <h4 class="price">@item.Make</h4>
                         </div>
 
                         <div class="product">
-                            <img src="assets/images/product/lp-1.png" alt="">
+                                <img src="@Url.Content(item.VehicleImages.FirstOrDefault().ImagePath)">
                             <div class="id"><span>ID 0195667</span></div>
                         </div>
 
@@ -232,73 +239,27 @@
                             <div class="product-acution">
                                 <div class="cv">
                                     <span>current Bid</span>
-                                    <h6>$2,079.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown1">
-                                    <h6>&nbsp;</h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
+                                    @if(item.Bids.Count()>0)
+                                        {
+                                            <h6>@item.Bids.FirstOrDefault().BidAmount.ToUpper()</h6>
+                                        }
+                                        else
+                                        {
+                                            <div class="countdown" id="week-countdown1">
+                                                <h6>&nbsp;</h6>
+                                                <span>Waiting For Bid</span>
+                                            </div>
+                                        }
+                                    </div>
+                            
                             </div>
 
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
+                                <a href="~/Vehicle/AuctionDetails?AvId=@item.AvId" class="bid-btn">Submit A Bid</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h5 class="product-title"><a href="product-details.html">Smart fortwo Red Mercedes AMG</a></h5>
-                            <h4 class="price">$3,526</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-2.png" alt="">
-                            <div class="id"><span>ID 0195668</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$2,079.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown2">
-                                    <h6>&nbsp;</h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card product-beta-md">
-                        <div class="product-header">
-                            <h5 class="product-title"><a href="product-details.html">Smart fortwo Red Mercedes AMG</a></h5>
-                            <h4 class="price">$3,526</h4>
-                        </div>
-
-                        <div class="product">
-                            <img src="assets/images/product/lp-3.png" alt="">
-                            <div class="id"><span>ID 0195669</span></div>
-                        </div>
-
-                        <div class="product-disc">
-                            <div class="product-acution">
-                                <div class="cv">
-                                    <span>current Bid</span>
-                                    <h6>$2,079.00</h6>
-                                </div>
-                                <div class="countdown" id="week-countdown3">
-                                    <h6>&nbsp;</h6>
-                                    <span>Waiting For Bid</span>
-                                </div>
-                            </div>
-                            <a href="auction-details.html" class="bid-btn">Submit A Bid</a>
-                        </div>
-                    </div>
-                </div>
+                }
+               
             </div>
         </div>
     </section>
