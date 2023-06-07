@@ -8,3 +8,4 @@
 .vs/AuctionManagementSystem/DesignTimeBuild/.dtbcache.v2
 AMSModel/obj/Debug/net7.0/AMSModels.assets.cache
 .vs/AuctionManagementSystem/FileContentIndex/264c6da6-1137-4fe4-8c8a-0dbc567be939.vsidx
+*.v2
