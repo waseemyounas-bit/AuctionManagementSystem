@@ -266,7 +266,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 6, 7, 10, 21, 1, 142, DateTimeKind.Utc).AddTicks(517),
+                            CreatedAt = new DateTime(2023, 6, 19, 17, 42, 6, 90, DateTimeKind.Utc).AddTicks(6280),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
