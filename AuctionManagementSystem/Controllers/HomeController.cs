@@ -22,7 +22,7 @@ namespace AuctionManagementSystem.Controllers
 		public IActionResult Index()
 		{
             //HttpContextAccessor.HttpContext.session["Succesmsg"];
-            List<AddVehicle> approvedVehicles = UOW.AddVehicle().GetAll().Include(x => x.VehicleImages).ToList();
+            List<AddVehicle> approvedVehicles = UOW.AddVehicle().GetAll().Include(x=>x.Bids).Include(x => x.VehicleImages).ToList();
             return View(approvedVehicles);
 		}
 		public IActionResult Contact()

@@ -21,7 +21,7 @@ namespace DataAccess.UnitOfWork
 		{
 			_context = context;
 		}
-        string connectionString = "Server=DEVELOPMENT-PC;Database=NFT2;Trusted_Connection=True;TrustServerCertificate=True;";
+        string connectionString = "Server=localhost;Database=biddingsystem_db;Trusted_Connection=True;TrustServerCertificate=True;";
        
 
         public GenericRepository<User> UserRepository()
@@ -39,6 +39,10 @@ namespace DataAccess.UnitOfWork
         public GenericRepository<ContactMe> ContactMe()
         {
             return new GenericRepository<ContactMe>(_context);
+        }
+        public GenericRepository<Configuration> Configurations()
+        {
+            return new GenericRepository<Configuration>(_context);
         }
         public List<AddVehicleView> GetVehicleInFo()
         {

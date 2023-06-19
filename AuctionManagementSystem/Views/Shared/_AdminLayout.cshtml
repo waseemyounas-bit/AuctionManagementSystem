@@ -79,14 +79,6 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="~/assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
 
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
@@ -94,10 +86,26 @@
                         <!-- Add icons to the links using the .nav-icon class
                              with font-awesome or any other icon font library -->
                             <li class="nav-item">
-                                <a asp-action="Index" asp-controller="Home" class="nav-link">
+                                <a asp-action="Index" asp-controller="Admin" class="nav-link">
                                     <i class="nav-icon fas fa-tachometer-alt"></i>
                                     <p>
                                         Dashboard
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Index" asp-controller="Home" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>
+                                        Go to Website
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a asp-action="Configurations" asp-controller="Admin" class="nav-link">
+                                    <i class="nav-icon fas fa-cogs"></i>
+                                    <p>
+                                        Manage Configurations
                                     </p>
                                 </a>
                             </li>
@@ -111,7 +119,7 @@
                             </li>
                             <li class="nav-item">
                                 <a asp-action="GetAllVehicles" asp-controller="Admin" class="nav-link">
-                                    <i class="nav-icon fas fa-cars"></i>
+                                    <i class="nav-icon fas fa-truck"></i>
                                     <p>
                                         Manage Vehicles
                                     </p>

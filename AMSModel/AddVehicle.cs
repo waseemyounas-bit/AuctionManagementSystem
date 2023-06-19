@@ -54,14 +54,16 @@ namespace AMSModels
         public string? DealerName { get; set; }
         public string? OwnerDetails { get; set; }
         public string sellerType { get; set; }
-        public String Vtitled { get; set; }
+        public string Vtitled { get; set; }
         public string? VtitledRemarks { get; set; }
         public string? TitleStatus { get; set; }
         public string? TitleState { get; set; }
         public string? VehicleLocated { get; set; }
         public string? Reserve { get; set; }
-        public string? ReserveRemaks { get; set; }
+        public decimal ReserveRemaks { get; set; }
         public string? AdInfoRemarks { get; set; }
+        public int AuctionDuration { get; set; }
+        public DateTime ApprovedDate { get; set; }
         //public string Images { get; set; }
         public string IsApproved { get; set; } = "0";
         public Guid AvId { get; set; }

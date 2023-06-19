@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230602150036_ContactMe")]
-    partial class ContactMe
+    [Migration("20230607101638_configurations")]
+    partial class configurations
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -66,14 +66,17 @@ namespace DataAccess.Migrations
                     b.Property<string>("Reserve")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ReserveRemaks")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("ReserveRemaks")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("TitleState")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TitleStatus")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("UserId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("VDamage")
                         .HasColumnType("nvarchar(max)");
@@ -128,9 +131,44 @@ namespace DataAccess.Migrations
                     b.Property<string>("mileageDistanceUnit")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("sellerType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("AvId");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("AddVehicle");
+                });
+
+            modelBuilder.Entity("AMSModels.Configuration", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AuctionDuration")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("BidStartPercentage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("MinAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Configurations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
+                            AuctionDuration = 7,
+                            BidStartPercentage = 50m,
+                            MinAmount = 50m
+                        });
                 });
 
             modelBuilder.Entity("AMSModels.ContactMe", b =>
@@ -160,8 +198,12 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("AMSModels.PlaceBid", b =>
                 {
-                    b.Property<string>("BidId")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("AddVehicleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("BidAmount")
                         .HasColumnType("nvarchar(max)");
@@ -169,13 +211,17 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("BidTime")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid>("Id")
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid?>("Userid")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Userid")
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("Id");
 
-                    b.HasKey("BidId");
+                    b.HasIndex("AddVehicleId");
+
+                    b.HasIndex("Userid");
 
                     b.ToTable("PlaceBid");
                 });
@@ -217,7 +263,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 6, 2, 15, 0, 36, 343, DateTimeKind.Utc).AddTicks(1140),
+                            CreatedAt = new DateTime(2023, 6, 7, 10, 16, 38, 112, DateTimeKind.Utc).AddTicks(3199),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
@@ -232,9 +278,8 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("AddVehicleId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<Guid?>("AddVehicleId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ImagePath")
                         .IsRequired()
@@ -242,7 +287,54 @@ namespace DataAccess.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("AddVehicleId");
+
                     b.ToTable("VehicleImages");
+                });
+
+            modelBuilder.Entity("AMSModels.AddVehicle", b =>
+                {
+                    b.HasOne("AMSModels.User", "User")
+                        .WithMany("Vehicles")
+                        .HasForeignKey("UserId");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AMSModels.PlaceBid", b =>
+                {
+                    b.HasOne("AMSModels.AddVehicle", "AddVehicle")
+                        .WithMany("Bids")
+                        .HasForeignKey("AddVehicleId");
+
+                    b.HasOne("AMSModels.User", "User")
+                        .WithMany()
+                        .HasForeignKey("Userid");
+
+                    b.Navigation("AddVehicle");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AMSModels.VehicleImages", b =>
+                {
+                    b.HasOne("AMSModels.AddVehicle", "AddVehicle")
+                        .WithMany("VehicleImages")
+                        .HasForeignKey("AddVehicleId");
+
+                    b.Navigation("AddVehicle");
+                });
+
+            modelBuilder.Entity("AMSModels.AddVehicle", b =>
+                {
+                    b.Navigation("Bids");
+
+                    b.Navigation("VehicleImages");
+                });
+
+            modelBuilder.Entity("AMSModels.User", b =>
+                {
+                    b.Navigation("Vehicles");
                 });
 #pragma warning restore 612, 618
         }

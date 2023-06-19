@@ -35,6 +35,7 @@ namespace DataAccess.Data
         public DbSet<VehicleImages> VehicleImages { get; set; }
         public DbSet<PlaceBid> PlaceBid { get; set; }
         public DbSet<ContactMe> ContactMe { get; set; }
+        public DbSet<Configuration> Configurations { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
           
@@ -50,6 +51,15 @@ namespace DataAccess.Data
                     Password = "12345678",
                     RoleId = 1,
                     IsApproved=1
+                }
+            );
+            modelBuilder.Entity<Configuration>().HasData(
+                new Configuration
+                {
+                    Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
+                    MinAmount = 50,//Minimum amount for non reserved vehicles
+                    AuctionDuration=7, //Days
+                    BidStartPercentage=50 //Percentage
                 }
             );
         }

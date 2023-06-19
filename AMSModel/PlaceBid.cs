@@ -13,7 +13,7 @@ namespace AMSModels
         public User? User { get; set; }
         public string? BidAmount { get; set; }
         public DateTime BidTime { get; set; } =DateTime.Now;
-        public Guid? VehicleId { get; set; }
+        public Guid? AddVehicleId { get; set; }
         public AddVehicle? AddVehicle { get; set; }
         public DateTime CreatedDate { get; set; }=DateTime.Now;
 

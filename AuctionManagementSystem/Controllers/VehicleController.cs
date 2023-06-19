@@ -126,11 +126,13 @@ namespace AuctionManagementSystem.Controllers
             {
                 return RedirectToAction("Login","Account");
             }
-            AddVehicle vehicle = UOW.AddVehicle().GetById(AvId);
+            AddVehicle vehicle = UOW.AddVehicle().GetAll().Where(x => x.AvId == AvId).Include(x => x.Bids).FirstOrDefault();
             vehicle.VehicleImages=UOW.AddVehicleImage().GetAll().Where(x=>x.AddVehicleId==AvId).ToList();
-            vehicle.Bids = UOW.AddBid().GetAll().Include(x=>x.User).Where(x => x.VehicleId == AvId).ToList();
+            vehicle.Bids = UOW.AddBid().GetAll().Include(x=>x.User).Where(x => x.AddVehicleId == AvId).ToList();
             List<AddVehicle> vehicles = UOW.AddVehicle().GetAll().Include(o => o.VehicleImages).Include(x=>x.Bids).ToList();
-            TempData["RelatedAuctions"] = vehicles;
+            TempData["RelatedAuctions"] = vehicles.Where(x=>x.AvId!=AvId && x.IsApproved=="1").ToList();
+            ViewData["MinAmount"] = UOW.Configurations().GetAll().FirstOrDefault().MinAmount;
+            ViewData["BidStart"] = UOW.Configurations().GetAll().FirstOrDefault().BidStartPercentage;
             return View(vehicle);
         }
         [HttpPost]
@@ -148,7 +150,7 @@ namespace AuctionManagementSystem.Controllers
                 {
                     return Json(0);
                 }
-                var exist = UOW.AddBid().GetAll().Where(x => x.Userid == userId && x.VehicleId == VehicleId).FirstOrDefault();
+                var exist = UOW.AddBid().GetAll().Where(x => x.Userid == userId && x.AddVehicleId == VehicleId).FirstOrDefault();
                 if (exist != null)
                 {
                     exist.BidAmount = amount;
@@ -162,7 +164,7 @@ namespace AuctionManagementSystem.Controllers
                     BidAmount = amount,
                     BidTime = DateTime.Now,
                     Userid = userId,
-                    VehicleId = VehicleId
+                    AddVehicleId = VehicleId
                 }
                 ;
                 UOW.AddBid().Insert(placebid);

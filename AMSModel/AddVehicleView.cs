@@ -63,7 +63,7 @@ namespace AMSModels
         public string? TitleState { get; set; }
         public string? VehicleLocated { get; set; }
         public string? Reserve { get; set; }
-        public string? ReserveRemaks { get; set; }
+        public decimal ReserveRemaks { get; set; }
         public string? AdInfoRemarks { get; set; }
         //public string Images { get; set; }
         public string IsApproved { get; set; } = "0";

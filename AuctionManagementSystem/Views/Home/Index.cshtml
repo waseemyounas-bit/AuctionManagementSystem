@@ -3,8 +3,8 @@
 @inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 ﻿@{
     ViewData["Title"] = "Auctions";
-    var appovedVehicels=Model.Where(x=>x.IsApproved=="1").ToList();
-    var pendingVehicles = Model.Where(x => x.IsApproved == "0").ToList();
+    var appovedVehicels=Model.Where(x=>x.ApprovedDate.AddDays(x.AuctionDuration)>DateTime.Now).ToList();
+    var pendingVehicles = Model.Where(x=>x.ApprovedDate.AddDays(x.AuctionDuration).ToShortDateString()==DateTime.Now.ToShortDateString()).ToList();
 }
 @if (@HttpContextAccessor.HttpContext.Session.GetString("Succesmsg") != null)
 {
@@ -30,13 +30,7 @@ background-image: url('/images/img/bg1.jpeg');"></div>
                                         <p>Middleton in objection discovery as agreeable. Edward thrown dinin. Nulla sem porta ullamcorper orci, scelerisque ullamcorper vitae.</p>
         
                                         <div class="hero-btns d-flex gap-5 align-items-center">
-                                            <a href="auction.html" class="alpha-btn-md">All Auction</a>
-                                            <div class="video-pluse">
-                                                <span style="--i:1;"></span>
-                                                <span style="--i:5;"></span>
-                                                <span style="--i:3;"></span>
-                                                <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="video-frame video-icon"><i class="bx bx-play"></i></a>
-                                            </div>
+                                            <a href="#liveauntions" class="alpha-btn-md">All Auction</a>
                                         </div>
                                     </div>
                                 </div>
@@ -79,81 +73,6 @@ background-image: url('/images/img/bg1.jpeg');"></div>
                                                             <h6>$79.00</h6>
                                                         </div>
                                                         <div class="countdown" id="week-countdown2">
-                                                            <h6>  </h6>
-                                                            <span>Waiting For Bid</span>
-                                                        </div>
-                                                    </div>
-                                                    <a href="auction-details.html" class="bid-btn">Bid Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide hero-item position-relative">
-                    <div class="hero-background-layer" style="background: url(./assets/images/banner/hero-banner2.png);"></div>
-                    <div class="hero-content-wrap">
-                        <div class="container">
-                            <div class="row align-items-center">
-                                <div class="col-lg-6">
-                                    <div class="hero-content">
-                                        <h1 class="hero-title">Welcome to car auction Best Platform</h1>
-                                        <p>Middleton in objection discovery as agreeable. Edward thrown dinin. Nulla sem porta ullamcorper orci, scelerisque ullamcorper vitae.</p>
-        
-                                        <div class="hero-btns d-flex gap-5 align-items-center">
-                                            <a href="auction.html" class="alpha-btn-md">All Auction</a>
-
-                                            <div class="video-pluse">
-                                                <span style="--i:1;"></span>
-                                                <span style="--i:5;"></span>
-                                                <span style="--i:3;"></span>
-                                                <a href="https://www.youtube.com/watch?v=u31qwQUeGuM" class="video-frame video-icon"><i class="bx bx-play"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6 pt-5 pt-lg-0">
-                                    <div class="row g-4">
-                                        <div class="col-sm-6">
-                                            <div class="product-card featured-product-card">
-                                                <div class="product">
-                                                    <img src="assets/images/product/feat-3.png" alt="">
-                                                    <div class="id"><span>ID 0195765</span></div>
-                                                </div>
-                                                <div class="product-disc">
-                                                    <h6 class="product-title"><a href="auction-details.html" class="">Masrati Mustang GT Premium</a></h6>
-                                                    <div class="product-auction">
-                                                        <div class="price">
-                                                            <span>From</span>
-                                                            <h6>$79.00</h6>
-                                                        </div>
-                                                        <div class="countdown" id="week-countdown3">
-                                                            <h6>  </h6>
-                                                            <span>Waiting For Bid</span>
-                                                        </div>
-                                                    </div>
-                                                    <a href="auction-details.html" class="bid-btn">Bid Now</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="product-card featured-product-card">
-                                                <div class="product">
-                                                    <img src="assets/images/product/feat-4.png" alt="">
-                                                    <div class="id"><span>ID 0195645</span></div>
-                                                </div>
-                                                <div class="product-disc">
-                                                    <h6 class="product-title"><a href="auction-details.html" class="">Smart fortwo coupe 1.0 Prime Sport Premium</a></h6>
-                                                    <div class="product-auction">
-                                                        <div class="price">
-                                                            <span>From</span>
-                                                            <h6>$79.00</h6>
-                                                        </div>
-                                                        <div class="countdown" id="week-countdown4">
                                                             <h6>  </h6>
                                                             <span>Waiting For Bid</span>
                                                         </div>
@@ -263,7 +182,7 @@ background-image: url('/images/img/bg1.jpeg');"></div>
 <!-- =============== product category area end=============== -->
 <!-- =============== product category area end=============== -->
 <!-- ===============   live auction area start =============== -->
-<div class="live-auction-area mt-110">
+<div class="live-auction-area mt-110" id="liveauctions">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -281,28 +200,41 @@ background-image: url('/images/img/bg1.jpeg');"></div>
                     <div class="col-lg-4 col-md-6 ">
                         <div class="product-card product-beta-md">
                             <div class="product-header">
-                                <h6 class="product-title"><a href="AuctionDetails">@item.FullName</a></h6>
-                                <h4 class="price">@item.Year</h4>
+                                <h6 class="product-title"><a href="AuctionDetails">@item.Year</a></h6>
+                                <h4 class="price">@item.FullName</h4>
                             </div>
 
                             <div class="product">
                                 <img src="@Url.Content(item.VehicleImages?.FirstOrDefault().ImagePath)">
-                                <div class="id"><span>ID 0195687</span></div>
+                                <div class="id"><span>VIN-@item.VIN</span></div>
                             </div>
 
                             <div class="product-disc">
                                 <div class="product-acution">
                                     <div class="cv">
                                         <span>current Bid</span>
-                                        <h6>$1,079.00</h6>
+                                        @if (item.Bids!=null && item.Bids.Count()>0)
+                                        {
+                                            <h6>$@item.Bids.Max(x=>x.BidAmount)</h6>
+                                        }
+                                        else
+                                        {
+                                            <h6>No bidding found.</h6>
+                                        }
                                     </div>
                                     <div class="countdown" id="week-countdown5">
                                         <h6>  </h6>
                                         <span>Waiting For Bid</span>
                                     </div>
                                 </div>
-
-                                <a href="Vehicle/AuctionDetails?AvId=@item.AvId" class="bid-btn">Submit A Bid</a>
+                                @if (item.IsApproved=="1")
+                                {
+                                    <a href="Vehicle/AuctionDetails?AvId=@item.AvId" class="bid-btn">Submit A Bid</a>
+                                }
+                                else
+                                {
+                                    <a href="javascript:void()" class="bid-btn">Pending for approval</a>
+                                }
                             </div>
                         </div>
                     </div>
@@ -321,7 +253,7 @@ background-image: url('/images/img/bg1.jpeg');"></div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="section-header-two">
-                    <h3>UpComing Auction</h3>
+                    <h3>Auctions Ending Today</h3>
                 </div>
             </div>
         </div>
@@ -331,29 +263,46 @@ background-image: url('/images/img/bg1.jpeg');"></div>
             {
                 foreach (var item in pendingVehicles)
                 {
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="product-card product-beta-sm">
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="product-card product-beta-md">
+                            <div class="product-header">
+                                <h6 class="product-title"><a href="AuctionDetails">@item.Year</a></h6>
+                                <h4 class="price">@item.FullName</h4>
+                            </div>
+
                             <div class="product">
                                 <img src="@Url.Content(item.VehicleImages?.FirstOrDefault().ImagePath)">
-                                <div class="id"><span>@item.FullName</span></div>
+                                <div class="id"><span>VIN-@item.VIN</span></div>
                             </div>
 
                             <div class="product-disc">
-                                <h6 class="product-title"> <a href="AuctionDetails">@item.FullName @item.Year</a> </h6>
-
                                 <div class="product-acution">
                                     <div class="cv">
                                         <span>current Bid</span>
-                                        <h6>$1,279</h6>
+                                        @if (item.Bids != null && item.Bids.Count() > 0)
+                                        {
+                                            <h6>$@item.Bids.Max(x=>x.BidAmount)</h6>
+                                        }
+                                        else
+                                        {
+                                            <h6>No bidding found.</h6>
+                                        }
                                     </div>
-                                    <div class="countdown" id="week-countdown11">
+                                    <div class="countdown" id="week-countdown5">
                                         <h6>  </h6>
-                                        <span>Pending for approval</span>
+                                        <span>Waiting For Bid</span>
                                     </div>
                                 </div>
+                                @if (item.IsApproved == "1")
+                                {
+                                    <a href="Vehicle/AuctionDetails?AvId=@item.AvId" class="bid-btn">Submit A Bid</a>
+                                }
+                                else
+                                {
+                                    <a href="javascript:void()" class="bid-btn">Pending for approval</a>
+                                }
                             </div>
                         </div>
-
                     </div>
                 }
             }

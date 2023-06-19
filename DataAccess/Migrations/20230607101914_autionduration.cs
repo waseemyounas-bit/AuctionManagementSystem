@@ -6,39 +6,50 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class initiald : Migration
+    public partial class autionduration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<DateTime>(
-                name: "CreatedDate",
-                table: "PlaceBid",
+                name: "ApprovedDate",
+                table: "AddVehicle",
                 type: "datetime2",
                 nullable: false,
                 defaultValue: new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified));
+
+            migrationBuilder.AddColumn<int>(
+                name: "AuctionDuration",
+                table: "AddVehicle",
+                type: "int",
+                nullable: false,
+                defaultValue: 0);
 
             migrationBuilder.UpdateData(
                 table: "Users",
                 keyColumn: "Id",
                 keyValue: new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
                 column: "CreatedAt",
-                value: new DateTime(2023, 6, 3, 16, 9, 16, 525, DateTimeKind.Utc).AddTicks(4100));
+                value: new DateTime(2023, 6, 7, 10, 19, 14, 803, DateTimeKind.Utc).AddTicks(7936));
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "CreatedDate",
-                table: "PlaceBid");
+                name: "ApprovedDate",
+                table: "AddVehicle");
+
+            migrationBuilder.DropColumn(
+                name: "AuctionDuration",
+                table: "AddVehicle");
 
             migrationBuilder.UpdateData(
                 table: "Users",
                 keyColumn: "Id",
                 keyValue: new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
                 column: "CreatedAt",
-                value: new DateTime(2023, 6, 3, 15, 44, 28, 953, DateTimeKind.Utc).AddTicks(283));
+                value: new DateTime(2023, 6, 7, 10, 16, 38, 112, DateTimeKind.Utc).AddTicks(3199));
         }
     }
 }

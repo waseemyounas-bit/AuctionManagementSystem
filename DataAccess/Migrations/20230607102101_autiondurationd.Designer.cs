@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataAccess.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230603175649_sellerType")]
-    partial class sellerType
+    [Migration("20230607102101_autiondurationd")]
+    partial class autiondurationd
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,6 +33,12 @@ namespace DataAccess.Migrations
 
                     b.Property<string>("AdInfoRemarks")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ApprovedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("AuctionDuration")
+                        .HasColumnType("int");
 
                     b.Property<string>("COR")
                         .HasColumnType("nvarchar(max)");
@@ -66,8 +72,8 @@ namespace DataAccess.Migrations
                     b.Property<string>("Reserve")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ReserveRemaks")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("ReserveRemaks")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("TitleState")
                         .HasColumnType("nvarchar(max)");
@@ -142,6 +148,35 @@ namespace DataAccess.Migrations
                     b.ToTable("AddVehicle");
                 });
 
+            modelBuilder.Entity("AMSModels.Configuration", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("AuctionDuration")
+                        .HasColumnType("int");
+
+                    b.Property<int>("BidStartPercentage")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("MinAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Configurations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
+                            AuctionDuration = 7,
+                            BidStartPercentage = 50,
+                            MinAmount = 50m
+                        });
+                });
+
             modelBuilder.Entity("AMSModels.ContactMe", b =>
                 {
                     b.Property<int>("Id")
@@ -173,7 +208,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("AddVehicleAvId")
+                    b.Property<Guid?>("AddVehicleId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("BidAmount")
@@ -188,12 +223,9 @@ namespace DataAccess.Migrations
                     b.Property<Guid?>("Userid")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("VehicleId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("AddVehicleAvId");
+                    b.HasIndex("AddVehicleId");
 
                     b.HasIndex("Userid");
 
@@ -237,7 +269,7 @@ namespace DataAccess.Migrations
                         new
                         {
                             Id = new Guid("5fb7097c-335c-4d07-b4fd-000004e2d28c"),
-                            CreatedAt = new DateTime(2023, 6, 3, 17, 56, 49, 818, DateTimeKind.Utc).AddTicks(5064),
+                            CreatedAt = new DateTime(2023, 6, 7, 10, 21, 1, 142, DateTimeKind.Utc).AddTicks(517),
                             Email = "admin@auctionsystem.com",
                             FullName = "SuperAdmin",
                             IsApproved = 1,
@@ -279,7 +311,7 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("AMSModels.AddVehicle", "AddVehicle")
                         .WithMany("Bids")
-                        .HasForeignKey("AddVehicleAvId");
+                        .HasForeignKey("AddVehicleId");
 
                     b.HasOne("AMSModels.User", "User")
                         .WithMany()

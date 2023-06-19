@@ -1,0 +1,72 @@
+﻿@model Configuration
+@{
+    ViewData["Title"] = "Configurations";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Manage Configurations</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+                <!-- general form elements -->
+                <div class="card card-warning">
+                    <div class="card-header">
+                        <h3 class="card-title">Set Configurations</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form action="@Url.Action("Configurations")" method="post">
+                        <div class="card-body">
+                            <input type="hidden" name="Id" value="@Model.Id" />
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="exampleInputEmail1">Minimum Amount for non-reserved vehicles:</label>
+                                    <input type="number" name="MinAmount" asp-for=MinAmount class="form-control" value="@Model.MinAmount">
+                                    @Html.ValidationMessageFor(model => model.MinAmount, string.Empty, new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="exampleInputEmail1">Bid Start Amount for reserved vehicles <small>(%)</small></label>
+                                    <input type="text" name="BidStartPercentage" asp-for="BidStartPercentage" class="form-control" value="@Model.BidStartPercentage">
+                                    @Html.ValidationMessageFor(model => model.BidStartPercentage, string.Empty, new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="exampleInputEmail1">Aution Duration</label>
+                                    <input type="text" name="AuctionDuration" asp-for="AuctionDuration" class="form-control" value="@Model.AuctionDuration">
+                                    @Html.ValidationMessageFor(model => model.AuctionDuration, string.Empty, new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card-body -->
+
+                        <div class="card-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- /.card -->
+
+            </div>
+        </div>
+    </div>
+</section>
