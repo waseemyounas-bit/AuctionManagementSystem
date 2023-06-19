@@ -64,7 +64,7 @@
                 <div class="row">
                     <div class="col-xl-2 align-items-center d-xl-flex d-lg-block">
                         <div class="nav-logo d-flex justify-content-between align-items-center">
-                            <a href="index.html"><img src="~/images/logo.png" alt="logo"></a>
+                            <a asp-action="Index" asp-controller="Home"><img src="~/images/logo.png" alt="logo"></a>
 
                             <div class="d-flex align-items-center gap-4">
                                 <ul class="nav-actions nav-inner-actions d-flex d-xl-none">
@@ -87,7 +87,7 @@
                             </div>
                             <ul>
                                 <li><a asp-action="Index" asp-controller="Home">Auctions</a></li>
-                                @if (@HttpContextAccessor.HttpContext.Session.GetString("UserName") != "")
+                                @if (string.IsNullOrEmpty(Context.Session.GetString("UserName")))
                                 {
                                     <li><a asp-action="vehiclesubmission" asp-controller="Vehicle">Sell A Car</a></li>
                                 }
@@ -101,7 +101,7 @@
                                 <li class="has-child-menu">
                                     <a href="javascript:void(0)">Account @User.Identity?.Name</a>
                                     <ul class="sub-menu">
-                                        @if (HttpContextAccessor.HttpContext.Session.GetString("UserName") == null)
+                                        @if (string.IsNullOrEmpty(Context.Session.GetString("UserName")))
                                         {<li><a href="Account/Login">login</a></li>
                                         <li><a href="Account/Register">SignUp</a></li>
                                         }

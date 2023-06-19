@@ -122,6 +122,8 @@ namespace AuctionManagementSystem.Controllers
         public IActionResult Logout()
         {
             HttpContext.Session.Clear();
+            HttpContext.Session.Remove("UserId");
+            HttpContext.Session.Remove("UserName");
             return RedirectToAction("Login");
         }
     }
