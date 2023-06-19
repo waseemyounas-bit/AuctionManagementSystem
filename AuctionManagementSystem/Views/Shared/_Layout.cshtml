@@ -87,7 +87,7 @@
                             </div>
                             <ul>
                                 <li><a asp-action="Index" asp-controller="Home">Auctions</a></li>
-                                @if (string.IsNullOrEmpty(Context.Session.GetString("UserName")))
+                                @if (!string.IsNullOrEmpty(Context.Session.GetString("UserName")))
                                 {
                                     <li><a asp-action="vehiclesubmission" asp-controller="Vehicle">Sell A Car</a></li>
                                 }
