@@ -11,11 +11,10 @@ namespace AuctionManagementSystem.Controllers
 {
 	public class HomeController : Controller
 	{
-		private readonly ILogger<HomeController> _logger;
-        private IUOW UOW;
-        public HomeController(ILogger<HomeController> logger, IUOW _uow)
+        private readonly IUOW UOW;
+        public HomeController( IUOW _uow)
 		{
-			_logger = logger;
+		
             UOW = _uow;
         }
 
@@ -44,7 +43,7 @@ namespace AuctionManagementSystem.Controllers
             }
             else
             {
-               int i= UOW.ContactMe(name, email,message);
+               UOW.ContactMe(name, email,message);
                 return Json(1);
             }
         }

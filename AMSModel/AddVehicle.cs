@@ -50,9 +50,9 @@ namespace AMSModels
         public string? VDamage { get; set; }
         public string? VDamageRemarks { get; set; }
         //Ownership, Title & Location
-        public string? VSeller { get; set; }
-        //public string? DealerName { get; set; }
-        public string? OwnerDetails { get; set; }
+        //public string? VSeller { get; set; }
+        ////public string? DealerName { get; set; }
+        //public string? OwnerDetails { get; set; }
         //public string sellerType { get; set; }
         public string Vtitled { get; set; }
         public string? VtitledRemarks { get; set; }

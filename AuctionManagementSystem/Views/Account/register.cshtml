@@ -62,6 +62,20 @@
                                 @Html.ValidationMessageFor(x=>x.Password,string.Empty,new {@class="text-danger"})
                                 <i class="bi bi-eye-slash" id="togglePassword2"></i>
                             </div>
+                        <div class="form-inner">
+                            <label>Seller Type *</label>
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="False" name="SellerType" checked="checked" id="rdrseller">
+                                <label class="form-check-label" for="flexRadioDefault1"> Dealer</label>
+                            </div>
+                            <br />
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" value="true" name="SellerType" id="rdrPrivate">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    Private Party
+                                </label>
+                            </div>
+                        </div>
                             <div class="form-inner d-flex justify-content-between flex-wrap">
                                 <div class="form-group">
                                     <input type="checkbox" id="html">
