@@ -40,6 +40,7 @@ namespace AuctionManagementSystem.Controllers
                 if (ad.Images == null || ad.Images.Length == 0)
                 {
                     // Handle empty or invalid file
+                    _notyf.Custom("Invalid file", 10, "#B600FF", "fa fa-home");
                     return BadRequest("Invalid file");
                 }
                 int a = 5;
@@ -109,7 +110,6 @@ namespace AuctionManagementSystem.Controllers
                 _notyf.Custom("Request Save Scussfully.", 10, "#B600FF", "fa fa-home");
                 return View(new AddVehicleView());
             }
-
             var errors = ModelState.Values.SelectMany(x => x.Errors).ToArray();
             _notyf.Custom(errors.ToString(), 10, "#B600FF", "fa fa-home");
             return View(ad);

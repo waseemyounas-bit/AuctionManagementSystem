@@ -47,6 +47,7 @@
         $("#rdrPrivate").click(function () {
             $("#PartyDealer").hide();
             $("#PrivateDealer").show();
+            $("#VehicleEntitledOwner").hide();
         });
         $("#rdrseller").click(function () {
             $("#PrivateDealer").hide();
@@ -59,7 +60,7 @@
             $("#VehicleEntitledOwner").hide();
         });
         $("#btn_VehicleEntitledonNameN").click(function () {
-            $("#VehicleEntitledOwner").hide();
+            //$("#VehicleEntitledOwner").hide();
             $("#VehicleEntitledOwner").show();
         });
         ////End--->
@@ -82,7 +83,6 @@
         var maxchars = 2;
         var maxYear = 4;
         $('#VehiclePurchaseMoth').keyup(function () {
-            debugger;
             var tlength = $(this).val().length;
             $(this).val($(this).val().substring(0, maxchars));
             var tlength = $(this).val().length;
@@ -96,6 +96,13 @@
             var tlength = $(this).val().length;
             remain = maxYear - parseInt(tlength);
             $('#VehiclePurchaseYear').text(remain);
+        });
+        $('#VehicledetailsYear').keyup(function () {
+            var tlength = $(this).val().length;
+            $(this).val($(this).val().substring(0, maxYear));
+            var tlength = $(this).val().length;
+            remain = maxYear - parseInt(tlength);
+            $('#VehicledetailsYear').text(remain);
         });
     });
 </script>
@@ -112,6 +119,13 @@
         //$("#AddInfoR").css("display", "none");
     });
 </script>
+<style>
+    .switch-field input:checked + label {
+        background-color: Black;
+        box-shadow: none;
+        color: white;
+    }
+</style>
 <link media="screen" rel="stylesheet" href="https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.css" />
 <link media="screen" rel="stylesheet" href='https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.css' />
 <script type="text/javascript" src="https://cdn.jsdelivr.net/sweetalert2/6.3.8/sweetalert2.min.js"></script>
@@ -184,11 +198,13 @@
                         <h4>Vehicle Details</h4>
                         <div class="contact-input-group">
                             <label for="first-Name">Year</label>
-                            <input type="number" placeholder="Enter year" name="Year" value="@Model.Year">
+                            <input type="number" placeholder="Enter year" id="VehicledetailsYear" name="Year" value="@Model.Year">
+                            @Html.ValidationMessageFor(x=>x.Year,string.Empty,new {@class="text-danger"})
                         </div>
                         <div class="contact-input-group">
                             <label for="first-Name">Make</label>
                             <input id="Make" name="Make" placeholder="Enter car manufacturer" value="@Model.Make">
+                            @Html.ValidationMessageFor(x=>x.Make,string.Empty,new {@class="text-danger"})
                         </div>
                         <div class="contact-input-group">
                             <label for="first-Name">Model</label>
@@ -211,7 +227,6 @@
                                 <input type="radio" class="form-check-input" value="MILES" name="CORType" id="MILES">
                                 <label class="form-check-label" for="flexRadioDefault1"> Miles</label>
                             </div>
-
                             <br />
                             <div class="form-check">
                                 <input type="radio" class="form-check-input" value="KILOMETERS" name="CORType" id="MILES" checked>
@@ -232,8 +247,9 @@
 
                         <div class="contact-input-group" id="CORTypeYN">
                             <label for="email">Text Area</label>
-                            <textarea id="OORMilegeRemarks" name="OORMilegeRemarks" cols="30" rows="7" placeholder="Enter current odometer reading details">
-                        </textarea> @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
+                           @* <textarea class="txtarea" style="height:30px;" rows="3" name="Text" Id="Text" value=""> </textarea>*@
+                            <textarea class="txtarea" id="OORMilegeRemarks" name="OORMilegeRemarks" cols="30" rows="7" value="" placeholder="Enter current odometer reading details"></textarea>
+                         @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
                         </div>
                         <h4>
                             Vehicle History &amp; Condition
@@ -276,8 +292,8 @@
                         </div>
                         <div class="contact-input-group" id="VehicleOwnerShipHistory">
                             <label for="email">Please explain below:</label>
-                            <textarea id="VownershipRemarks" name="VownershipRemarks" cols="30" rows="7" placeholder="Enter current odometer reading details">
-                        </textarea> @Html.ValidationMessageFor(x=>x.VownershipRemarks,string.Empty,new {@class="text-danger"})
+                            <textarea id="VownershipRemarks" name="VownershipRemarks" cols="30" rows="7" value="" placeholder="Enter current odometer reading details"></textarea>
+                        @Html.ValidationMessageFor(x=>x.VownershipRemarks,string.Empty,new {@class="text-danger"})
                         </div>
 
                         @*vehicle damagae*@
@@ -292,8 +308,8 @@
                         </div>
                         <div class="contact-input-group" id="VehicleDamageRepair">
                             <label for="email">Please explain below:</label>
-                            <textarea id="VDamageRemarks" name="VDamageRemarks" cols="30" rows="7" placeholder="Enter Vehicle Damage Repair Remarks">
-                        </textarea> @Html.ValidationMessageFor(x=>x.VDamageRemarks,string.Empty,new {@class="text-danger"})
+                            <textarea id="VDamageRemarks" name="VDamageRemarks" cols="30" rows="7" value="" placeholder="Enter Vehicle Damage Repair Remarks"></textarea>
+                         @Html.ValidationMessageFor(x=>x.VDamageRemarks,string.Empty,new {@class="text-danger"})
                         </div>
                         @*vehicle damage*@
                         <h1>Ownership, Title & Location</h1>
@@ -314,6 +330,7 @@
                                     Private Party
                                 </label>
                             </div>
+                            @Html.ValidationMessageFor(x=>x.sellerType,string.Empty,new {@class="text-danger"})
                         </div>
                         <div class="contact-input-group" id="PartyDealer">
                             <div class="switch-field">
@@ -348,7 +365,7 @@
                         @*TITLE sTATUS*@
                         <div class="contact-input-group">
                             <label for="drop">State</label>
-                            <select class="form-select" aria-label="Default select example" name="VehicleLocated">
+                            <select class="form-select" aria-label="Default select example" name="TitleState" value="@Model.TitleState">
                                 <option selected value="0">Select State</option>
                                 <option>Albama</option>
                                 <option>Alaska</option>
@@ -360,7 +377,7 @@
                         @*TITLE SSTATUS eND*@
                         <div class="contact-input-group">
                             <label for="email">Where is the vehicle located?</label>
-                            <input id="11" name="VehicleLocated" placeholder="Enter City, State, and ZIP code" value="@Model.VehicleLocated">
+                            <input id="VehicleLocated" name="VehicleLocated" placeholder="Enter City, State, and ZIP code" value="@Model.VehicleLocated">
                         </div>
                         <h1>Reserve</h1>
                         <div class="mt-3">
@@ -380,7 +397,7 @@
                         </div>
                         <div class="contact-input-group" id="VehicleReserve">
                             <label for="email">Please explain below:.</label>
-                            <input type="number" min="0" name="ReserveRemaks" value="@Model.ReserveRemaks" placeholder="$ Enter Reserve Amount">
+                            <input type="text" name="ReserveRemaks" value="@Model.ReserveRemaks" placeholder="$ Enter Reserve Amount">
                         </div>
                         <h1>Additional Information</h1>
                         <p>Is there anything else we should know to determine if your vehicle is a good fit for auction (modifications, rare factory features/options, etc.)?</p>
@@ -405,11 +422,9 @@
                             </p>
                             <div>
                                 <input type="file" id="file" name="Images" si multiple value="@Model.Images" />
+                                @Html.ValidationMessageFor(m => m.Images, "", new { @class = "text-danger" })
                             </div>
                         </div>
-
-
-
                         <div class="contact-input-group mt-0">
                             <button type="submit" class="submit-btn">Submit</button>
                         </div>

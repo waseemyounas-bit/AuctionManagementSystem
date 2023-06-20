@@ -11,8 +11,9 @@ namespace AMSModels
 {
     public class ImageViewModel
     {
-        [Required(ErrorMessage = "Please select file.")]
         [Display(Name = "Browse File")]
+        [Required(ErrorMessage = "Please Upload Vehicle Images.")]
+        //[RegularExpression(@"([a-zA-Z0-9\s_\\.\-:])+(.png|.jpg|.gif)$", ErrorMessage = "Only Image files allowed.")]
         public IFormFile[] Images { get; set; }
     }
 }

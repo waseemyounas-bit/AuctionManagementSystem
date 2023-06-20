@@ -15,7 +15,7 @@ namespace AMSModels
         [StringLength(100, MinimumLength = 3, ErrorMessage = "Length should be in between 3 and 100")]
         public string? FullName { get; set; }
         [Required(AllowEmptyStrings = false)]
-        [Range(2000, 2023, ErrorMessage = "Please enter valid Year")]
+        [Range(2000, 2027, ErrorMessage = "Please enter valid Year")]
         public string Year { get; set; }
         [Required(AllowEmptyStrings = false)]
         [StringLength(100, MinimumLength = 4, ErrorMessage = "Enter Car Manufacture")]
@@ -37,12 +37,16 @@ namespace AMSModels
          public string? odometerreadingreflect { get; set; }
         public string? OORMilegeRemarks { get; set; }
         // Vehicle History & Condition
-        //[Required(AllowEmptyStrings = false)]
-        //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
+        [Required(AllowEmptyStrings = false)]
+        [Range(1, 12, ErrorMessage = "Enter Vehicle Purchase Month")]
+        //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Vehicle Purchase Month")]
         public string? VehiclePurchaseMoth { get; set; }
-        //[Required(AllowEmptyStrings = false)]
-        //[StringLength(1, MinimumLength = 1, ErrorMessage = "Enter Current odometer reading")]
+        [Required(AllowEmptyStrings = false)]
+        [Range(2000,2023, ErrorMessage = "Enter Vehicle Purchase Year")]
+        //[StringLength(1, MinimumLength = 4, ErrorMessage = "Enter Vehicle Purchase YEAR")]
         public string? VehiclePurchaseYear { get; set; }
+        [Required(AllowEmptyStrings = false)]
+        //[StringLength(1, MinimumLength = 4, ErrorMessage = "Enter Vehicle Miles")]
         public string? Vmiles { get; set; }
         public string? mileageDistanceUnit { get; set; }
         public string? VehicleOwnerShipHistory { get; set; }
