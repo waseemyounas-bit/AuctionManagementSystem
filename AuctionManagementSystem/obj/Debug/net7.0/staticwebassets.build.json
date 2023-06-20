@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8zBj08zJ49BSktiW8OVbsiJinzqmM/9Ttv6iFnGiOf0=",
+  "Hash": "OH0jJmfIUhk0buO8ioxtWgnotx1U/21pk7v8tGCNb8s=",
   "Source": "AuctionManagementSystem",
   "BasePath": "_content/AuctionManagementSystem",
   "Mode": "Default",
@@ -40528,6 +40528,23 @@
       "OriginalItemSpec": "wwwroot\\media\\283a85ba-abc3-4a0a-9abd-295e15202e53_e672dca8-3e1a-4129-a17c-3d0ac22fa678.jpg"
     },
     {
+      "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\31191462-a01a-46f3-8f20-99d3fad0f099_6305d909-4cbb-4b01-87ca-e6b6913ead8b.jpg",
+      "SourceId": "AuctionManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\",
+      "BasePath": "_content/AuctionManagementSystem",
+      "RelativePath": "media/31191462-a01a-46f3-8f20-99d3fad0f099_6305d909-4cbb-4b01-87ca-e6b6913ead8b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\31191462-a01a-46f3-8f20-99d3fad0f099_6305d909-4cbb-4b01-87ca-e6b6913ead8b.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\3450b226-ac2b-464c-8049-24b8585a7636_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
       "SourceId": "AuctionManagementSystem",
       "SourceType": "Discovered",
@@ -40696,6 +40713,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\5b21338d-575b-4886-b2af-afd6c08ea946_bg2.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\613cf393-8275-48f2-ae18-036e57c05084_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
+      "SourceId": "AuctionManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\",
+      "BasePath": "_content/AuctionManagementSystem",
+      "RelativePath": "media/613cf393-8275-48f2-ae18-036e57c05084_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\613cf393-8275-48f2-ae18-036e57c05084_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg"
     },
     {
       "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\628d67f0-4968-461e-92de-54bcdd8f9073_fronx1.avif",
@@ -40985,6 +41019,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\bea77d57-5d08-4954-bf0e-7c518fe8d562_bg2.jpeg"
+    },
+    {
+      "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\c21e5b83-3a20-4eb2-be8b-f7e2beb48f31_758bd918-ea52-4692-a7d9-3eaffae3a18f.jpg",
+      "SourceId": "AuctionManagementSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\",
+      "BasePath": "_content/AuctionManagementSystem",
+      "RelativePath": "media/c21e5b83-3a20-4eb2-be8b-f7e2beb48f31_758bd918-ea52-4692-a7d9-3eaffae3a18f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\media\\c21e5b83-3a20-4eb2-be8b-f7e2beb48f31_758bd918-ea52-4692-a7d9-3eaffae3a18f.jpg"
     },
     {
       "Identity": "C:\\Users\\Shahbaz\\Documents\\GitHub\\AuctionManagementSystem\\AuctionManagementSystem\\wwwroot\\media\\c786e364-2b8b-414c-bb4a-02e1a2628d21_d62dfe9d-78e5-4851-8823-767ecbded3e0.jpg",

@@ -247,8 +247,9 @@
 
                         <div class="contact-input-group" id="CORTypeYN">
                             <label for="email">Text Area</label>
-                            <textarea id="OORMilegeRemarks" name="OORMilegeRemarks" cols="30" rows="7" placeholder="Enter current odometer reading details">
-                        </textarea> @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
+                           @* <textarea class="txtarea" style="height:30px;" rows="3" name="Text" Id="Text" value=""> </textarea>*@
+                            <textarea class="txtarea" id="OORMilegeRemarks" name="OORMilegeRemarks" cols="30" rows="7" value="" placeholder="Enter current odometer reading details"></textarea>
+                         @Html.ValidationMessageFor(x=>x.OORMilegeRemarks,string.Empty,new {@class="text-danger"})
                         </div>
                         <h4>
                             Vehicle History &amp; Condition
@@ -291,8 +292,8 @@
                         </div>
                         <div class="contact-input-group" id="VehicleOwnerShipHistory">
                             <label for="email">Please explain below:</label>
-                            <textarea id="VownershipRemarks" name="VownershipRemarks" cols="30" rows="7" placeholder="Enter current odometer reading details">
-                        </textarea> @Html.ValidationMessageFor(x=>x.VownershipRemarks,string.Empty,new {@class="text-danger"})
+                            <textarea id="VownershipRemarks" name="VownershipRemarks" cols="30" rows="7" value="" placeholder="Enter current odometer reading details"></textarea>
+                        @Html.ValidationMessageFor(x=>x.VownershipRemarks,string.Empty,new {@class="text-danger"})
                         </div>
 
                         @*vehicle damagae*@
@@ -307,8 +308,8 @@
                         </div>
                         <div class="contact-input-group" id="VehicleDamageRepair">
                             <label for="email">Please explain below:</label>
-                            <textarea id="VDamageRemarks" name="VDamageRemarks" cols="30" rows="7" placeholder="Enter Vehicle Damage Repair Remarks">
-                        </textarea> @Html.ValidationMessageFor(x=>x.VDamageRemarks,string.Empty,new {@class="text-danger"})
+                            <textarea id="VDamageRemarks" name="VDamageRemarks" cols="30" rows="7" value="" placeholder="Enter Vehicle Damage Repair Remarks"></textarea>
+                         @Html.ValidationMessageFor(x=>x.VDamageRemarks,string.Empty,new {@class="text-danger"})
                         </div>
                         @*vehicle damage*@
                         <h1>Ownership, Title & Location</h1>
@@ -396,7 +397,7 @@
                         </div>
                         <div class="contact-input-group" id="VehicleReserve">
                             <label for="email">Please explain below:.</label>
-                            <input type="number" min="0" name="ReserveRemaks" value="@Model.ReserveRemaks" placeholder="$ Enter Reserve Amount">
+                            <input type="text" name="ReserveRemaks" value="@Model.ReserveRemaks" placeholder="$ Enter Reserve Amount">
                         </div>
                         <h1>Additional Information</h1>
                         <p>Is there anything else we should know to determine if your vehicle is a good fit for auction (modifications, rare factory features/options, etc.)?</p>
@@ -420,12 +421,10 @@
                                 <strong>Need help taking photos? View our <a target="_blank" rel="noopener noreferrer" class="chakra-link css-1tue41d" href="/pdf/photo-tips-and-checklist.pdf">Photo Guide</a>!</strong>
                             </p>
                             <div>
-                                <input type="file" id="file" name="Images" si multiple value="@Model.Images" required/>
+                                <input type="file" id="file" name="Images" si multiple value="@Model.Images" />
+                                @Html.ValidationMessageFor(m => m.Images, "", new { @class = "text-danger" })
                             </div>
                         </div>
-
-
-
                         <div class="contact-input-group mt-0">
                             <button type="submit" class="submit-btn">Submit</button>
                         </div>
