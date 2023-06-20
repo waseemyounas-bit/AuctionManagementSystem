@@ -67,7 +67,7 @@ namespace AuctionManagementSystem.Controllers
                     VDamage = ad.VDamage,
                     VehicleLocated = ad.VehicleLocated,
                     VSeller = ad.VSeller,
-                    DealerName = ad.DealerName,
+                    //DealerName = ad.DealerName,
                     OwnerDetails = ad.OwnerDetails,
                     Vtitled = ad.Vtitled,
                     VtitledRemarks = ad.VtitledRemarks,
@@ -77,7 +77,7 @@ namespace AuctionManagementSystem.Controllers
                     ReserveRemaks = ad.ReserveRemaks,
                     AdInfoRemarks = ad.AdInfoRemarks,
                     VehicleOwnerShipHistory = ad.VehicleOwnerShipHistory,
-                    sellerType=ad.sellerType,
+                    //sellerType=ad.sellerType,
                     IsApproved = "0"
                 };
                 UOW.AddVehicle().Insert(advv);
